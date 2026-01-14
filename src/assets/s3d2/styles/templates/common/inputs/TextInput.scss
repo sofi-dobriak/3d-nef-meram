@@ -1,0 +1,26 @@
+@use "../../../globals/fonts";
+
+.TextInput {
+  padding: var(--space-4);
+  background-color: var(--color-surface-gray-100);
+  border: 1px solid var(--border-gray-600-transparent-40);
+  border-radius: var(--border-space-1);
+  -webkit-appearance: none;
+  appearance: none;
+  @include fonts.text-style-3-d-fonts-1920-body-regular;
+  transition: 0.25s ease-out;
+  @media screen and (min-width:769px){
+    padding: calc(var(--space-5) + 2px) var(--space-5);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--border-gray-600);
+    background-color: var(--color-gray-100);
+  }
+
+  &:hover {
+    background-color: var(--color-surface-gray-300);
+    border-color: var(--border-gray-600);
+  }
+}

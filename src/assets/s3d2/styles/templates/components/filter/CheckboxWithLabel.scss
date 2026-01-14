@@ -1,0 +1,54 @@
+@use "../../../globals/fonts";
+
+.CheckboxWithLabel {
+  // display: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  &__input {
+    width: 24px;
+    height: 24px;
+    padding: var(--space-1);
+    border: 1px solid var(--border-brand-900);
+    border-radius: var(--border-space-1);
+    background-color: var(--color-surface-gray-200);
+    border-color: var(--border-gray-600-transparent-40);
+    transition: 0.25s ease-out;
+
+    svg {
+      display: none;
+    }
+  }
+
+  &:hover input:not(:checked) + &__input {
+    background-color: var(--color-surface-gray-300);
+    border-color: var(--border-gray-600);
+  }
+
+  input:checked + &__input {
+    border-color: var(--border-brand-900);
+    background-color: var(--color-surface-brand-800);
+
+    svg {
+      display: block;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--s3d2-color-icon-gray-200);
+    transform: translate(-1px, -1px);
+  }
+
+  &__label {
+    @include fonts.text-style-3-d-fonts-1920-body-regular;
+    color: var(--text-gray-900);
+    margin-left: var(--space-2);
+  }
+}

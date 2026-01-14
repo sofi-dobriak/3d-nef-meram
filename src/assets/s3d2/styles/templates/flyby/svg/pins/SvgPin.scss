@@ -1,0 +1,45 @@
+@use "../../../../globals/fonts";
+
+.SvgPin {
+  pointer-events: all;
+  transform: none;
+  & > * {
+    pointer-events: none;
+  }
+
+  &__title {
+    padding: var(--space-1) var(--space-3);
+    color: var(--text-gray-900);
+    border-radius: var(--border-space-2);
+    // background-color: var(--color-surface-gray-900);
+    // border: 1px solid var(--border-gray-900);
+    background-color: var(--s3d2-color-text-gray-200);
+    text-align: center;
+    margin-bottom: 2px;
+
+    @include fonts.text-style-3-d-fonts-1920-body-regular;
+    width: max-content;
+    margin: auto;
+    &:empty {
+      opacity: 0;
+    }
+  }
+
+  &__icon {
+    & > * {
+      pointer-events: none;
+    }
+
+    &-large {
+      width: 65px !important;
+      height: 90px !important;
+      pointer-events: none !important;
+    }
+
+    &-small {
+      width: 32px !important;
+      height: 32px !important;
+      pointer-events: none !important;
+    }
+  }
+}

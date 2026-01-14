@@ -1,0 +1,46 @@
+.s3d2-back-button {
+  position: fixed;
+  top: 62px;
+  // left: 26px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: var(--space-16, 64px);
+
+  //light theme
+  background: var(--s3d2-color-surface-gray-200-transparent-80);
+
+  backdrop-filter: blur(20px);
+  transition: 0.25s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--s3d2-color-accent-800-hover-overlays-transparent-72);
+
+    svg {
+      fill: var(--s3d2-color-icon-gray-200);
+
+      path {
+        fill: var(--s3d2-color-icon-gray-200);
+      }
+    }
+  }
+
+  svg {
+    path {
+      fill: var(--s3d2-color-icon-gray-900);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 52px;
+    left: 8px;
+  }
+}
