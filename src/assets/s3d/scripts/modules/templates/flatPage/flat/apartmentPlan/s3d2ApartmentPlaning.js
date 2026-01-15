@@ -46,29 +46,31 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
                       : ''
                   }
 
-                  <div class="s3d2-apartment__flat-explication-screen-buttons--slider">
+                  
                     ${
                       hasFlat2dAnd3dPlansOnLevel
                         ? `
-                      <div class="s3d2-apartment__flat-explication-screen-buttons--planning3d">
-                        ${
-                          hasFlat2dAnd3dPlansOnLevel
-                            ? ButtonWithoutIcon(
-                                '',
-                                'data-flat-explication-button="type"  data-value="2d"',
-                                i18n.t(`Flat.buttons.planning3d`),
-                              )
-                            : ''
-                        }
-                        ${
-                          hasFlat2dAnd3dPlansOnLevel
-                            ? ButtonWithoutIcon(
-                                'active',
-                                'data-flat-explication-button="type" data-value="3d"',
-                                i18n.t(`Flat.buttons.planning2d`),
-                              )
-                            : ''
-                        }
+                      <div class="s3d2-apartment__flat-explication-screen-buttons--slider">
+                        <div class="s3d2-apartment__flat-explication-screen-buttons--planning3d">
+                          ${
+                            hasFlat2dAnd3dPlansOnLevel
+                              ? ButtonWithoutIcon(
+                                  '',
+                                  'data-flat-explication-button="type"  data-value="2d"',
+                                  i18n.t(`Flat.buttons.planning3d`),
+                                )
+                              : ''
+                          }
+                          ${
+                            hasFlat2dAnd3dPlansOnLevel
+                              ? ButtonWithoutIcon(
+                                  'active',
+                                  'data-flat-explication-button="type" data-value="3d"',
+                                  i18n.t(`Flat.buttons.planning2d`),
+                                )
+                              : ''
+                          }
+                        </div>
                       </div>
                       `
                         : ''
@@ -84,7 +86,7 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
                           i18n.t(`Flat.buttons.furnished`),
                         )}
                       </div> -->
-                  </div>
+                 
 
                 </div>
 

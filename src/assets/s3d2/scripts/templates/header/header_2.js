@@ -97,9 +97,10 @@ export default function header_2(i18n, { logo, menuSelector, config = {} }) {
     });
   }, 100);
   const $phoneNumber = config.show_phoneNumber
-    ? `<a class="ButtonWithoutIcon" href="tel:${config.show_phoneNumber.replace(/[\s-]/g, '')}"> ${
-        config.show_phoneNumber
-      }</a>`
+    ? `<a class="s3d2-ButtonWithoutIcon" href="tel:${config.show_phoneNumber.replace(
+        /[\s-]/g,
+        '',
+      )}"> ${config.show_phoneNumber}</a>`
     : '';
   document.body.addEventListener('click', e => {
     if (!e.target.closest('[data-fullscreen-mode]')) return;
@@ -153,6 +154,7 @@ export default function header_2(i18n, { logo, menuSelector, config = {} }) {
             <span>${i18n.t('ctr.nav.callback')}</span>
           </button>`
       }
+       ${$phoneNumber}
        <div class="s3d2-IconButton-container">
           <!--<button class="s3d2-IconButton s3d2-IconButton--dark" data-s3d-voice="">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -164,6 +166,7 @@ export default function header_2(i18n, { logo, menuSelector, config = {} }) {
               <path d="M16.293 6L13.5 6L13.5 5L18 5L18 9.5L17 9.5L17 6.70703L10.5205 13.1865L9.81348 12.4795L16.293 6ZM5 8.83301C5.00009 8.3469 5.19337 7.88085 5.53711 7.53711C5.88085 7.19337 6.34689 7.00009 6.83301 7L10.833 7L10.833 8L6.83301 8C6.61211 8.00009 6.40034 8.08794 6.24414 8.24414C6.08794 8.40034 6.00009 8.61211 6 8.83301L6 16.167C6.00009 16.3879 6.08794 16.5997 6.24414 16.7559C6.40034 16.9121 6.61211 16.9999 6.83301 17L14.167 17C14.3879 16.9999 14.5997 16.9121 14.7559 16.7559C14.9121 16.5997 14.9999 16.3879 15 16.167L15 12.167L16 12.167L16 16.167C15.9999 16.6531 15.8066 17.1192 15.4629 17.4629C15.1192 17.8066 14.6531 17.9999 14.167 18L6.83301 18C6.34689 17.9999 5.88085 17.8066 5.53711 17.4629C5.19337 17.1192 5.00009 16.6531 5 16.167L5 8.83301Z"/>
             </svg>
           </button>
+         
           ${$favourite()}
           <div class="s3d2-theme-switch-wrapper" data-hide-elements="floor,flat,plannings,favourites">
             ${$s3d2_ToggleButton(i18n)}

@@ -52,7 +52,7 @@ export default function renderVillaContact(i18n, managerInfo = {}, contactAdvant
               ${i18n.t('Flat.contactUs.introDescription')}
             </div>
             <div class="s3d-villa__contact__intro__img">
-              <img src="/wp-content/themes/3d/assets/images-wp/logo.png" alt="">
+              <img src="/wp-content/themes/3d/assets/s3d/images/nef-logo.svg" alt="">
             </div>
           </div>
         </div>

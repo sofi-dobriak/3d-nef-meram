@@ -30,12 +30,7 @@
     "horizontalAlign_faq": "left || center || right",
     "horizontalAlign": "center",
     "video_keyframes": {},
-    "controlPoint": [
-      25,
-      50,
-      75,
-      100
-    ],
+    "controlPoint": [25, 50, 75, 100],
     "activeSlide": 100,
     "rotateSpeedDefault": 24,
     "rotateSpeed": [],
@@ -68,12 +63,7 @@
         "horizontalAlign_faq": "left || center || right",
         "horizontalAlign": "center",
         "video_keyframes": {},
-        "controlPoint": [
-          25,
-          50,
-          75,
-          100
-        ],
+        "controlPoint": [25, 50, 75, 100],
         "activeSlide": 100,
         "rotateSpeedDefault": 24,
         "rotateSpeed": [
@@ -279,7 +269,6 @@
         "translationNS": "Filter.rooms.build",
         "paramaterByWhatWillBeFilter": "build"
       }
-   
     ]
   },
   "pinsInfo": {
@@ -345,9 +334,7 @@
     }
   },
   "form": {
-    "prefered_countries": [
-      "us"
-    ]
+    "prefered_countries": ["us"]
   },
   "flyby_finish_dates": {
     "1-outside": "2027"
@@ -373,11 +360,11 @@
   "currency_list": [],
   "show_prices": true,
   "languages": "en/tr",
-  "show_phoneNumber": true,
+  "show_phoneNumber": "+444 9633",
   "hideDocumentation": true,
   "hideExterior": true,
   "hideFinancialTerms": true,
-  "hideConstructionProgress": false,
+  "hideConstructionProgress": true,
   "social_media_links_faq": "Якщо строчка пуста, то кнопка не буде відображатися",
   "social_media_links": {
     "telegram": "#",
