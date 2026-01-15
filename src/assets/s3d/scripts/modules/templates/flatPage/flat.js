@@ -91,6 +91,8 @@ function Flat({
 }) {
   const CONFIG = getConfig();
 
+  console.log('payment_list in flat.js: ', payment_list);
+
   const contactFormHtml1 = renderVillaContact(i18n, managerInfo, contactAdvantagesList);
   const contactFormHtml2 = renderVillaContact(i18n, managerInfo, contactAdvantagesList);
 

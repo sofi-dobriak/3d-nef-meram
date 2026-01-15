@@ -30,7 +30,12 @@
     "horizontalAlign_faq": "left || center || right",
     "horizontalAlign": "center",
     "video_keyframes": {},
-    "controlPoint": [25, 50, 75, 100],
+    "controlPoint": [
+      25,
+      50,
+      75,
+      100
+    ],
     "activeSlide": 100,
     "rotateSpeedDefault": 24,
     "rotateSpeed": [],
@@ -63,7 +68,12 @@
         "horizontalAlign_faq": "left || center || right",
         "horizontalAlign": "center",
         "video_keyframes": {},
-        "controlPoint": [25, 50, 75, 100],
+        "controlPoint": [
+          25,
+          50,
+          75,
+          100
+        ],
         "activeSlide": 100,
         "rotateSpeedDefault": 24,
         "rotateSpeed": [
@@ -237,9 +247,7 @@
         "logoAlt": "Italkraft logo"
       }
     ],
-    "contact_block_variant": "2"
-  },
-  "payment_list": [
+    "payment_list": [
     {
       "title": "Reservation",
       "description": "Hold 72h, sign reservation",
@@ -276,6 +284,9 @@
       "period": "Q1 2027"
     }
   ],
+    "contact_block_variant": "2"
+  },
+  
   "plannings": {
     "id": "plannings",
     "generalWrapId": ".js-s3d__slideModule"
@@ -378,7 +389,9 @@
     }
   },
   "form": {
-    "prefered_countries": ["us"]
+    "prefered_countries": [
+      "us"
+    ]
   },
   "flyby_finish_dates": {
     "1-outside": "2027"

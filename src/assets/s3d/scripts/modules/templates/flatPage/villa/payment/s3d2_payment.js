@@ -13,6 +13,8 @@ export default function s3d2_paymentSection({ i18n, payment_list = [] }) {
     disablePreviousResize = null;
   }
 
+  console.log('payment_list: ', payment_list);
+
   const paymentHtml =
     payment_list.length > 0
       ? `
