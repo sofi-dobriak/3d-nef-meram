@@ -167,7 +167,7 @@ function Flat({
           : ``
       }
       <div class="s3d-villa__container-bg"></div>
-      ${s3dDashboard(i18n, flat, $specifiedFlybysByGroup, showPrices)}
+      ${s3dDashboard(i18n, flat, $specifiedFlybysByGroup, showPrices, contacts)}
       <div class="s3d-villa__video-screen" style="padding-top: var(--space-5);     padding-left: var(--space-6);padding-right: var(--space-6);">
         <div class="s3d-villa-description-screen">
           <div class="s3d-villa-description-screen-item" ${

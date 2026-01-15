@@ -30,7 +30,8 @@ const lang = langDetect();
           field_only_letter: 'Ім`я повинно містити тільки букви',
           field_more_letter: 'Ім`я повинно містити не більше 30 букв',
           title: 'ЧИ ВИ ВЖЕ ЗНАЙШЛИ СВІЙ МАЙБУТНІЙ ДІМ?',
-          subtitle: 'Заповніть форму, щоб отримати більше інформації про нерухомість та умови придбання.',
+          subtitle:
+            'Заповніть форму, щоб отримати більше інформації про нерухомість та умови придбання.',
           only_number: 'Тут лише цифри',
           'Your phone': 'Ваш телефон:',
           'Your name': "Ваше ім'я:",
@@ -63,7 +64,8 @@ const lang = langDetect();
           send: 'Send message',
           sending: 'Sending',
           title: 'ARE YOU LOOKING TO GET MORE INFORMATION?',
-          subtitle: 'Fill out the form to get more information about the property and purchase details.',
+          subtitle:
+            'Fill out the form to get more information about the property and purchase details.',
           'Your name': 'Your name:',
           'Your phone': 'Your phone:',
           'Your email': 'Your email:',
@@ -98,7 +100,8 @@ const lang = langDetect();
           send: 'Send message',
           sending: 'Sending',
           title: 'ARE YOU LOOKING TO GET MORE INFORMATION?',
-          subtitle: 'Fill out the form to get more information about the property and purchase details.',
+          subtitle:
+            'Fill out the form to get more information about the property and purchase details.',
           'Your name': 'Your name:',
           'Your phone': 'Your phone:',
           'Your email': 'Your email:',
@@ -133,7 +136,8 @@ const lang = langDetect();
           send: 'Send message',
           sending: 'Sending',
           title: 'ARE YOU LOOKING TO GET MORE INFORMATION?',
-          subtitle: 'Fill out the form to get more information about the property and purchase details.',
+          subtitle:
+            'Fill out the form to get more information about the property and purchase details.',
           'Your name': 'Your name:',
           'Your phone': 'Your phone:',
           'Your email': 'Your email:',
@@ -168,7 +172,8 @@ const lang = langDetect();
           send: 'Send message',
           sending: 'Sending',
           title: 'ARE YOU LOOKING TO GET MORE INFORMATION?',
-          subtitle: 'Fill out the form to get more information about the property and purchase details.',
+          subtitle:
+            'Fill out the form to get more information about the property and purchase details.',
           'Your name': 'Your name:',
           'Your phone': 'Your phone:',
           'Your email': 'Your email:',
@@ -193,7 +198,44 @@ const lang = langDetect();
           connectionFailed: 'Server connection error',
         },
       },
-      
+      tr: {
+        translation: {
+          name: 'Ad Soyad:*',
+          phone: 'Telefon:*',
+          email: 'E-posta:*',
+          namePlaceholder: 'Ad Soyad',
+          emailPlaceholder: 'E-posta',
+          send: 'Mesaj gönder',
+          sending: 'Gönderiliyor',
+          title: 'DAHA FAZLA BİLGİ ALMAK MI İSTİYORSUNUZ?',
+          subtitle:
+            'Mülk ve satın alma detayları hakkında daha fazla bilgi almak için formu doldurun.',
+          'Your name': 'Adınız:',
+          'Your phone': 'Telefonunuz:',
+          'Your email': 'E-postanız:',
+          'Your comment': 'Mesajınız:',
+          'Type your message': 'Mesajınızı yazın',
+          field_too_short: 'Telefon en az {{cnt}} karakter olmalıdır',
+          field_too_long: 'Telefon en fazla {{cnt}} karakter olmalıdır',
+          field_only_letter: 'İsim sadece harflerden oluşmalıdır',
+          field_more_letter: 'İsim en fazla 30 harf olmalıdır',
+          only_number: 'Buraya sadece rakam giriniz',
+          required: 'Bu alan zorunludur',
+          sendingSuccessTitle: 'Talebiniz için teşekkür ederiz!',
+          sendingSuccessText: 'Danışmanlarımızın yanıtını bekleyin',
+          sendingErrorText: 'Lütfen danışmanlarımızın sizinle iletişime geçmesini bekleyin',
+          sendingErrorTitle: 'Bir hata oluştu',
+          send_fail: 'Bilinmeyen bir sunucu hatası nedeniyle mesaj gönderilemedi. Kod: [send_fail]',
+          invalid_form:
+            'Bilinmeyen bir sunucu hatası nedeniyle mesaj gönderilemedi. Kod: [invalid_form]',
+          front_error:
+            'Bilinmeyen bir sunucu hatası nedeniyle mesaj gönderilemedi. Kod: [front_error]',
+          invalid_upload_file: 'Dosya yükleme hatası. Kod: [invalid_upload_file]',
+          invalid_recaptcha:
+            'Lütfen robot doğrulamasını tamamlayıp tekrar deneyin. Kod: [invalid_recaptcha]',
+          connectionFailed: 'Sunucu bağlantı hatası',
+        },
+      },
     },
   });
 })();
@@ -317,8 +359,6 @@ export default class FormMonster {
     this.listers();
   }
 }
-
-
 
 async function wait(time) {
   return new Promise(resolve => {

@@ -24,9 +24,9 @@
   }
 }
 
-// .FlybyController>*:not([for="data-hightlight-svg-elements"]) {
-//     display: none !important;
-// }
+.FlybyController > *:not([for='data-hightlight-svg-elements']) {
+  display: none !important;
+}
 
 .s3d-intro__content > div {
   opacity: 0;
@@ -46,8 +46,8 @@
     .s3d-flat-new__details,
     /* .FlybyController, */
     [data-hide-elements="genplan"],
-    // [data-s3d2-header-flyby-dropdown],
-    // [data-header-floor-plan-group],
+    [data-s3d2-header-flyby-dropdown],
+    [data-header-floor-plan-group],
     [data-type="flyby"] .MenuMobileButton.js-s3d-ctr__filter,
     // .MobileNavigationMenu .ButtonWithoutIcon.js-s3d-nav__btn[data-type="floor"],
     .MobileFunctionsMenu>:nth-last-child(1),

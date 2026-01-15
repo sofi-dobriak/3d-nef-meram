@@ -45,6 +45,7 @@
     text-align: center;
     color: var(--s3d2-color-text-gray-900);
     @include s3d2_fonts.fonts-3d-small-medium;
+    font-family: 'Chalet Lonninse';
     transition: var(--transition);
   }
 

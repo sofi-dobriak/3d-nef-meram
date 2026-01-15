@@ -14,11 +14,13 @@ import s3d2spriteIcon from '../../../../../s3d2/scripts/templates/spriteIcon';
 import { TOOLTIP_ATTRIBUTE } from '../../../../../s3d2/scripts/constants';
 
 export default function CompareItem({ i18n, id, flat, propertiesToShow = [] }) {
-
   const $status = (i18n, flat) => {
-    const tooltipAttributes = flat.sale == 1 ? `${TOOLTIP_ATTRIBUTE}="${i18n.t('unit_statuses.1_tooltip')}"` : '';
+    const tooltipAttributes =
+      flat.sale == 1 ? `${TOOLTIP_ATTRIBUTE}="${i18n.t('unit_statuses.1_tooltip')}"` : '';
     return `
-       <div class="s3d-card__status s3d-card__image-info" data-sale='${flat.sale}' ${tooltipAttributes}>
+       <div class="s3d-card__status s3d-card__image-info" data-sale='${
+         flat.sale
+       }' ${tooltipAttributes}>
           ${i18n.t(`unit_statuses.${flat.sale}`)}
           ${s3d2spriteIcon('Info', 's3d-card__status-icon')}
         </div>
@@ -36,6 +38,7 @@ export default function CompareItem({ i18n, id, flat, propertiesToShow = [] }) {
           .map(({ keyPath, hide, valueFormat = e => e, title }) => {
             if (hide) return '';
             const value = get(flat, keyPath, undefined);
+            if (value === 0) return ``;
             if (value === undefined)
               return `
             <div class="CompareItem__table-row">
@@ -48,7 +51,9 @@ export default function CompareItem({ i18n, id, flat, propertiesToShow = [] }) {
             <div class="CompareItem__table-row">
               <div class="CompareItem__table-cell">
                 <span class="CompareItem__table-title text-style-3-d-fonts-1920-body-regular">${title}:</span>
-                <span class="text-style-3-d-fonts-1920-body-regular">${ keyPath === 'sale' ?  $status(i18n, flat) : valueFormat(value) } </span>
+                <span class="text-style-3-d-fonts-1920-body-regular">${
+                  keyPath === 'sale' ? $status(i18n, flat) : valueFormat(value)
+                } </span>
               </div>
             </div>
           `;

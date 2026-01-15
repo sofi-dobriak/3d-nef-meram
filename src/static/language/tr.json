@@ -1,0 +1,571 @@
+{
+  "currency_label": "$",
+  "currency_label_m2": "$t(currency_label) / $t(area_unit)",
+  "area_unit": "m²",
+  "unit_statuses": {
+    "0": "Satıldı",
+    "1": "Müsait",
+    "2": "Rezerve Edildi",
+    "3": "Rezerve Edildi",
+    "4": "Erişilemez",
+    "6": "Bloke Edildi",
+    "1_tooltip": "Sistemdeki müsaitlik durumu onaylandı"
+  },
+  "error": {
+    "pdf": "PDF içeriğini görüntülemek için lütfen gizlilik ayarlarınızı değiştirin: Ayarlar -> Safari -> Açılır Pencereleri Engelle seçeneğini kapatın.",
+    "open_pdf": "PDF'yi Aç"
+  },
+  "floor_list": {
+    "build": "Blok {{build}}",
+    "section": "Bölüm {{section}}"
+  },
+  "infoBox": {
+    "sold": "Tüm konutlar satıldı",
+    "sold_short": "Satıldı",
+    "flatSold": "Konut satıldı",
+    "flatClosed": "Satışlar henüz açılmadı",
+    "freeObjects": "Müsait",
+    "notAvailable": "Satıldı",
+    "price_m2_from": "$t(area_unit) başına fiyat:",
+    "from_price": "{{currency}} {{text}}'dan başlayan fiyatlarla",
+    "price_from": "Fiyat:",
+    "reviewFlat": "Mülkü incele",
+    "buildReview": "Evi görüntüle",
+    "review": "İncele",
+    "finishDate": "Teslim tarihi:",
+    "filter_results": "{{count}} konut filtrelendi",
+    "infrastructure_button_iframe": "Turu keşfet",
+    "infrastructure_button_image": "Fotoğrafı keşfet",
+    "infrastructure_button_video": "Videoyu keşfet",
+    "general": {
+      "button_titles": {
+        "queue": "Sırayı keşfet",
+        "villa": "Villayı keşfet",
+        "house": "Evi keşfet"
+      }
+    }
+  },
+  "title": {
+    "genplan": "Eden",
+    "flyby_1_outside": "Blok 1",
+    "favourites": "Favoriler",
+    "plannings": "Planlar"
+  },
+  "load": {
+    "loading-text": "Yükleniyor",
+    "loading-text-wait": "Lütfen bekleyin..."
+  },
+  "menu": {
+    "menu-title": "Menü",
+    "nav": {
+      "1": {
+        "nav-title": "İsim",
+        "nav-subtitle": {
+          "1": "Ana Sayfa",
+          "2": "Hakkımızda",
+          "3": "Konutlar",
+          "4": "Galeri",
+          "5": "İsim"
+        }
+      },
+      "2": {
+        "nav-title": "İsim",
+        "nav-subtitle": {
+          "1": "Otopark",
+          "2": "Altyapı",
+          "3": "Belgeler",
+          "4": "İnşaat Aşamaları",
+          "5": "Haberler ve Promosyonlar",
+          "6": "İletişim"
+        }
+      }
+    }
+  },
+  "ctr": {
+    "nav": {
+      "title": "3D Menü",
+      "genplan": "Eden",
+      "navigation": "Navigasyon",
+      "tooltip_1": "Blok 5",
+      "tooltip_2": "Blok 7",
+      "flyby": "Blok",
+      "flyby_1_outside": "Blok 1",
+      "flyby_1_inside": "Blok 5",
+      "flyby_2_inside": "Blok 7",
+      "plannings": "Planlar",
+      "level": "Kat",
+      "floor": "Kat planı",
+      "floor_plans": "Kat planları",
+      "flat": "Konut",
+      "functions": "Fonksiyonlar",
+      "property": "Mülk",
+      "flat_shot": "Daireler",
+      "back": "Geri",
+      "menu": "Menü",
+      "callback": "Şimdi Bilgi Alın",
+      "intro": "Giriş",
+      "plannings_availability": "Müsaitlik",
+      "home": "Ana Sayfa",
+      "masterplan": "Bina Genel Bakışı",
+      "360_orbit": "360 Yörünge",
+      "availability": "Müsaitlik",
+      "fisher_island": "Vaziyet Planı",
+      "mansion": "Konut"
+    },
+    "share": {
+      "link-copied": "Bağlantı kopyalandı"
+    },
+    "flybysidechooser": {
+      "outside": "Dış cephe",
+      "inside": "İç cephe"
+    },
+    "menu": {
+      "compass": {
+        "south": "G",
+        "west": "B",
+        "east": "D",
+        "north": "K"
+      },
+      "btn": {
+        "infrastructure": "Altyapı",
+        "filter": "Filtre",
+        "chooseOfApartment": "Ünite",
+        "chooseOfFloor": "Kat",
+        "repeatHelp": "?"
+      },
+      "hightlightInfrastructure": "Katman",
+      "build_progress": "İnşaat aşamaları",
+      "on_the_map": "Haritadaki konum",
+      "on_the_build": "Konut planları",
+      "callbackFormCall": "Danışmanla iletişime geçin"
+    }
+  },
+  "Helper": {
+    "slide-0--title": "Basılı tutun ve döndürün",
+    "slide-1--title": "Filtre",
+    "slide-2--title": "Katlar veya Konutlar",
+    "slide-3--title": "Navigasyonu kullanın",
+    "title1": "Navigasyon",
+    "description1": "3D modeli döndürebilirsiniz",
+    "title2": "Araçlar",
+    "description2": "3D modelle etkileşim araçları",
+    "title3": "Filtre",
+    "description3": "Kendi parametrelerinize göre filtreleme yapabilirsiniz",
+    "title4": "Karşılaştır",
+    "description5": "Karşılaştırmak için planlar ekleyebilirsiniz",
+    "close": "Eğitimi atla",
+    "next": "Sonraki",
+    "gotIt": "Anladım!"
+  },
+  "Filter": {
+    "title": "Parametrelere göre seçim",
+    "data_changed": "Parametreler değişti",
+    "list": {
+      "type": "Tür",
+      "rooms": "Yatak Odaları",
+      "bathrooms": "Banyolar",
+      "area": "Alan",
+      "area_unit": "$t(area_unit)",
+      "price": "Fiyat",
+      "status": "Durum",
+      "floor": "Kat",
+      "favourite--add": "Seç",
+      "parking_spots": "Otopark yerleri"
+    },
+    "range": {
+      "floor": "Kat",
+      "area": "Boyut",
+      "price": "Fiyat",
+      "price_m2": "$t(area_unit) başına fiyat",
+      "area_unit": "$t(area_unit)",
+      "price_unit": "$t(currency_label)"
+    },
+    "checkboxes": {
+      "rooms": "Yatak Odaları",
+      "bathrooms": "Banyolar",
+      "build": "Blok",
+      "type": "Tür"
+    },
+    "reset": "Temizle",
+    "apply": "Uygula",
+    "hide": "Gizli filtreler",
+    "show": "Filtreleri göster",
+    "found": "Bulunan",
+    "from": "ile",
+    "to": "kadar",
+    "not-marked-message": "Bu bölüm işaretlenmedi",
+    "openFilter": "Filtreyi aç",
+    "enterUnitNumber": "Ünite numarasını girin",
+    "Search by number": "Numaraya göre ara"
+  },
+  "Flat": {
+    "name": "Ünite",
+    "explication": "Açıklama",
+    "gallery": "Galeri",
+    "virtual_tour": "ODA TURU",
+    "floor_plan": "KAT SEÇİCİ",
+    "other_flats_title": "Bu konutun diğer katlardaki seçenekleri",
+    "doc_title": "Belgeler",
+    "financial_terms_title": "finansman koşulları",
+    "construction_title": "İnşaat aşamaları",
+    "video": "Video sunumu",
+    "discount": "İndirim",
+    "floor": "kat",
+    "bathroom": "banyo",
+    "bedrooms": "yatak odaları",
+    "garage": "garaj",
+    "pools": "havuzlar",
+    "from_window_view": "360 manzara",
+    "scroll": "Kaydır",
+    "see_all_photos": "Tüm {{count}} fotoğrafı görüntüle",
+    "explication_data": {
+      "floor_1": "Zemin kat",
+      "floor_2": "1. kat",
+      "floor_3": "2. kat",
+      "floor_4": "Çatı",
+      "floor_5": "En üst kat",
+      "open_full_plan": "plan detayları"
+    },
+    "floor_planning": "Kat planı ve özellikler",
+    "change_floor": "Katı değiştir:",
+    "same_apartment_type": "Müsait konutlar",
+    "buttons": {
+      "with": "3D",
+      "without": "2D",
+      "gallery_btn": "Galeri",
+      "showIn3d": "3D'de",
+      "view": "Görüntüle",
+      "windowView": "Pencereden",
+      "compare": "Karşılaştır",
+      "addedToCompare": "Karşılaştırmaya eklendi",
+      "addedToCompare_mob": "Karşılaştırmada",
+      "pdf": "PDF",
+      "3dTour": "3D tur",
+      "callback--1": "Danışmanla iletişime geçin",
+      "callback--2": "Konut rezerve et",
+      "planning2d": "2D plan",
+      "planning3d": "3D plan",
+      "furnished": "Mobilyalı",
+      "video": "Video raporunu izle"
+    },
+    "timer": {
+      "timer-text": "Bu fiyata rezervasyon yapmak için hala zamanınız var"
+    },
+    "information": {
+      "title": "Bilgi",
+      "sale": "Durum",
+      "build": "Block",
+      "number": "Numara",
+      "area": "Alan",
+      "allArea": "Toplam alan",
+      "life_area": "Yaşam alanı",
+      "area_unit": "$t(area_unit)",
+      "rooms": "Yatak Odaları",
+      "rooms_R": "YO",
+      "floor": "Kat",
+      "price": "Fiyat",
+      "priceText": " $t(currency_label)",
+      "type": "Tür",
+      "section": "Bölüm",
+      "price_m2": "$t(area_unit) fiyatı",
+      "per": "başına",
+      "priceHistory": "Fiyat dinamiği",
+      "floor_n_desktop": "Kat numarası",
+      "floor_n_mobile": "Kat №",
+      "viewPlanning": "Planı Görüntüle",
+      "exterior_area": "Dış alan",
+      "baths": "Banyo",
+      "beds": "Yatak"
+    },
+    "goToFloor": "Kat planı",
+    "goToFlat": "Mülkü keşfet",
+    "hero": {
+      "title": "ATHOS",
+      "subtitle": "Villa",
+      "description": "YENİ PROJEMİZ, CORAL GABLES'IN KALBİNDEKİ MANZARALI HIGH PINES BÖLGESİNDE, GÜNEY MIAMI'NİN EN SEÇKİN NOKTASINDADIR. BU BÖLGE, ÜST DÜZEY OKULLARI VE OLAĞANÜSTÜ YAŞAM KALİTESİYLE TANINIR."
+    },
+    "faq": {
+      "faqTitle": "SSS",
+      "faq_question": {
+        "1": "Konutun fiyatı nedir?"
+      },
+      "faq_answer": {
+        "1": "Konutun fiyatı:"
+      }
+    },
+    "exterior": {
+      "exteriorTitle": "VİLLANIN DIŞ GÖRÜNÜMÜ",
+      "exteriorItemTitle": {
+        "1": "GÜNDOĞUMU MANZARALARI: KIYI YAŞAMI YENİDEN TANIMLANIYOR:",
+        "2": "ÖZEL KIYI SIĞINAKLARI: SIĞINAĞINIZ SİZİ BEKLİYOR",
+        "3": "OKYANUS KIYISINDA ZARAFET: MANZARALI MASTER SUİTLER"
+      },
+      "exteriorItemDescription": {
+        "1": "Özel terasınızda nefes kesici gündoğumu manzaralarıyla uyanın. Her villa, her sabahın muhteşem geçmesini sağlayan eşsiz bir deniz manzarası sunar.",
+        "2": "Özel kıyı sığınaklarımızda huzuru bulun. Villas Dumas, panoramik terasları, şık iç mekanları ve kesintisiz iç-dış mekan yaşam alanlarıyla benzersiz bir yaşam tarzı sunuyor.",
+        "3": "Kapınızın önündeki okyanusla uyanın. Master suitlerimiz, eşsiz bir yaşam deneyimi için lüksü doğanın güzelliğiyle birleştiren çarpıcı deniz manzaraları sunar."
+      },
+      "exteriorContactButton": "Danışmanla iletişime geçin"
+    },
+    "contactUs": {
+      "form_title": "KONUŞALIM",
+      "form_description": "Satış ofisimizde tüm detayları keşfedin",
+      "contacts_title": "İLETİŞİME GEÇİN",
+      "contacts_description": "Bağlantıda kalın — yolunuzu seçin",
+      "general_title": "İLETİŞİM",
+      "phone": "İletişim telefonu:",
+      "email": "E-posta adresimiz:",
+      "social": "SOSYAL MEDYA:",
+      "working_hours": {
+        "title": "ÇALIŞMA SAATLERİ",
+        "weekdays": "Pazartesi - Cuma: 09:00 - 20:00",
+        "weekends": "Cumartesi - Pazar: Esnek çalışma saatleri"
+      },
+      "departmentTitle": {
+        "1": "Satış Departmanı",
+        "2": "İnşaat:"
+      },
+      "departmentAddress": {
+        "1": "Vinnıtsya, Magistratska Caddesi, 82",
+        "2": "Vinnıtsya, Keletska Caddesi"
+      },
+      "departmentAddressLink": "GOOGLE HARİTALARDA AÇ",
+      "introTitle": "Bunu Kaçırmak İstemezsiniz!",
+      "introDescription": "Sektörden özel haberlerin doğrudan e-posta kutunuza gelmesini sağlayın.",
+      "contactManagerName": "Alex Smith",
+      "contactManagerPosition": "Satış Müdürü",
+      "contactManagerEmailTitle": "E-posta:",
+      "ourAdvantages": "KENDİNİZİ KONUTLARIMIZDAN BİRİNDE <br/>HAYAL EDİYOR MUSUNUZ?",
+      "contactAdvantagesItem": {
+        "1": "Kişiye Özel Danışmanlık",
+        "2": "Özelleştirme Seçenekleri",
+        "3": "Finansman Çözümleri",
+        "4": "İç Mimari Danışmanlık",
+        "5": "Kiralama Potansiyeli"
+      },
+      "contactButton": "BUGÜN BİZİMLE İLETİŞİME GEÇİN",
+      "bookButton": "Toplantı planla"
+    },
+    "virtual_tour_open": "Turu keşfet",
+    "virtual_tour_close": "Duraklat",
+    "share": "Paylaş",
+    "brands_list_title": "Özellikler",
+    "brands_list_description": "Welcome evleri, klasik ve güvenilir yerinde inşaat yöntemiyle yapılır. Evlerimiz 'modüler' veya prefabrik değildir; sahada inşa edilirler. Aşağıda Katona bileşenlerine dair genel bir genel bakış bulabilirsiniz."
+  },
+  "Floor": {
+    "title-1": "",
+    "changeFloor--": "Katı değiştir:",
+    "title-2": "kat",
+    "title-3": "seviye",
+    "number_rooms": "Yatak Odası Sayısı",
+    "apps_from": "Konutlar:",
+    "information": {
+      "title": "Bilgi",
+      "build": "Blok",
+      "floor": "Kat",
+      "section": "Bölüm",
+      "price_m2_from": "$t(currency_label) / $t(area_unit) 'dan başlayan fiyatlarla",
+      "all-flats": "Toplam konut",
+      "free-flats": "Müsait",
+      "free-flats--": "Müsait:",
+      "from": "Fiyatlar",
+      "per_m2": "$t(area_unit) başına",
+      "reviewFloor": "Kat planını keşfet"
+    },
+    "filter": {
+      "1": "1 yatak odası",
+      "2": "2 yatak odası",
+      "3": "3 yatak odası",
+      "4": "4 yatak odası",
+      "5": "5 yatak odası",
+      "all": "Tüm odalar",
+      "title-mob": "Yatak Odaları"
+    },
+    "floor-list": "katlar",
+    "goToFloor": "Kata git"
+  },
+  "Plannings": {
+    "found": "Bulunan",
+    "found--from": "itibaren",
+    "found--with": "ile",
+    "found-flats": "daireler",
+    "notFound": "Ancak bu konutlara da göz atabilirsiniz",
+    "toggle-title": "Yerleşim Planları",
+    "toggle-title-btn-cards": "Kartlar",
+    "toggle-title-btn-list": "Liste",
+    "toggle-title222": "başlık"
+  },
+  "favourite--title": "Karşılaştır",
+  "favourite--added": "Karşılaştır (<span class=\"js-s3d__fv-count\"></span> konut eklendi)",
+  "favourite--added-mobile": "Karşılaştır (<span class=\"js-s3d__fv-count\"></span> eklendi)",
+  "favourite--apartments": "Konutlar",
+  "favourite--add": "Seç",
+  "favourite--empty-title": "Karşılaştırılacak bir şey bulunamadı",
+  "favourite--empty-text": "Yerleşim planlarını seçin ve karşılaştırma listesine ekleyin",
+  "favourite--empty-button": "Planları görüntüle",
+  "favourite--show-differences": "Yalnızca farkları göster",
+  "card--link": "Daha fazla oku",
+  "card--add_to_compare": "Karşılaştırmaya ekle",
+  "PopupFlyby": {
+    "title": "Konut",
+    "description": "Plan başka bir binada bulunuyor. 3D modelde görüntülemek için diğer bloğa geçmeniz gerekiyor.",
+    "btn": "Açıyı değiştir"
+  },
+  "Error-popup": {
+    "title": "Bir hata oluştu",
+    "translate-info": "3D Eden'e yönlendirileceksiniz. Kalan süre:",
+    "link": "Ana sayfaya",
+    "messages": {
+      "not-find-data": "Beklenen veriler alınamadı",
+      "not-all-required-data-received": "Gerekli tüm veriler alınamadı",
+      "invalid-url": "URL'de hatalı veri",
+      "failed-request": "Veri yüklenemedi",
+      "network-error": "Ağ hatası",
+      "application-error": "Uygulama hatası",
+      "unknown-error": "Bilinmeyen hata"
+    }
+  },
+  "Send-error-popup": {
+    "success": "Hata verileri teknik destek uzmanlarına başarıyla gönderildi",
+    "failed": "Hata verileri kaydedilemedi, lütfen teknik desteğe bildirin"
+  },
+  "slider_popup": {
+    "227": "Tip MasterFly",
+    "228": "Tip 5BR AB",
+    "229": "Tip 4BR AB",
+    "230": "Tip 4BR AB",
+    "231": "Tip 4BR KS",
+    "232": "Tip 4BR KS",
+    "233": "Tip 4BR SJ",
+    "234": "Tip 4BR SJ",
+    "235": "Tip 5BR JM",
+    "236": "Tip 5BR JM",
+    "239": "Tip 5BR KS",
+    "240": "Tip 5BR KS",
+    "241": "Tip 5BR SJ",
+    "242": "Tip 5BR SJ",
+    "default": "Villa"
+  },
+  "builds": {
+    "1": "A",
+    "2": "B",
+    "3": "C",
+    "4": "D",
+    "5": "E"
+  },
+  "rooms": {
+    "1": "1 yatak odası",
+    "2": "2 yatak odası",
+    "3": "3 yatak odası",
+    "4": "4 yatak odası",
+    "5": "5 yatak odası"
+  },
+  "rooms-abbreviation": {
+    "1": "1 YO",
+    "2": "2 YO",
+    "3": "3 YO",
+    "4": "4 YO",
+    "5": "5 YO"
+  },
+  "sales": {
+    "0": "Satıldı",
+    "1": "Müsait",
+    "2": "Rezerve Edildi",
+    "3": "Müsait değil",
+    "4": "Satıldı"
+  },
+  "pins": {
+    "park_trc": "Mağaza",
+    "video": "Misafir otoparkı",
+    "zone": "Misafir otoparkı",
+    "walking_zone": "Yürüyüş alanı",
+    "shop_1": "Gıda marketi",
+    "playground_playground1": "Oyun alanı",
+    "shop_coffee": "Kahve dükkanı",
+    "parking_underground": "Yeraltı otoparkı",
+    "commercial_zone": "Ticari alanlar",
+    "street_zamarstynivska": "Zamarstynivska sok.",
+    "street_shidna": "Shidna sok.",
+    "street_kvitova": "Kvitova sok.",
+    "tennis_court_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum ligula at, malesuada magna."
+  },
+  "loader": {
+    "load": "Önizleme yükleniyor",
+    "wait_a_little": "Lütfen bekleyin...",
+    "rotate_warning": "Lütfen telefonu dikey tutun."
+  },
+  "currencies": {
+    "USD": "$",
+    "UAH": "₴",
+    "EUR": "€"
+  },
+  "Dropdown": {
+    "title": "Navigasyon"
+  },
+  "tutorial": {
+    "step_nav": "Navigasyon",
+    "step_nav_description": "3D modeli döndürebilirsiniz",
+    "step_interact": "Araçlar",
+    "step_interact_description": "3D modelle etkileşim araçları",
+    "ster_filter": "Filtre",
+    "ster_filter_description": "Parametrelerinize göre filtreleme yapabilirsiniz",
+    "step_compare": "Karşılaştır",
+    "step_compare_description": "Karşılaştırmak için planlar ekleyebilirsiniz",
+    "step_share": "Paylaş",
+    "step_share_description": "Modelin bağlantısını kopyalayabilirsiniz",
+    "step_fullscreen": "Tam ekran modu",
+    "step_fullscreen_description": "Bu modu kullanarak tam ekran deneyiminin keyfini çıkarabilirsiniz"
+  },
+  "monthes": {
+    "January": "Ocak",
+    "February": "Şubat",
+    "March": "Mart",
+    "April": "Nisan",
+    "May": "Mayıs",
+    "June": "Haziran",
+    "July": "Temmuz",
+    "August": "Ağustos",
+    "September": "Eylül",
+    "October": "Ekim",
+    "November": "Kasım",
+    "December": "Aralık"
+  },
+  "from": "itibaren",
+  "touchModePopup": {
+    "title": "Cihazınızda dokunmatik ekran algılandı. Lütfen etkileşim modunu seçin:",
+    "mouse": "Fare",
+    "touch": "Dokunmatik ekran",
+    "changeMode": "Modu değiştir: {{mode}}"
+  },
+  "pdf_error": "Bir şeyler yanlış gitti...",
+  "pdf_download": "İndir",
+  "pdf_ready": "PDF'niz hazır",
+  "pdf_preparing": "Hazırlanıyor...",
+  "SuccessFormPopup": {
+    "title": "EVET, TALEBİNİZ ALINDI!",
+    "button": "ANLADIM",
+    "text": "Yeni alanınıza yolculuğunuzun sorunsuz ve heyecan verici olması için gereken her şeyi hazırlamaya başladık bile."
+  },
+  "infobox": {
+    "available": "Müsait"
+  },
+  "audioGuide": {
+    "play": "Oynat",
+    "repeat": "Tekrarla",
+    "turn_off": "Kapat"
+  },
+  "SmartoTours": {
+    "title": "Sanal tur",
+    "floor": "Kat",
+    "Go to": "Git",
+    "fullscreen": "Tam ekran",
+    "floor_show_or_hide": "Kat planını Göster/Gizle",
+    "menu": "Menü"
+  },
+  "Flyby": {
+    "mobile_scale_title_block": {
+      "title_1": "The Spinhouse'a Hoş Geldiniz!",
+      "title_2": "Yakınlaştır ve Döndür!"
+    }
+  }
+}

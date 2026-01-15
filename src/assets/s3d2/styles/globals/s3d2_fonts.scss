@@ -1,3 +1,13 @@
+$chalet-font: 'Chalet Lonninse', sans-serif;
+
+@font-face {
+  font-family: 'Chalet Lonninse';
+  font-display: swap;
+  src: url('../../fonts/Chalet-Lonninse.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
 @font-face {
   font-display: swap;
   font-family: 'Inter Tight';
@@ -35,7 +45,7 @@
 }
 
 @mixin fonts-3d-h1 {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -44,7 +54,7 @@
 }
 
 @mixin fonts-3d-h2 {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -52,8 +62,16 @@
   text-transform: uppercase;
 }
 
+@mixin fonts-3d-h3-semibold {
+  font-family: $chalet-font;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 20.4px */
+}
+
 @mixin fonts-3d-body {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +79,7 @@
 }
 
 @mixin fonts-3d-body-uppercase {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -70,7 +88,7 @@
 }
 
 @mixin fonts-3d-small-uppercase {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -79,7 +97,7 @@
 }
 
 @mixin fonts-3d-small-medium {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -87,7 +105,7 @@
 }
 
 @mixin fonts-3d-small-bold {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -95,7 +113,7 @@
 }
 
 @mixin fonts-3d-small-strikeshrought {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +122,7 @@
 }
 
 @mixin fonts-3d-tiny {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -112,7 +130,7 @@
 }
 
 @mixin fonts-3d-tiny-strikeshrought {
-  font-family: 'Inter Tight';
+  font-family: $chalet-font;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -127,6 +145,11 @@
 
 .fonts-3d-h2 {
   @include fonts-3d-h2;
+  color: var(--s3d2-color-text-gray-900);
+}
+
+.fonts-3d-h3-semibold {
+  @include fonts-3d-h3-semibold;
   color: var(--s3d2-color-text-gray-900);
 }
 

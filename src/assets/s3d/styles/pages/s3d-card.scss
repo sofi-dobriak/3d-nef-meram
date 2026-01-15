@@ -120,7 +120,7 @@
         width: auto;
         padding: var(--space-1) var(--space-2);
         @include fonts.text-style-3-d-fonts-1920-body-regular;
-
+        font-family: 'Chalet Lonninse', sans-serif;
         border-radius: var(--border-space-2);
 
         & > svg {
@@ -245,6 +245,7 @@
 
     &__info-label {
       @include fonts.text-style-3-d-fonts-tiny;
+      font-family: 'Chalet Lonninse';
       color: var(--color-gray-700);
       text-transform: uppercase;
     }

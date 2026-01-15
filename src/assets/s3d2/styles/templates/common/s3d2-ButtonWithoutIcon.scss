@@ -3,6 +3,7 @@
 
 .s3d2-ButtonWithoutIcon {
   @include s3d2_fonts.fonts-3d-small-medium;
+  font-family: 'Chalet Lonninse', sans-serif;
   line-height: 120%;
   padding: var(--space-3) var(--space-4);
   color: var(--s3d2-color-text-gray-900);

@@ -1,5 +1,15 @@
 @use "../../../s3d/styles/assets/vars";
 
+$chalet-font: 'Chalet Lonninse', sans-serif;
+
+@font-face {
+  font-family: 'Chalet Lonninse';
+  font-display: swap;
+  src: url('../../fonts/Chalet-Lonninse.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
 @font-face {
   font-family: 'Inter Display';
   font-display: swap;
@@ -53,7 +63,7 @@
 
 @mixin text-style-3-d-fonts-1920-h-1() {
   font-size: 32px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 300;
   font-style: normal;
   line-height: 130%;
@@ -64,7 +74,7 @@
 
 @mixin text-style-3-d-fonts-1920-h-1-light() {
   font-size: 32px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 300;
   font-style: normal;
   line-height: 130%;
@@ -74,7 +84,7 @@
 
 @mixin text-style-3-d-fonts-1920-h-2-regular() {
   font-size: 20px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 130%;
@@ -84,7 +94,7 @@
 
 @mixin text-style-3-d-fonts-1920-h-2-semi-bold() {
   font-size: 20px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 600;
   font-style: normal;
   line-height: 130%;
@@ -94,7 +104,7 @@
 
 @mixin text-style-3-d-fonts-1920-h-2-bold() {
   font-size: 20px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 700;
   font-style: normal;
   line-height: 130%;
@@ -104,7 +114,7 @@
 
 @mixin text-style-3-d-fonts-1920-body-bold() {
   font-size: 13px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 700;
   font-style: normal;
   line-height: 130%;
@@ -114,7 +124,7 @@
 
 @mixin text-style-3-d-fonts-1920-body-medium() {
   font-size: 13px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
@@ -124,7 +134,7 @@
 
 @mixin text-style-3-d-fonts-1920-body-regular() {
   font-size: 13px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 140%;
@@ -134,7 +144,7 @@
 
 @mixin text-style-3-d-fonts-1920-semi-tiny() {
   font-size: 14px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 140%;
@@ -144,7 +154,7 @@
 
 @mixin text-style-3-d-fonts-1920-tiny() {
   font-size: 12px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 500;
   font-style: normal;
   line-height: 100%;
@@ -154,7 +164,7 @@
 
 @mixin text-style-3-d-fonts-1920-super-tiny() {
   font-size: 10px;
-  font-family: vars.$default-font;
+  font-family: $chalet-font;
   font-weight: 500;
   font-style: normal;
   line-height: 100%;
@@ -164,7 +174,7 @@
 
 @mixin text-style-3-d-fonts-1360-h-1() {
   font-size: 48px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 100%;
@@ -175,7 +185,7 @@
 
 @mixin text-style-3-d-fonts-1360-h-2() {
   font-size: 32px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 120%;
@@ -186,7 +196,7 @@
 
 @mixin text-style-3-d-fonts-1360-h-3() {
   font-size: 24px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 130%;
@@ -196,7 +206,7 @@
 
 @mixin text-style-3-d-fonts-1360-h-4() {
   font-size: 16px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
@@ -206,7 +216,7 @@
 
 @mixin text-style-3-d-fonts-360-h-1() {
   font-size: 32px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 100%;
@@ -217,7 +227,7 @@
 
 @mixin text-style-3-d-fonts-360-h-2() {
   font-size: 28px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 400;
   font-style: normal;
   line-height: 120%;
@@ -228,7 +238,7 @@
 
 @mixin text-style-3-d-fonts-360-h-3() {
   font-size: 22px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
@@ -238,7 +248,7 @@
 
 @mixin text-style-3-d-fonts-360-h-4() {
   font-size: 16px;
-  font-family: Inter;
+  font-family: $chalet-font;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;

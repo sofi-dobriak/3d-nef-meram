@@ -8,7 +8,7 @@
   padding: var(--space-2) var(--space-3);
   color: var(--s3d2-color-text-gray-900);
   background-color: transparent;
-
+  border: none;
   // border: 1px solid var(--s3d2-color-border-gray-400);
   cursor: pointer;
   display: flex;
@@ -36,8 +36,15 @@
     background: var(--s3d2-color-surface-gray-200-transparent-10) !important;
   }
 
+  span,
+  svg {
+    position: relative;
+    z-index: 2;
+  }
+
   span {
     @include s3d2_fonts.fonts-3d-small-medium;
+    font-family: 'Chalet Lonninse', sans-serif;
 
     @media screen and (max-width: 768px) {
       font-size: 11px;
@@ -47,6 +54,7 @@
   svg {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
     &:not(.s3d2-ButtonIconLeft__icon--no-paints) {
       fill: var(--s3d2-color-icon-gray-900);
     }
@@ -63,7 +71,8 @@
     color: var(--s3d2-color-text-gray-200);
 
     &::after {
-      background: var(--s3d2-color-surface-gray-400-transparent-88) !important;
+      // background: var(--s3d2-color-surface-gray-400-transparent-88) !important;
+      background-color: var(--s3d2-hover-color-to-dark-bg-button) !important;
     }
 
     svg:not(.s3d2-ButtonIconLeft__icon--no-paints) {
@@ -94,14 +103,18 @@
   }
 
   &--light {
-    border-radius: var(--space-2);
-    background: var(--s3d2-color-surface-gray-900);
-    backdrop-filter: blur(20px);
-    border-color: transparent;
-    color: var(--s3d2-color-gray-200);
+    background-color: var(--s3d2-color-surface-gray-900);
+    border: 1px solid var(--s3d2-color-border-gray-900);
+    color: var(--s3d2-color-text-gray-200);
+
+    &::after {
+      background: var(--s3d2-hover-color-to-dark-bg-button) !important;
+    }
 
     svg {
-      stroke: var(--s3d2-color-icon-gray-200);
+      path {
+        stroke: var(--s3d2-color-text-gray-200);
+      }
     }
   }
 
@@ -147,7 +160,7 @@
 
     .s3d2-ButtonIconLeft__icon--no-paints {
       path {
-        stroke: var(--s3d2-color-icon-gray-900);
+        // stroke: var(--s3d2-color-icon-gray-900);
       }
     }
     &::after {
@@ -172,12 +185,21 @@
     background: var(--s3d2-color-surface-gray-200-transparent-10);
   }
 
-  // .s3d2-ButtonIconLeft--light:hover {
-  //   border-color: transparent;
-  //   background: var(--s3d2-color-surface-gray-200-transparent-80);
+  .s3d2-ButtonIconLeft--light:hover {
+    background-color: var(--s3d2-color-surface-gray-900);
 
-  //   span {
-  //     color: var(--s3d2-color-text-gray-900);
-  //   }
-  // }
+    &::after {
+      transform: translate3d(100%, 0, 0) skew(25deg);
+    }
+
+    span {
+      color: var(--s3d2-color-text-gray-200);
+    }
+
+    svg {
+      path {
+        stroke: var(--s3d2-color-text-gray-200);
+      }
+    }
+  }
 }

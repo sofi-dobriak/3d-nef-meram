@@ -1107,8 +1107,8 @@
   width: 84px;
   &--currencies {
     width: 100px;
-
     height: 40px;
+    margin: 0 0 0 8px;
   }
 
   input[type='checkbox'] {
@@ -1145,6 +1145,7 @@
 
       &:hover {
         background-color: var(--color-surface-gray-400-transperent-88);
+        color: var(--s3d2-color-text-gray-900);
       }
     }
     div {

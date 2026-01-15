@@ -20,16 +20,25 @@
   backdrop-filter: blur(20px);
   transition: 0.25s ease-out;
   cursor: pointer;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 0.15s ease-out;
+    background-color: var(--s3d2-color-surface-gray-200-transparent-10);
+    border-radius: 50%;
+    overflow: hidden;
+  }
 
   &:hover {
-    background: var(--s3d2-color-accent-800-hover-overlays-transparent-72);
-
-    svg {
-      fill: var(--s3d2-color-icon-gray-200);
-
-      path {
-        fill: var(--s3d2-color-icon-gray-200);
-      }
+    &::after {
+      transform: translateX(0);
     }
   }
 

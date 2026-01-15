@@ -2,6 +2,7 @@
 
 .s3d2-filter-call-button {
   @include s3d2_fonts.fonts-3d-small-medium;
+  font-family: 'Chalet Lonninse', sans-serif;
   position: absolute;
   left: 0;
   top: 50%;
@@ -24,6 +25,10 @@
 
   &.active {
     left: var(--filter-width);
+
+    svg {
+      transform: rotate(180deg);
+    }
   }
 
   &::after {
@@ -69,7 +74,6 @@
   &--mobile {
     display: none;
   }
-  
 }
 
 .mobile {

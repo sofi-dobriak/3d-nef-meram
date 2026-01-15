@@ -23,7 +23,7 @@
     "DISABLE_MOBILE_ZOOM": false,
     "numberSlide": {
       "min": 0,
-      "max": 119
+      "max": 101
     },
     "verticalAlig_faq": "top || center || bottom",
     "verticalAlign": "center",
@@ -31,12 +31,12 @@
     "horizontalAlign": "center",
     "video_keyframes": {},
     "controlPoint": [
-      1,
-      30,
-      60,
-      90
+      25,
+      50,
+      75,
+      100
     ],
-    "activeSlide": 1,
+    "activeSlide": 100,
     "rotateSpeedDefault": 24,
     "rotateSpeed": [],
     "frameWithNorthDirection": 100,
@@ -61,7 +61,7 @@
         "show_flat_polygons_tooltip_key": "area",
         "numberSlide": {
           "min": 0,
-          "max": 119
+          "max": 101
         },
         "verticalAlig_faq": "top || center || bottom",
         "verticalAlign": "center",
@@ -69,12 +69,12 @@
         "horizontalAlign": "center",
         "video_keyframes": {},
         "controlPoint": [
-          1,
-          30,
-          60,
-          90
+          25,
+          50,
+          75,
+          100
         ],
-        "activeSlide": 1,
+        "activeSlide": 100,
         "rotateSpeedDefault": 24,
         "rotateSpeed": [
           {
@@ -247,7 +247,7 @@
         "logoAlt": "Italkraft logo"
       }
     ],
-    "contact_block_variant": "1"
+    "contact_block_variant": "2"
   },
   "plannings": {
     "id": "plannings",
@@ -271,7 +271,15 @@
         "needTranslation": false,
         "translationNS": "Filter.rooms.",
         "paramaterByWhatWillBeFilter": "rooms"
+      },
+      {
+        "title": "Filter.checkboxes.build",
+        "type": "checkbox",
+        "needTranslation": false,
+        "translationNS": "Filter.rooms.build",
+        "paramaterByWhatWillBeFilter": "build"
       }
+   
     ]
   },
   "pinsInfo": {
@@ -341,9 +349,11 @@
       "us"
     ]
   },
-  "flyby_finish_dates": {},
+  "flyby_finish_dates": {
+    "1-outside": "2027"
+  },
   "assotiated_flat_builds_with_flybys": {},
-  "project_google_map_location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3902.661542857601!2d-61.770804924286416!3d11.997905235475903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDU5JzUyLjQiTiA2McKwNDYnMDUuNiJX!5e0!3m2!1suk!2sua!4v1767716250078!5m2!1suk!2sua",
+  "project_google_map_location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d59930.63007041538!2d32.422693875787935!3d37.86694093986449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUxJzMyLjgiTiAzMsKwMjUnMTguNCJF!5e0!3m2!1sen!2sua!4v1768470991532!5m2!1sen!2sua",
   "infoBoxes": {
     "general_flyby_button_titles": {
       "faq": "Можливі підписи для кнопок у інфобоксі обльоту : queue ,villa, house",
@@ -353,21 +363,21 @@
     }
   },
   "header": {
-    "logo": "/wp-content/themes/3d/assets/s3d/images/mansion-big-logo-white.png",
+    "logo": "/wp-content/themes/3d/assets/s3d/images/nef-logo.svg",
     "menu_selector_default_FAQ": "data-open-menu // виставити це для дефолтного меню модуля, видалити",
     "menu_selector": "data-open-menu"
   },
-  "menu_top_img": "/wp-content/themes/3d/assets/s3d/images/mansion-big-logo.png",
-  "currency_label": "$",
-  "currency_value": "USD",
+  "menu_top_img": "/wp-content/themes/3d/assets/s3d/images/nef-logo.svg",
+  "currency_label": "₺",
+  "currency_value": "TRY",
   "currency_list": [],
   "show_prices": true,
-  "languages": "en",
+  "languages": "en/tr",
   "show_phoneNumber": false,
   "hideDocumentation": true,
   "hideExterior": true,
   "hideFinancialTerms": true,
-  "hideConstructionProgress": true,
+  "hideConstructionProgress": false,
   "social_media_links_faq": "Якщо строчка пуста, то кнопка не буде відображатися",
   "social_media_links": {
     "telegram": "#",
@@ -404,26 +414,30 @@
     }
   },
   "g_contacts": {
-    "global_number": "+1 473 416 6121",
+    "global_number": "4449633",
     "email": "welcome@goldblat.com",
     "construction_department": {
-      "google_maps_link": "https://maps.app.goo.gl/MHUaW512vC1ps5d99",
+      "google_maps_link": "https://maps.app.goo.gl/9YqkJ4N5V5QuQWJGA",
       "text": {
-        "en": "6 True Blue Beach, St. George’s, Grenada"
+        "en": "Meram, Konya, Türkiye",
+        "tr": "Meram, Konya, Türkiye"
       }
     },
     "sales_department": {
-      "google_maps_link": "https://maps.app.goo.gl/MHUaW512vC1ps5d99",
+      "google_maps_link": "https://maps.app.goo.gl/9YqkJ4N5V5QuQWJGA",
       "text": {
-        "en": "6 True Blue Beach, St. George’s, Grenada"
+        "en": "Meram, Konya, Türkiye",
+        "tr": "Meram, Konya, Türkiye"
       }
     },
     "working_hours": {
       "weekdays": {
-        "en": "Monday - Friday: 09:00 - 20:00"
+        "en": "Monday - Friday: 09:00 - 20:00",
+        "tr": "Pazartesi - Cuma: 09:00 - 20:00"
       },
       "weekends": {
-        "en": "Saturday - Sunday: Flexible schedule"
+        "en": "Saturday - Sunday: Flexible schedule",
+        "tr": "Cumartesi - Pazar: Esnek program"
       }
     }
   },

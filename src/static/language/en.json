@@ -1,7 +1,7 @@
 {
   "currency_label": "$",
   "currency_label_m2": "$t(currency_label) per $t(area_unit)",
-  "area_unit": "Sq/Ft",
+  "area_unit": "m²",
   "unit_statuses": {
     "0": "Sold",
     "1": "Available",
@@ -109,7 +109,7 @@
       "masterplan": "Building Overview",
       "360_orbit": "360 Orbit",
       "availability": "Availability",
-      "fisher_island": "Hilton",
+      "fisher_island": "General plan",
       "mansion": "Residence"
     },
     "share": {
@@ -217,6 +217,7 @@
     "pools": "pools",
     "from_window_view": "360 views",
     "scroll": "Scroll",
+    "see_all_photos": "See all {{count}} photos",
     "explication_data": {
       "floor_1": "Ground floor",
       "floor_2": "1st floor",
@@ -253,7 +254,7 @@
     "information": {
       "title": "Information",
       "sale": "Status",
-      "build": "House",
+      "build": "Build",
       "number": "Number",
       "area": "Area",
       "allArea": "Total area",

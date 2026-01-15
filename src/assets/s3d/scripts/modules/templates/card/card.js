@@ -1,4 +1,3 @@
-
 import $addToFavourite from '../$addToFavourite';
 import { TOOLTIP_ATTRIBUTE, BATHS_CUSTOM_PROPERTY_ID } from '../../../../../s3d2/scripts/constants';
 import { numberWithCommas } from '../../../../../s3d2/scripts/helpers/helpers_s3d2';
@@ -124,7 +123,7 @@ function Card(
   };
 
   const isFavourite = favouritesIds$.value.includes(id);
-  
+
   return `
     <div class="${
       slide ? 'swiper-slide' : ''
@@ -151,7 +150,7 @@ function Card(
         <!-- ${$number(i18n, flat)} -->
       </div>
       <div class="s3d-card__middle">
-        <div>${i18n.t('ctr.nav.flat')} ${number}</div>
+        <div>${i18n.t('Flat.information.rooms')}: ${rooms}</div>
         <div class="decorative-slash">/</div>
         <div>${area} ${i18n.t('Flat.information.area_unit')}</div>
         <!-- <div>${area} м²</div> -->
@@ -167,14 +166,19 @@ function Card(
         ${$price()}
         <div class="s3d-card__info-label-wrapper">
           <div class="s3d-card__info-label">
-            ${i18n.t('Flat.information.floor')}: ${floor} 
+            ${i18n.t('Flat.information.build')}: ${build}
           </div>
           <div class="s3d-card__info-label">
-           ${i18n.t('Flat.information.beds')}: ${rooms} 
+            ${i18n.t('Flat.information.floor')}: ${floor}
           </div>
           <div class="s3d-card__info-label">
-           ${i18n.t('Flat.information.baths')}: ${Object.values(customProperties)?.find(prop => prop?.value.crm_properties_id == 52)?.value.value}
+           ${i18n.t('Flat.information.beds')}: ${rooms}
           </div>
+          <!--<div class="s3d-card__info-label">
+           ${i18n.t('Flat.information.baths')}: ${
+    Object.values(customProperties)?.find(prop => prop?.value.crm_properties_id == 52)?.value.value
+  }
+          </div>-->
         </div>
         <!-- <div class="s3d-card__buttons">
             ${ButtonWithoutIcon('js-s3d-card__link', '', i18n.t('Flat.goToFlat'), 'secondary')}

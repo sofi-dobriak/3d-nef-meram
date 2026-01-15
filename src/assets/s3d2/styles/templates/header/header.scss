@@ -147,12 +147,10 @@
   overflow: hidden;
   width: 40px;
   max-height: 40px;
-
   border: 1px solid var(--border-gray-600-transparent-40);
-
   background-color: var(--color-surface-gray-200-transperent-88);
   border-radius: var(--border-space-2);
-  transition: max-height 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     max-height: calc(var(--lang-count) * 40px);

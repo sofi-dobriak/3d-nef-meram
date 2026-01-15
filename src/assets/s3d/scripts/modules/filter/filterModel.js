@@ -451,7 +451,7 @@ class FilterModel extends EventEmitter {
         }
 
         instance.update(key === 'from' ? { from: val } : { to: val });
-        $(this).prop('value', numberWithCommas(val));
+        $(this).prop('value', val);
         self.filterFlatStart({
           min: instance.result.from,
           max: instance.result.to,

@@ -41,7 +41,7 @@
       height: 100%;
       width: auto;
       object-fit: contain;
-      mix-blend-mode: difference;
+      // mix-blend-mode: difference;
     }
   }
 
@@ -164,6 +164,7 @@
 
   &__nav-button {
     @include s3d2_fonts.fonts-3d-small-medium;
+    font-family: 'Chalet Lonninse', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +178,10 @@
     border-radius: var(--space-2);
     background-color: transparent;
     overflow: hidden;
+
+    &:hover {
+      background-color: var(--s3d2-color-surface-gray-900-transparent-10);
+    }
 
     &[data-type='flyby'] {
       position: relative;

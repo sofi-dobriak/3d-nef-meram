@@ -26,7 +26,8 @@ html.mobile {
 
 body {
   display: block;
-  font-family: vars.$default-font-2;
+  // font-family: vars.$default-font-2;
+  font-family: 'Chalet Lonninse', sans-serif;
 }
 
 body[data-type='plannings'],
@@ -559,22 +560,23 @@ sup {
   }
 }
 
-
 .s3d__flyby-mobile-scale-info-box {
-  z-index: 100; 
-  position: fixed; 
-  top: 50%; left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center; 
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   font-size: 24px;
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
-  align-items: center; 
-  width: 100%; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   height: 100%;
   padding-top: calc(var(--s3d-header) + var(--space-8));
-  padding-bottom: calc(var(--mobile-controller-height) * 2 + var(--space-8));
+  // padding-bottom: calc(var(--mobile-controller-height) * 2 + var(--space-8));
+  padding-bottom: calc(var(--mobile-controller-height) * 2);
   pointer-events: none;
 }
 
@@ -590,50 +592,50 @@ sup {
 }
 
 .s3d__flyby-mobile-scale-switcher {
-    position: fixed;
-    right: var(--space-2);
-    top: calc(50% - 28px);
-    z-index: 120;
-    border-radius: 50%;
-    background-color: var(--icon-gray-200);
-    border: none;
-    width: 56px;
-    height: 56px;
-    border: var(--space-2) solid var(--surface-gray-900-transperent-40);
-    animation: rotate-in-center-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    svg {
-      width: 24px;
-      height: 24px;
-    }
-    .remove-when-zoom-in {
-      transition: opacity 0.3s ease-in-out;
-      opacity: 0;
-    }
-    &.zoom-in {
-      animation: rotate-in-center-out 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
-    &.zoom-in .remove-when-zoom-in {
-      opacity: 1;
-    }
+  position: fixed;
+  right: var(--space-2);
+  top: calc(50% - 28px);
+  z-index: 120;
+  border-radius: 50%;
+  background-color: var(--icon-gray-200);
+  border: none;
+  width: 56px;
+  height: 56px;
+  border: var(--space-2) solid var(--surface-gray-900-transperent-40);
+  animation: rotate-in-center-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .remove-when-zoom-in {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  &.zoom-in {
+    animation: rotate-in-center-out 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  &.zoom-in .remove-when-zoom-in {
+    opacity: 1;
+  }
 }
 
 @keyframes rotate-in-center-in {
   0% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
   100% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
 }
 @keyframes rotate-in-center-out {
   0% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
   100% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
 }
