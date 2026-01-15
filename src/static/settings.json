@@ -4,7 +4,7 @@
     "generalWrapId": ".js-s3d__slideModule",
     "title_img": "/wp-content/themes/3d/assets/s3d/images/mansion-big-logo.png",
     "bg_url": "https://3d-mension-on-fisher.smartorange.site/wp-content/themes/3d/assets/images-wp/poster.jpg",
-    "video_url": "https://3d-mension-on-fisher.smartorange.site/wp-content/themes/3d/assets/images-wp/real-estate-v5-v2.mp4",
+    "video_url": "https://3d-mension-on-fisher.smartorange.site/wp-content/themes/3dshow_num/assets/images-wp/real-estate-v5-v2.mp4",
     "faq": "Видалити цей об'єкт, якщо не потрібен інтро екран перед обльотом"
   },
   "genplan": {
@@ -367,13 +367,13 @@
     "menu_selector_default_FAQ": "data-open-menu // виставити це для дефолтного меню модуля, видалити",
     "menu_selector": "data-open-menu"
   },
-  "menu_top_img": "/wp-content/themes/3d/assets/s3d/images/nef-logo.svg",
+  "menu_top_img": "/wp-content/themes/3d/assets/s3d/images/nef-meram-logo-big.svg",
   "currency_label": "₺",
   "currency_value": "TRY",
   "currency_list": [],
   "show_prices": true,
   "languages": "en/tr",
-  "show_phoneNumber": false,
+  "show_phoneNumber": true,
   "hideDocumentation": true,
   "hideExterior": true,
   "hideFinancialTerms": true,

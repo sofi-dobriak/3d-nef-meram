@@ -169,8 +169,11 @@ function Card(
             ${i18n.t('Flat.information.build')}: ${build}
           </div>
           <div class="s3d-card__info-label">
-            ${i18n.t('Flat.information.floor')}: ${floor}
+            ${i18n.t('Flat.information.type')}: ${type}
           </div>
+          <!--<div class="s3d-card__info-label">
+            ${i18n.t('Flat.information.floor')}: ${floor}
+          </div>-->
           <div class="s3d-card__info-label">
            ${i18n.t('Flat.information.beds')}: ${rooms}
           </div>
