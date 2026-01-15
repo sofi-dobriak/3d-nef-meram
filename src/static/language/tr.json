@@ -19,6 +19,16 @@
     "build": "Blok {{build}}",
     "section": "Bölüm {{section}}"
   },
+  "asideMenu": {
+    "home": "Anasayfa",
+    "building_overview": "Binaya Genel Bakış",
+    "availability": "Uygunluk",
+    "tours": "Turlar",
+    "video": "Video",
+    "brochure": "Broşür",
+    "location": "Konum",
+    "contact": "İletişim"
+  },
   "infoBox": {
     "sold": "Tüm konutlar satıldı",
     "sold_short": "Satıldı",
@@ -254,7 +264,7 @@
     "information": {
       "title": "Bilgi",
       "sale": "Durum",
-      "build": "Block",
+      "build": "İnşa etmek",
       "number": "Numara",
       "area": "Alan",
       "allArea": "Toplam alan",
@@ -350,7 +360,11 @@
     "virtual_tour_close": "Duraklat",
     "share": "Paylaş",
     "brands_list_title": "Özellikler",
-    "brands_list_description": "Welcome evleri, klasik ve güvenilir yerinde inşaat yöntemiyle yapılır. Evlerimiz 'modüler' veya prefabrik değildir; sahada inşa edilirler. Aşağıda Katona bileşenlerine dair genel bir genel bakış bulabilirsiniz."
+    "brands_list_description": "Welcome evleri, klasik ve güvenilir yerinde inşaat yöntemiyle yapılır. Evlerimiz 'modüler' veya prefabrik değildir; sahada inşa edilirler. Aşağıda Katona bileşenlerine dair genel bir genel bakış bulabilirsiniz.",
+    "payment_title": "Rezervasyon ve inşaat zaman çizelgesi",
+    "payment_description": "Satın alma ve inşaat sürecinin zaman içindeki ilerleyişini gösteren adım adım yol haritası.",
+    "payment_end_text": "Satış temsilciniz her aşamada size rehberlik edecektir.",
+    "payment_info": "Bilgi"
   },
   "Floor": {
     "title-1": "",

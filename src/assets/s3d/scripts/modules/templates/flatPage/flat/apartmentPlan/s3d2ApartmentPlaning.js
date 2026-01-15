@@ -46,7 +46,7 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
                       : ''
                   }
 
-                  
+
                     ${
                       hasFlat2dAnd3dPlansOnLevel
                         ? `
@@ -86,7 +86,7 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
                           i18n.t(`Flat.buttons.furnished`),
                         )}
                       </div> -->
-                 
+
 
                 </div>
 
@@ -166,12 +166,12 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
                 <span>${i18n.t('Flat.explication_data.open_full_plan')}</span>
               </button>
               <div class="s3d2-apartment__flat-explication-screen-socials-wrap">
-                <span class="s3d2-apartment__flat-explication-screen-socials-share">
+                <button data-s3d-share class="s3d2-apartment__flat-explication-screen-socials-share">
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                     <path d="M11.293 1L8.5 1L8.5 -3.71547e-07L13 -5.68248e-07L13 4.5L12 4.5L12 1.70703L5.52051 8.18652L4.81348 7.47949L11.293 1ZM-4.00701e-07 3.83301C8.58134e-05 3.3469 0.193369 2.88085 0.537109 2.53711C0.880849 2.19337 1.34689 2.00009 1.83301 2L5.83301 2L5.83301 3L1.83301 3C1.61211 3.00009 1.40034 3.08794 1.24414 3.24414C1.08794 3.40034 1.00009 3.61211 1 3.83301L1 11.167C1.00009 11.3879 1.08794 11.5997 1.24414 11.7559C1.40034 11.9121 1.61211 11.9999 1.83301 12L9.16699 12C9.38789 11.9999 9.59966 11.9121 9.75586 11.7559C9.91206 11.5997 9.99991 11.3879 10 11.167L10 7.16699L11 7.16699L11 11.167C10.9999 11.6531 10.8066 12.1192 10.4629 12.4629C10.1192 12.8066 9.65311 12.9999 9.16699 13L1.83301 13C1.34689 12.9999 0.880849 12.8066 0.537109 12.4629C0.193369 12.1192 8.60293e-05 11.6531 -8.01233e-08 11.167L-4.00701e-07 3.83301Z" fill="none"/>
                   </svg>
                   <span>${i18n.t('Flat.share')}</span>
-                </span>
+                </button>
                 <div class="s3d2-apartment__flat-explication-screen-socials">
                   <a class="s3d2-apartment__flat-explication-screen-socials-item" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

@@ -74,18 +74,23 @@ export default function s3dDashboard(
                         ${i18n.t('ctr.nav.flat')} ${flat.number}
                     </span>
 
-                    ${
+                    <!--${
                       flat.adress
                         ? `
                     <span class="text-style-3-d-fonts-1920-body-regular">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M12 4C9.30033 4 6.90924 5.66034 6.90918 8.83008C6.90918 9.49423 7.26924 10.4656 7.44922 10.8682L12 20L16.5508 10.8682C16.7308 10.4656 17.0908 9.49423 17.0908 8.83008C17.0908 5.66036 14.6997 4.00002 12 4ZM12 7.09082C13.1045 7.09087 13.9999 7.98632 14 9.09082C14 10.1954 13.1045 11.0908 12 11.0908C10.8954 11.0908 10 10.1954 10 9.09082C10.0001 7.98629 10.8955 7.09082 12 7.09082Z" fill="none"/>
                         </svg>
-                        <!--${flat.adress}-->
-                        ${address}
+                        ${flat.adress}
                     </span>`
                         : ``
-                    }
+                    }-->
+                    <span class="text-style-3-d-fonts-1920-body-regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 4C9.30033 4 6.90924 5.66034 6.90918 8.83008C6.90918 9.49423 7.26924 10.4656 7.44922 10.8682L12 20L16.5508 10.8682C16.7308 10.4656 17.0908 9.49423 17.0908 8.83008C17.0908 5.66036 14.6997 4.00002 12 4ZM12 7.09082C13.1045 7.09087 13.9999 7.98632 14 9.09082C14 10.1954 13.1045 11.0908 12 11.0908C10.8954 11.0908 10 10.1954 10 9.09082C10.0001 7.98629 10.8955 7.09082 12 7.09082Z" fill="none"/>
+                      </svg>
+                      ${address}
+                    </span>
                 </div>
             </div>
             <div class="s3d-flat-dashboard__info-details">
@@ -114,6 +119,14 @@ export default function s3dDashboard(
                     </div>
                     <div class="s3d-flat-dashboard__info-details-item s3d-flat-dashboard__info-item--mobile-row">
                         <span class="text-style-3-d-fonts-1920-h-1">
+                            ${flat.build}
+                        </span>
+                        <span class="text-style-3-d-fonts-1920-body-regular">
+                            ${i18n.t('Flat.information.build')}
+                        </span>
+                    </div>
+                    <!--<div class="s3d-flat-dashboard__info-details-item s3d-flat-dashboard__info-item--mobile-row">
+                        <span class="text-style-3-d-fonts-1920-h-1">
                             ${
                               Object.values(flat.customProperties)?.find(
                                 prop => prop?.value.crm_properties_id == 52,
@@ -123,7 +136,7 @@ export default function s3dDashboard(
                         <span class="text-style-3-d-fonts-1920-body-regular">
                             ${i18n.t('Flat.information.baths')}
                         </span>
-                    </div>
+                    </div>-->
                     <div class="s3d-flat-dashboard__info-details-item s3d-flat-dashboard__info-item--mobile-row">
                         <span class="text-style-3-d-fonts-1920-h-1">
                             ${numberWithCommas(flat.area)}

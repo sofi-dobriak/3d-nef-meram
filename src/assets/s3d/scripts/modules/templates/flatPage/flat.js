@@ -44,6 +44,7 @@ import {
 import s3d2FlatFloorPlan from './flat/s3d2FlatFloor';
 import $brandsList from './$brandsList';
 import $s3d2_brandsList from './$s3d2_brandsList';
+import s3d2_paymentSection from './villa/payment/s3d2_payment';
 
 /**
  * Represents a Flat object.
@@ -85,6 +86,7 @@ function Flat({
   project_google_map_location,
   faq_questions = [],
   brands_list = [],
+  payment_list = [],
   contact_block_variant,
 }) {
   const CONFIG = getConfig();
@@ -205,6 +207,7 @@ function Flat({
 
       </div>
       ${s3d2FlatFloorPlan(i18n, flat, floorList)}
+      ${s3d2_paymentSection({ i18n, payment_list })}
       ${$additionalAmenities(flat)}
     <!--  ${$brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })} -->
       <!--${$s3d2_brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })}-->

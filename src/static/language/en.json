@@ -19,6 +19,16 @@
     "build": "Build {{build}}",
     "section": "Section {{section}}"
   },
+  "asideMenu": {
+    "home": "Home",
+    "building_overview": "Building Overview",
+    "availability": "Availability",
+    "tours": "Tours",
+    "video": "Video",
+    "brochure": "Brochure",
+    "location": "Location",
+    "contact": "Contact"
+  },
   "infoBox": {
     "sold": "All residences are sold",
     "sold_short": "Sold",
@@ -350,7 +360,11 @@
     "virtual_tour_close": "Pause",
     "share": "Share",
     "brands_list_title": "Specifications",
-    "brands_list_description": "Welcome homes are made by way of classic, tried-and-true, stick-built construction. Our homes are not 'modular' homes, nor are they prefabricated; they're built on site. Below, you can find a general overview of the components of the Katona."
+    "brands_list_description": "Welcome homes are made by way of classic, tried-and-true, stick-built construction. Our homes are not 'modular' homes, nor are they prefabricated; they're built on site. Below, you can find a general overview of the components of the Katona.",
+    "payment_title": "Reservation & construction timeline",
+    "payment_description": "Step-by-step timeline showing how the purchase and construction progress over time.",
+    "payment_end_text": "Your sales agent will guide you through each stage.",
+    "payment_info": "Info"
   },
   "Floor": {
     "title-1": "",

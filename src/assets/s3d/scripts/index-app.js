@@ -151,7 +151,7 @@ const createHtml = (i18n, config) => {
     [controllerNode, planningsNode, favouritesNode, filterNode].join(''),
   );
   initMobileFlybyListeners();
-  document.body.insertAdjacentHTML('beforeend', loader(get(config, 'header.logo', null)));
+  document.body.insertAdjacentHTML('beforeend', loader(get(config, 'header.logo_2', null)));
   document.body.insertAdjacentHTML('beforeend', percentLoader(i18n));
   // document.body.insertAdjacentHTML('beforeend', header(i18n));
   document.body.insertAdjacentHTML('beforeend', menu(i18n, config));

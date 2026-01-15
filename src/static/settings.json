@@ -239,6 +239,43 @@
     ],
     "contact_block_variant": "2"
   },
+  "payment_list": [
+    {
+      "title": "Reservation",
+      "description": "Hold 72h, sign reservation",
+      "percent": "10%",
+      "payment": "Payment",
+      "period": "Week 1"
+    },
+    {
+      "title": "Agreement",
+      "description": "Sign SPA, confirm purchase terms",
+      "percent": "20%",
+      "payment": "Payment",
+      "period": "Week 2-4"
+    },
+    {
+      "title": "Foundation",
+      "description": "Groundworks & base structure",
+      "percent": "10%",
+      "payment": "Payment",
+      "period": "Q1 202"
+    },
+    {
+      "title": "Structure",
+      "description": "Main frame & load-bearing systems",
+      "percent": "20%",
+      "payment": "Payment",
+      "period": "Q3 2026"
+    },
+    {
+      "title": "Facade",
+      "description": "Exterior walls, cladding & glazing",
+      "percent": "20%",
+      "payment": "Payment",
+      "period": "Q1 2027"
+    }
+  ],
   "plannings": {
     "id": "plannings",
     "generalWrapId": ".js-s3d__slideModule"
@@ -252,22 +289,29 @@
         "title_prefix_i18n": false,
         "name": "price",
         "type": "range"
+      },
+      {
+        "title_i18n": "Filter.range.area",
+        "title_postfix_i18n": false,
+        "title_prefix_i18n": false,
+        "name": "area",
+        "type": "range"
       }
     ],
     "checkboxes": [
+      {
+        "title": "Filter.checkboxes.type",
+        "type": "checkbox",
+        "needTranslation": false,
+        "translationNS": "Filter.type.",
+        "paramaterByWhatWillBeFilter": "_type"
+      },
       {
         "title": "Filter.checkboxes.rooms",
         "type": "checkbox",
         "needTranslation": false,
         "translationNS": "Filter.rooms.",
         "paramaterByWhatWillBeFilter": "rooms"
-      },
-      {
-        "title": "Filter.checkboxes.build",
-        "type": "checkbox",
-        "needTranslation": false,
-        "translationNS": "Filter.rooms.build",
-        "paramaterByWhatWillBeFilter": "build"
       }
     ]
   },
@@ -351,6 +395,7 @@
   },
   "header": {
     "logo": "/wp-content/themes/3d/assets/s3d/images/nef-logo.svg",
+    "logo_2": "/wp-content/themes/3d/assets/s3d/images/nef-meram-logo-big.svg",
     "menu_selector_default_FAQ": "data-open-menu // виставити це для дефолтного меню модуля, видалити",
     "menu_selector": "data-open-menu"
   },

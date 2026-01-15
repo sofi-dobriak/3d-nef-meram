@@ -98,6 +98,7 @@ class FlatModel extends EventEmitter {
     this.project_google_map_location = config.project_google_map_location;
     this.faq_questions = config.faq_questions || [];
     this.brands_list = config.brands_list || [];
+    this.payment_list = config.payment_list || [];
     this.contact_block_variant = config.contact_block_variant || '1';
 
     this.explicationState$.subscribe(state => {
@@ -431,6 +432,7 @@ class FlatModel extends EventEmitter {
       project_google_map_location: this.project_google_map_location,
       faq_questions: this.faq_questions,
       brands_list: this.brands_list,
+      payment_list: this.payment_list,
       contact_block_variant: this.contact_block_variant,
     });
 
