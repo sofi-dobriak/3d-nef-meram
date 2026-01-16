@@ -159,26 +159,54 @@ function getPaymentCardFromDevBase(flat) {
   const paymentItemsHtml = paymentIndexes
     .map(index => {
       const property = flat.customProperties[index];
+      const rawLabel = property?.properties?.label ?? '';
+      const priceValue = property?.value?.value ?? '';
 
-      const title = property?.properties?.label ?? '';
-      const value = property?.value?.value ?? '';
+      if (!rawLabel && !priceValue) return '';
 
-      if (!title && !value) return '';
+      const { title, period, percent } = parsePaymentTitle(rawLabel);
 
       return `
           <li class="payment__list__item swiper-slide">
-            <div class="payment__list__item__title-container"><h2 class="payment__list__item__title">${title}</h2></div>
-            <div class="payment__list__item__description-percent-container">
-              <div class="payment__list__item__percent-container">
-                <p class="payment__list__item__percent-container__percent">${value}</p>
-              </div>
+            <div class="payment__list__item__title-container">
+              <h2 class="payment__list__item__title">
+                ${title}${percent ? ` (${percent})` : ''}
+              </h2>
             </div>
+              <div class="payment__list__item__description-percent-container">
+                <div class="payment__list__item__percent-container">
+                  <p class="payment__list__item__percent-container__percent">${priceValue}</p>
+                </div>
+              </div>
+              <p class="payment__list__item__period">${period}</p>
           </li>
         `;
     })
     .join('');
 
   return paymentItemsHtml;
+}
+
+function parsePaymentTitle(input) {
+  // Регулярний вираз витягує:
+  // 1. Все до першої дужки (Назва платежу)
+  // 2. Вміст у дужках до дефіса або знака % (Період)
+  // 3. Все, що залишилося після знака % (Значення відсотка)
+  const regex = /^([^(]+)\s*\(([^-%]*)-?%?([^)]*)\)$/;
+  const match = input.match(regex);
+
+  if (match) {
+    // Якщо всередині дужок був тільки відсоток (як %35),
+    // то match[2] буде пустим, а match[3] отримає число.
+    return {
+      title: match[1].trim(),
+      period: match[2].trim() ? `${match[2].trim()}` : '',
+      percent: match[3].trim() ? `${match[3].trim()}%` : '',
+    };
+  }
+
+  // Якщо формат не підійшов — просто виводимо назву, а інше порожнє
+  return { title: input, period: '', percent: '' };
 }
 
 function paymentCard(i18n, item) {
