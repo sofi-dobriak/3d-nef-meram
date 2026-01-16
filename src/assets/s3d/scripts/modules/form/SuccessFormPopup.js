@@ -84,9 +84,9 @@ export default class SuccessFormPopup {
             <div class="SuccessFormPopup__text">
               ${this.i18n.t('SuccessFormPopup.text')}
             </div>
-            <div class="SuccessFormPopup__bg">
+            <!--<div class="SuccessFormPopup__bg">
               <img src="/wp-content/themes/3d/assets/s3d/images/nef-logo.svg" alt="">
-            </div>
+            </div>-->
           </div>
         </div>
     `;

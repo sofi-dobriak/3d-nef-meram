@@ -31,6 +31,8 @@ function Flat(i18n, data) {
   const img = srcImage ? srcImage : imageDefault;
   const currency = i18n.t(`currency_label`);
 
+  const buildType = data.customProperties[1].value.value;
+
   const $priceBlock = show_prices
     ? `
     <!--<div class="s3d-infoBox__flat__alert-title">
@@ -99,7 +101,7 @@ function Flat(i18n, data) {
               ${i18n.t('Flat.information.build')}: ${build}
             </div>
             <div class="s3d-card__info-label">
-              ${i18n.t('Flat.information.type')}: ${type}
+              ${i18n.t('Flat.information.type')}: ${buildType}
             </div>
             <!--<div class="s3d-card__info-label">
               ${i18n.t('Flat.information.floor')}: ${floor}

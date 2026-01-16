@@ -1,6 +1,7 @@
 @use "../../assets/mixins";
 @use "../../globals/s3d2_fonts";
 
+.swal2-confirm,
 .s3d2-ButtonIconLeft {
   @include s3d2_fonts.fonts-3d-small-medium;
 

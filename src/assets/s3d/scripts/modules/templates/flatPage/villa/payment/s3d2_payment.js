@@ -33,11 +33,9 @@ export default function s3d2_paymentSection({ i18n, flat, payment_list = [] }) {
       <div class="payment-swiper-wrapper">
 
           <div class="swiper">
-            <div class="payment__list swiper-wrapper">
-
+            <ul class="payment__list swiper-wrapper">
               ${getPaymentCardFromDevBase(flat)}
-
-          </div>
+          </ul>
         </div>
 
         <div class="payment__nav-buttons">
@@ -78,6 +76,7 @@ function initSwiper() {
     observer: true,
     observeParents: true,
     watchOverflow: true,
+    slidesOffsetAfter: 0,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -167,14 +166,14 @@ function getPaymentCardFromDevBase(flat) {
       if (!title && !value) return '';
 
       return `
-          <div class="payment__list__item swiper-slide">
+          <li class="payment__list__item swiper-slide">
             <div class="payment__list__item__title-container"><h2 class="payment__list__item__title">${title}</h2></div>
             <div class="payment__list__item__description-percent-container">
               <div class="payment__list__item__percent-container">
                 <p class="payment__list__item__percent-container__percent">${value}</p>
               </div>
             </div>
-          </div>
+          </li>
         `;
     })
     .join('');

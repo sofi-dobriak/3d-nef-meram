@@ -1535,15 +1535,15 @@ div:where(.swal2-container) div:where(.swal2-popup) {
   .swal2-actions {
     margin: 0;
     button {
-      padding: 0;
-      border-radius: 128px;
+      // padding: 0;
+      // border-radius: 128px;
 
       a {
         display: flex;
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
-        padding: 20px 32px;
+        // padding: 20px 32px;
         span {
           margin-left: 12px;
         }
@@ -1552,9 +1552,45 @@ div:where(.swal2-container) div:where(.swal2-popup) {
   }
 
   .swal2-confirm {
-    background-color: var(--color-surface-brand-800);
-    border-color: var(--border-brand-900);
-    color: var(--color-surface-gray-200);
+    // background-color: var(--color-surface-brand-800);
+    // border-color: var(--border-brand-900);
+    // color: var(--color-surface-gray-200);
+    background-color: var(--s3d2-color-surface-gray-900);
+    border: 1px solid var(--s3d2-color-border-gray-900);
+    color: var(--s3d2-color-text-gray-200);
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 209%;
+      height: 200%;
+      position: absolute;
+      top: -20%;
+      left: -215%;
+      -webkit-transform: skew(30deg);
+      -ms-transform: skew(30deg);
+      transform: skew(30deg);
+      -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+      transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+      transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+      transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1),
+        -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+      background: var(--s3d2-color-surface-gray-200-transparent-10) !important;
+    }
+
+    &:hover {
+      &::after {
+        background: var(--s3d2-hover-color-to-dark-bg-button) !important;
+      }
+    }
+
+    svg {
+      fill: var(--s3d2-color-icon-gray-200);
+      stroke: var(--s3d2-color-icon-gray-200);
+      width: 12px;
+      height: 12px;
+    }
+
     @include fonts.text-style-3-d-fonts-1920-body-regular;
     a {
       text-decoration: none;

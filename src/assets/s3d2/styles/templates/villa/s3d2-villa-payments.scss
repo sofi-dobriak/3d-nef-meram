@@ -106,6 +106,10 @@
       height: 100%;
       min-height: 200px;
 
+      &:last-of-type {
+        margin-right: 0 !important;
+      }
+
       &::before {
         position: absolute;
         content: '';
