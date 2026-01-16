@@ -7,13 +7,11 @@ Swiper.use([Navigation]);
 
 let disablePreviousResize = null;
 
-export default function s3d2_paymentSection({ i18n, payment_list = [] }) {
+export default function s3d2_paymentSection({ i18n, flat, payment_list = [] }) {
   if (typeof disablePreviousResize === 'function') {
     disablePreviousResize();
     disablePreviousResize = null;
   }
-
-  console.log('payment_list: ', payment_list);
 
   const paymentHtml =
     payment_list.length > 0
@@ -34,9 +32,11 @@ export default function s3d2_paymentSection({ i18n, payment_list = [] }) {
       <p class="payment__description">${i18n.t('Flat.payment_description')}</p>
       <div class="payment-swiper-wrapper">
 
-        <div class="swiper">
-          <div class="payment__list swiper-wrapper">
-            ${payment_list.map(item => paymentCard(item)).join('')}
+          <div class="swiper">
+            <div class="payment__list swiper-wrapper">
+
+              ${getPaymentCardFromDevBase(flat)}
+
           </div>
         </div>
 
@@ -154,7 +154,37 @@ function updateSwiperUI(swiperInstance) {
   line.style.width = `${lineEnd - lineStart}px`;
 }
 
-function paymentCard(item) {
+function getPaymentCardFromDevBase(flat) {
+  const paymentIndexes = [11, 12, 13, 14, 15];
+
+  const paymentItemsHtml = paymentIndexes
+    .map(index => {
+      const property = flat.customProperties[index];
+
+      const title = property?.properties?.label ?? '';
+      const value = property?.value?.value ?? '';
+
+      if (!title && !value) return '';
+
+      return `
+          <div class="payment__list__item swiper-slide">
+            <div class="payment__list__item__title-container"><h2 class="payment__list__item__title">${title}</h2></div>
+            <div class="payment__list__item__description-percent-container">
+              <div class="payment__list__item__percent-container">
+                <p class="payment__list__item__percent-container__percent">${value}</p>
+              </div>
+            </div>
+          </div>
+        `;
+    })
+    .join('');
+
+  return paymentItemsHtml;
+}
+
+function paymentCard(i18n, item) {
+  const lang = i18n.language || 'en';
+
   const escapeHtml = str =>
     String(str)
       .replace(/&/g, '&amp;')
@@ -163,20 +193,28 @@ function paymentCard(item) {
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;');
 
-  const title = escapeHtml(get(item, 'title', ''));
-  const description = escapeHtml(get(item, 'description'));
-  const percent = escapeHtml(get(item, 'percent'));
-  const payment = escapeHtml(get(item, 'payment'));
-  const period = escapeHtml(get(item, 'period'));
+  function getTranslation(field) {
+    const value = field[lang] || field['en'] || '';
+    return escapeHtml(value);
+  }
+
+  const title = getTranslation(item.title);
+  const description = getTranslation(item.description);
+  const percent = getTranslation(item.percent);
+  const payment = getTranslation(item.payment);
+  const period = getTranslation(item.period);
 
   return `
       <div class="payment__list__item swiper-slide">
         <h2 class="payment__list__item__title">${title}</h2>
-        <p class="payment__list__item__description">${description}</p>
 
-        <div class="payment__list__item__percent-container">
-          <p class="payment__list__item__percent-container__percent">${percent}</p>
-          <p class="payment__list__item__percent-container__payment">${payment}</p>
+        <div class="payment__list__item__description-percent-container">
+          <p class="payment__list__item__description">${description}</p>
+
+          <div class="payment__list__item__percent-container">
+            <p class="payment__list__item__percent-container__percent">${percent}</p>
+            <p class="payment__list__item__percent-container__payment">${payment}</p>
+          </div>
         </div>
 
         <p class="payment__list__item__period">${period}</p>

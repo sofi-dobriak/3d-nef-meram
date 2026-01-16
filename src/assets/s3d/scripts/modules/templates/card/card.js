@@ -35,6 +35,8 @@ function Card(
     id,
   } = flat;
 
+  const buildType = flat.customProperties[1].value.value;
+
   const $showIn3dButton = (() => {
     const isMarked = Array.isArray(specifiedFlybys) && specifiedFlybys.length > 0;
     if (!isMarked) return '';
@@ -169,7 +171,7 @@ function Card(
             ${i18n.t('Flat.information.build')}: ${build}
           </div>
           <div class="s3d-card__info-label">
-            ${i18n.t('Flat.information.type')}: ${type}
+            ${i18n.t('Flat.information.type')}: ${buildType}
           </div>
           <!--<div class="s3d-card__info-label">
             ${i18n.t('Flat.information.floor')}: ${floor}

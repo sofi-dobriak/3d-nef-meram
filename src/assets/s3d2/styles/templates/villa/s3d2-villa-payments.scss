@@ -86,6 +86,10 @@
     margin-bottom: var(--space-10);
     position: relative;
 
+    &.swiper-wrapper {
+      display: flex;
+    }
+
     .payment-timeline {
       background: var(--s3d2-color-surface-gray-900);
       height: 1px;
@@ -99,6 +103,8 @@
       background: var(--s3d2-color-surface-gray-200);
       position: relative;
       z-index: 1;
+      height: 100%;
+      min-height: 200px;
 
       &::before {
         position: absolute;
@@ -113,11 +119,13 @@
         z-index: 2;
       }
 
-      &__title {
-        @include s3d2_fonts.fonts-3d-body-uppercase;
-        text-align: center;
-        color: var(--s3d2-color-text-gray-900);
-        margin-bottom: var(--space-4);
+      &.swiper-slide {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__title-container {
         position: relative;
 
         &::after {
@@ -131,14 +139,31 @@
         }
       }
 
+      &__title {
+        @include s3d2_fonts.fonts-3d-body-uppercase;
+        text-align: center;
+        color: var(--s3d2-color-text-gray-900);
+
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      &__description-percent-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: var(--space-6);
+      }
+
       &__description {
         @include s3d2_fonts.fonts-3d-body;
         text-align: center;
         color: var(--s3d2-color-text-gray-900);
-        margin-bottom: var(--space-16);
       }
 
       &__percent-container {
+        margin-top: auto;
         @include s3d2_fonts.fonts-3d-h2;
         color: var(--s3d2-color-text-gray-900);
         display: flex;
@@ -185,6 +210,20 @@
 
     width: fit-content;
     margin: 0 auto var(--space-10);
+
+    .swiper-button-disabled {
+      button {
+        cursor: not-allowed;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        svg {
+          opacity: 0.5;
+        }
+      }
+    }
 
     &__button {
       border-radius: var(--space-2);

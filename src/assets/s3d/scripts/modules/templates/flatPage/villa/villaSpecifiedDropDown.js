@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 function generateButton(el, flat, i18n) {
   return `
-       <button class="ButtonIconLeft" data-show-flat-in-flyby
+       <button class="s3d2-ButtonIconLeft" data-show-flat-in-flyby
         data-side="${el.side}"
         data-control-point="${el.controlPoint}"
         data-flyby="${el.flyby}"
@@ -18,7 +18,5 @@ function generateButton(el, flat, i18n) {
 
 export default function generateButtonGroup(groupName, flybyList, flat, i18n) {
   const firstFlyby = flybyList.find(() => true);
-  return firstFlyby
-    ? generateButton(firstFlyby, flat, i18n)
-    : '';
+  return firstFlyby ? generateButton(firstFlyby, flat, i18n) : '';
 }

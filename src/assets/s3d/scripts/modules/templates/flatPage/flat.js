@@ -91,8 +91,6 @@ function Flat({
 }) {
   const CONFIG = getConfig();
 
-  console.log('payment_list in flat.js: ', payment_list);
-
   const contactFormHtml1 = renderVillaContact(i18n, managerInfo, contactAdvantagesList);
   const contactFormHtml2 = renderVillaContact(i18n, managerInfo, contactAdvantagesList);
 
@@ -209,7 +207,7 @@ function Flat({
 
       </div>
       ${s3d2FlatFloorPlan(i18n, flat, floorList)}
-      ${s3d2_paymentSection({ i18n, payment_list })}
+      ${s3d2_paymentSection({ i18n, flat, payment_list })}
       ${$additionalAmenities(flat)}
     <!--  ${$brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })} -->
       <!--${$s3d2_brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })}-->

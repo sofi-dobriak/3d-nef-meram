@@ -173,7 +173,8 @@
   }
   &__call-to-action {
     // width: 25%;
-    width: calc(300 / 1512) * 100vw;
+    // width: calc(300 / 1512) * 100vw;
+    width: 272px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;

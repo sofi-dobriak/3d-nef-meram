@@ -26,13 +26,13 @@
     column-gap: var(--space-16);
     max-height: 100vh;
     overflow-y: auto;
-    @media screen and (max-width:1024px){
+    @media screen and (max-width: 1024px) {
       width: calc(100% - var(--space-5) - var(--space-5));
       margin: auto;
       max-width: none;
       padding: var(--space-8) var(--space-7);
     }
-    @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
       padding-bottom: 150px;
       padding-left: var(--space-6);
       padding-right: var(--space-6);
@@ -41,10 +41,10 @@
     }
   }
   &__button {
-    @media screen and (max-width:1024px){
+    @media screen and (max-width: 1024px) {
       align-self: flex-end;
     }
-    @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
       order: 6;
       margin-top: var(--space-8);
     }
@@ -58,13 +58,13 @@
     cursor: pointer;
     z-index: 3;
     transform-origin: center;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     @media (hover: hover) {
       &:hover {
         transform: rotate(180deg);
       }
     }
-    @media screen and (max-width:1024px){
+    @media screen and (max-width: 1024px) {
       right: var(--space-2);
       top: var(--space-2);
     }
@@ -74,14 +74,14 @@
     }
   }
   &__title {
-    @include  fonts.text-style-villas-1366-h-2;
+    @include fonts.text-style-villas-1366-h-2;
     margin-bottom: 100px;
     width: 100%;
-    @media screen and (max-width:1024px){
+    @media screen and (max-width: 1024px) {
       font-size: 64px;
       width: 80%;
     }
-    @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
       @include fonts.text-style-villas-375-h-2;
       width: 100%;
       margin-bottom: var(--space-8);
@@ -91,7 +91,7 @@
     @include fonts.text-style-villas-1920-body;
     color: var(--text-gray-800);
     max-width: 274px;
-    @media screen and (max-width:1024px){
+    @media screen and (max-width: 1024px) {
       max-width: 225px;
     }
   }
@@ -103,34 +103,46 @@
     height: auto;
     pointer-events: none;
     overflow: hidden;
-    @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
       width: 75%;
     }
     img {
       width: 100%;
       height: auto;
       object-fit: contain;
-      transform: scaleX(-1) translate3d(-15%, 10%, 10px);
+      // transform: scaleX(-1) translate3d(-15%, 10%, 10px);
     }
   }
 }
 
 @keyframes confetti-slow {
-  0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
-  
-  100% { transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg); }
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  }
 }
 
 @keyframes confetti-medium {
-  0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
-  
-  100% { transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg); }
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+  }
 }
 
 @keyframes confetti-fast {
-  0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
-  
-  100% { transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg); }
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+  }
 }
 
 .container {
@@ -159,11 +171,11 @@
   &--animation-slow {
     animation: confetti-slow 3s linear 1 forwards;
   }
-  
+
   &--animation-medium {
     animation: confetti-medium 2.5s linear 1 forwards;
   }
-  
+
   &--animation-fast {
     animation: confetti-fast 2s linear 1 forwards;
   }

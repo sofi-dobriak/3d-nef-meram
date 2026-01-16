@@ -194,7 +194,9 @@
       "rooms": "Yatak Odaları",
       "bathrooms": "Banyolar",
       "build": "Blok",
-      "type": "Tür"
+      "type": "Tür",
+      "villa_type": "Villa tipi",
+      "parking_type": "Otopark tipi"
     },
     "reset": "Temizle",
     "apply": "Uygula",
@@ -229,8 +231,8 @@
     "scroll": "Kaydır",
     "see_all_photos": "Tüm {{count}} fotoğrafı görüntüle",
     "explication_data": {
-      "floor_1": "Zemin kat",
-      "floor_2": "1. kat",
+      "floor_1": "Plan",
+      "floor_2": "Dış",
       "floor_3": "2. kat",
       "floor_4": "Çatı",
       "floor_5": "En üst kat",

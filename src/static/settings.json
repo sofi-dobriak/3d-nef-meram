@@ -248,45 +248,141 @@
       }
     ],
     "payment_list": [
-    {
-      "title": "Reservation",
-      "description": "Hold 72h, sign reservation",
-      "percent": "10%",
-      "payment": "Payment",
-      "period": "Week 1"
-    },
-    {
-      "title": "Agreement",
-      "description": "Sign SPA, confirm purchase terms",
-      "percent": "20%",
-      "payment": "Payment",
-      "period": "Week 2-4"
-    },
-    {
-      "title": "Foundation",
-      "description": "Groundworks & base structure",
-      "percent": "10%",
-      "payment": "Payment",
-      "period": "Q1 202"
-    },
-    {
-      "title": "Structure",
-      "description": "Main frame & load-bearing systems",
-      "percent": "20%",
-      "payment": "Payment",
-      "period": "Q3 2026"
-    },
-    {
-      "title": "Facade",
-      "description": "Exterior walls, cladding & glazing",
-      "percent": "20%",
-      "payment": "Payment",
-      "period": "Q1 2027"
-    }
-  ],
+      {
+        "title": {
+          "en": "Reservation",
+          "tr": "Rezervasyon"
+        },
+        "description": {
+          "en": "Hold 72h, sign reservation",
+          "tr": "72 saat bekletme, rezervasyon imzalama"
+        },
+        "percent": {
+          "en": "10%",
+          "tr": "10%"
+        },
+        "payment": {
+          "en": "Payment",
+          "tr": "Ödeme"
+        },
+        "period": {
+          "en": "Week 1",
+          "tr": "1. Hafta"
+        }
+      },
+      {
+        "title": {
+          "en": "Agreement",
+          "tr": "Sözleşme"
+        },
+        "description": {
+          "en": "Sign SPA, confirm purchase terms",
+          "tr": "Satış sözleşmesini (SPA) imzalayın, satın alma şartlarını onaylayın"
+        },
+        "percent": {
+          "en": "20%",
+          "tr": "20%"
+        },
+        "payment": {
+          "en": "Payment",
+          "tr": "Ödeme"
+        },
+        "period": {
+          "en": "Week 2-4",
+          "tr": "2-4. Hafta"
+        }
+      },
+      {
+        "title": {
+          "en": "Foundation",
+          "tr": "Temel"
+        },
+        "description": {
+          "en": "Groundworks & base structure",
+          "tr": "Zemin işleri ve temel yapısı"
+        },
+        "percent": {
+          "en": "10%",
+          "tr": "10%"
+        },
+        "payment": {
+          "en": "Payment",
+          "tr": "Ödeme"
+        },
+        "period": {
+          "en": "Q1 2025",
+          "tr": "2025 1. Çeyrek"
+        }
+      },
+      {
+        "title": {
+          "en": "Structure",
+          "tr": "Yapı / Kaba İnşaat"
+        },
+        "description": {
+          "en": "Main frame & load-bearing systems",
+          "tr": "Ana çerçeve ve taşıyıcı sistemler"
+        },
+        "percent": {
+          "en": "20%",
+          "tr": "20%"
+        },
+        "payment": {
+          "en": "Payment",
+          "tr": "Ödeme"
+        },
+        "period": {
+          "en": "Q3 2026",
+          "tr": "2026 3. Çeyrek"
+        }
+      },
+      {
+        "title": {
+          "en": "Facade",
+          "tr": "Cephe"
+        },
+        "description": {
+          "en": "Exterior walls, cladding & glazing",
+          "tr": "Dış duvarlar, kaplama ve cam işleri"
+        },
+        "percent": {
+          "en": "20%",
+          "tr": "20%"
+        },
+        "payment": {
+          "en": "Payment",
+          "tr": "Ödeme"
+        },
+        "period": {
+          "en": "Q1 2027",
+          "tr": "2027 1. Çeyrek"
+        }
+      },
+      {
+        "title": {
+          "en": "Facade",
+          "tr": "Cephe"
+        },
+        "description": {
+          "en": "Exterior walls, cladding & glazing",
+          "tr": "Dış duvarlar, kaplama ve cam işleri"
+        },
+        "percent": {
+          "en": "20%",
+          "tr": "20%"
+        },
+        "payment": {
+          "en": "Payment",
+          "tr": "Ödeme"
+        },
+        "period": {
+          "en": "Q1 2027",
+          "tr": "2027 1. Çeyrek"
+        }
+      }
+    ],
     "contact_block_variant": "2"
   },
-  
   "plannings": {
     "id": "plannings",
     "generalWrapId": ".js-s3d__slideModule"
@@ -311,11 +407,18 @@
     ],
     "checkboxes": [
       {
-        "title": "Filter.checkboxes.type",
+        "title": "Filter.checkboxes.villa_type",
         "type": "checkbox",
         "needTranslation": false,
         "translationNS": "Filter.type.",
-        "paramaterByWhatWillBeFilter": "_type"
+        "paramaterByWhatWillBeFilter": "villa_type"
+      },
+      {
+        "title": "Filter.checkboxes.parking_type",
+        "type": "checkbox",
+        "needTranslation": false,
+        "translationNS": "Filter.type.",
+        "paramaterByWhatWillBeFilter": "parking_type"
       },
       {
         "title": "Filter.checkboxes.rooms",
@@ -390,14 +493,14 @@
   },
   "form": {
     "prefered_countries": [
-      "us"
+      "tr"
     ]
   },
   "flyby_finish_dates": {
     "1-outside": "2027"
   },
   "assotiated_flat_builds_with_flybys": {},
-  "project_google_map_location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d59930.63007041538!2d32.422693875787935!3d37.86694093986449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUxJzMyLjgiTiAzMsKwMjUnMTguNCJF!5e0!3m2!1sen!2sua!4v1768470991532!5m2!1sen!2sua",
+  "project_google_map_location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d54201.02526687444!2d32.435332553786296!3d37.86739399968722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUxJzMyLjgiTiAzMsKwMjUnMTguNCJF!5e1!3m2!1suk!2sua!4v1768553293731!5m2!1suk!2sua",
   "infoBoxes": {
     "general_flyby_button_titles": {
       "faq": "Можливі підписи для кнопок у інфобоксі обльоту : queue ,villa, house",
@@ -459,32 +562,23 @@
     }
   },
   "g_contacts": {
-    "global_number": "4449633",
+    "global_number": "+444 9633",
     "email": "welcome@goldblat.com",
     "construction_department": {
-      "google_maps_link": "https://maps.app.goo.gl/9YqkJ4N5V5QuQWJGA",
+      "google_maps_link": "https://maps.app.goo.gl/AXraxUzSUNz8JxJH8",
       "text": {
         "en": "Meram, Konya, Türkiye",
         "tr": "Meram, Konya, Türkiye"
       }
     },
     "sales_department": {
-      "google_maps_link": "https://maps.app.goo.gl/9YqkJ4N5V5QuQWJGA",
+      "google_maps_link": "https://maps.app.goo.gl/AXraxUzSUNz8JxJH8",
       "text": {
         "en": "Meram, Konya, Türkiye",
         "tr": "Meram, Konya, Türkiye"
       }
     },
-    "working_hours": {
-      "weekdays": {
-        "en": "Monday - Friday: 09:00 - 20:00",
-        "tr": "Pazartesi - Cuma: 09:00 - 20:00"
-      },
-      "weekends": {
-        "en": "Saturday - Sunday: Flexible schedule",
-        "tr": "Cumartesi - Pazar: Esnek program"
-      }
-    }
+    "working_hours": {}
   },
   "g_contact_advantaged_list": [
     {

@@ -162,7 +162,7 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
 
 
               </div>
-              <button class="s3d2-ButtonIconLeft active s3d2-ButtonIconLeft--secondary text-uppercase-important s3d2-apartment__flat-explication-screen-open" data-flat-explication-button>
+              <button class="s3d2-ButtonIconLeft active s3d2-ButtonIconLeft--secondary text-uppercase-important s3d2-apartment__flat-explication-screen-open text-uppercase-important js-s3d__create-pdf" data-flat-explication-button>
                 <span>${i18n.t('Flat.explication_data.open_full_plan')}</span>
               </button>
               <div class="s3d2-apartment__flat-explication-screen-socials-wrap">

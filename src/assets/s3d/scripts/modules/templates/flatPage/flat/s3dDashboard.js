@@ -172,7 +172,7 @@ export default function s3dDashboard(
                           'Flat.buttons.compare',
                         )}</span>
                     </button>
-                  <!--${$specifiedFlybysByGroup}-->
+                  ${$specifiedFlybysByGroup}
                 </div>
             </div>
         </div>

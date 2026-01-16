@@ -9,8 +9,8 @@ export default class SexyInput {
     this.$input = setting.$input || setting.$field.querySelector('input');
     this.typeInput = setting.typeInput || 'text';
     this.animation = setting.animation || 'none';
-    this.globalConfig = setting.config || {},
-    this.$message = setting.$message || setting.$field.querySelector('[data-input-message]');
+    (this.globalConfig = setting.config || {}),
+      (this.$message = setting.$message || setting.$field.querySelector('[data-input-message]'));
     this.$body = document.querySelector('body');
     this.init();
   }
@@ -105,7 +105,7 @@ export default class SexyInput {
     if (this.typeInput === 'phone') {
       /* eslint-disable */
       input.setAttribute('inputmode', 'tel');
-      const preferredCountries = get(self, 'globalConfig.prefered_countries', ['us']);
+      const preferredCountries = get(self, 'globalConfig.prefered_countries', ['tr']);
       input.intTelIput = intlTelInput(input, {
         preferredCountries: preferredCountries,
         initialCountry: preferredCountries[0],
@@ -113,11 +113,13 @@ export default class SexyInput {
       });
       document.querySelectorAll('.iti').forEach(el => el.setAttribute('data-lenis-prevent', true));
 
-      const initialDialCode = input.intTelIput.countries.find(country => country.iso2 === preferredCountries[0]).dialCode
+      const initialDialCode = input.intTelIput.countries.find(
+        country => country.iso2 === preferredCountries[0],
+      ).dialCode;
       let cleave = new Cleave(input, {
         /* eslint-enable */
         numericOnly: true,
-        prefix: '+'+initialDialCode,
+        prefix: '+' + initialDialCode,
         blocks: [initialDialCode.length + 1, 3, 3, 2, 2],
         delimiters: [' ', ' ', ' ', ''],
       });

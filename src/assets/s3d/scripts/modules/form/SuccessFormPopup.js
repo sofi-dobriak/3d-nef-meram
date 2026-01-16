@@ -76,7 +76,7 @@ export default class SuccessFormPopup {
               ${this.i18n.t('SuccessFormPopup.title')}
             </div>
             ${BigButton(
-              'SuccessFormPopup__button',
+              's3d2-ButtonIconLeft s3d2-ButtonIconLeft--secondary SuccessFormPopup__button',
               this.closeAttr,
               this.i18n.t('SuccessFormPopup.button'),
               'Arrow right',

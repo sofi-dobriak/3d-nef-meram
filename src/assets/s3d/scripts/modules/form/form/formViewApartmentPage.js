@@ -110,9 +110,9 @@ export default class FormViewPage {
                       <button type="submit" data-btn-submit><span>${i18next.t(
                         'send',
                       )}</span></button>
-                      <svg class="form-progress-circle" width="70" height="70"><path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
-                      <svg class="checkmark" width="70" height="70"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
-                      <svg class="cross" width="70" height="70"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
+                      <svg class="form-progress-circle" viewBox="0 0 120 120"><path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
+                      <svg class="checkmark" viewBox="0 0 120 120"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
+                      <svg class="cross" viewBox="0 0 120 120"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
                     </div>
                   </div>
                 </form>
@@ -172,13 +172,13 @@ export default class FormViewPage {
                       <button type="submit" data-btn-submit><span>${i18next.t(
                         'send',
                       )}</span></button>
-                      <svg class="form-progress-circle" width="30" height="30" viewBox="0 0 70 70">
+                      <svg class="form-progress-circle" viewBox="0 0 120 120">
                         <path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
                       </svg>
 
-                      <svg class="checkmark" width="50" height="50" viewBox="0 0 70 70"><path d="m31.5,46.5l15.3,-23.2"/>
+                      <svg class="checkmark" viewBox="0 0 120 120"><path d="m31.5,46.5l15.3,-23.2"/>
                         <path d="m31.5,46.5l-8.5,-7.1"/></svg>
-                      <svg class="cross" width="30" height="30" viewBox="0 0 70 70"><path d="m35,35l-9.3,-9.3"/>
+                      <svg class="cross" viewBox="0 0 120 120"><path d="m35,35l-9.3,-9.3"/>
                         <path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/>
                       </svg>
                     </div>
