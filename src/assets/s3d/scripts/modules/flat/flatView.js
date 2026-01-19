@@ -199,7 +199,6 @@ class FlatView extends EventEmitter {
       this._model.wrapper.querySelectorAll('[data-flat-explication-title]').forEach(el => {
         el.textContent = this.i18n.t(`Flat.explication_data.floor_${data.floor}`);
       });
-
       this._model.wrapper.querySelectorAll('[data-flat-explication-button="floor"]').forEach(el => {
         el.classList.toggle('active', data.floor == el.dataset.value);
       });
@@ -211,25 +210,30 @@ class FlatView extends EventEmitter {
       const updateFloorProperties = (container, properties, propertyRowFunction) => {
         container.innerHTML = properties
           .map(premise =>
-            propertyRowFunction(premise.property_name, premise.property_flat, this.i18n),
+            propertyRowFunction(
+              premise.properties_order,
+              premise.property_name,
+              premise.property_flat,
+              this.i18n,
+            ),
           )
           .join('');
       };
-      const flatContainer = document.querySelector(
-        '[data-flat-explication-floor-properties-container]',
-      );
-      const villaContainer = document.querySelector(
-        '[data-villa-explication-floor-properties-container]',
-      );
-      flatContainer
-        ? updateFloorProperties(flatContainer, propertiesOfCurrentFloor, FlatExplicationPropertyRow)
-        : villaContainer
-        ? updateFloorProperties(
-            villaContainer,
-            propertiesOfCurrentFloor,
-            VillaExplicationPropertyRow,
-          )
-        : console.warn('No valid container found for floor properties.');
+      // const flatContainer = document.querySelector(
+      //   '[data-flat-explication-floor-properties-container]',
+      // );
+      // const villaContainer = document.querySelector(
+      //   '[data-villa-explication-floor-properties-container]',
+      // );
+      // flatContainer
+      //   ? updateFloorProperties(flatContainer, propertiesOfCurrentFloor, FlatExplicationPropertyRow)
+      //   : villaContainer
+      //   ? updateFloorProperties(
+      //       villaContainer,
+      //       propertiesOfCurrentFloor,
+      //       VillaExplicationPropertyRow,
+      //     )
+      //   : console.warn('No valid container found for floor properties.');
     });
   }
 
@@ -260,6 +264,32 @@ class FlatView extends EventEmitter {
 
   setFlat(content) {
     this._model.wrapper.innerHTML = content;
+
+    const flatData = this._model.getFlat(this._model.activeFlat);
+    if (flatData && flatData.properties) {
+      let properties = Object.values(flatData.properties);
+
+      const currentFloor = this._model.explicationState$.value.floor;
+      if (currentFloor) {
+        properties = properties.filter(p => p.property_level == currentFloor);
+      }
+
+      const flatContainer = document.querySelector(
+        '[data-flat-explication-floor-properties-container]',
+      );
+      const villaContainer = document.querySelector(
+        '[data-villa-explication-floor-properties-container]',
+      );
+      const container = flatContainer || villaContainer;
+
+      if (container) {
+        const rowFunc = flatContainer ? FlatExplicationPropertyRow : VillaExplicationPropertyRow;
+        container.innerHTML = properties
+          .map(p => rowFunc(p.properties_order, p.property_name, p.property_flat, this.i18n))
+          .join('');
+      }
+    }
+
     const points = this._model.wrapper.querySelectorAll('[data-peculiarity-content]');
     if (points.length === 0) return;
     tippy(points, {

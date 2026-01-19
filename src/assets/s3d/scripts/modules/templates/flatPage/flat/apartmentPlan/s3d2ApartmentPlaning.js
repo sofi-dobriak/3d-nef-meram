@@ -4,6 +4,8 @@ import ButtonIconLeft from '../../../../../../../s3d2/scripts/templates/common/B
 import { $highlightSvgElements } from '../../../controller/$highlightSvgElements';
 import { numberWithCommas } from '../../../../../../../s3d2/scripts/helpers/helpers_s3d2';
 export default function s3d2ApartmentPlanings(i18n, flat) {
+  const firstLevelPhoto = flat.flat_levels_photo[1].without;
+
   const $floorButtons = () => {
     //прибрати flat.level = 2
     if (flat.level < 2) {
@@ -94,7 +96,7 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="s3d2-apartment__flat-explication-screen-slide">
-                            <img src="${flat['img_big']}" data-flat-explication-image />
+                            <img src="${firstLevelPhoto}" data-flat-explication-image />
                         </div>
                     </div>
                 </div>
@@ -105,7 +107,7 @@ export default function s3d2ApartmentPlanings(i18n, flat) {
               <span class="s3d2-apartment__flat-explication-screen-title">Layout</span>
               <div class="s3d2-apartment__flat-explication-screen-table-inner">
                 <div class="s3d2-apartment__flat-explication-screen-table-content">
-                  <div class="s3d2-apartment__flat-explication-screen-table__title" data-flat-explication-title> Floor </div>
+                  <!--<div class="s3d2-apartment__flat-explication-screen-table__title" data-flat-explication-title> Floor </div>-->
                   <div class="s3d2-apartment__flat-explication-screen-info ">
                       <div class="s3d2-apartment__flat-explication-screen-info-row  ">
                           <div class="s3d2-apartment__flat-explication-screen-info-row-title">

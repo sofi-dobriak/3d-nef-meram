@@ -14,6 +14,7 @@
   height: 100%;
   position: relative;
 }
+
 .s3d2-toggle-input {
   opacity: 0;
   width: 0;
@@ -22,7 +23,7 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .s3d2-toggle-label {
@@ -31,10 +32,10 @@
   width: 24px;
   height: 14px;
   border-radius: 64px;
-  background: var(--s3d2-color-surface-gray-900, #fafbfe);
+  background: var(--s3d2-color-surface-gray-900);
   display: block;
   border-radius: 100px;
-  border: 1px solid var(--s3d2-color-border-gray-900, #fafbfe);
+  border: 1px solid var(--s3d2-color-border-gray-900);
   position: relative;
 }
 
@@ -45,8 +46,8 @@
   left: 1px;
   width: 10px;
   height: 10px;
-  border-radius: var(--Spacing-Corner-radius-radius-24, 96px);
-  background: var(--s3d2-color-icon-gray-200, #1a1e21);
+  border-radius: 50%;
+  background: var(--s3d2-color-icon-gray-200);
   transition: 0.3s;
 }
 
@@ -57,7 +58,7 @@
 .s3d2-toggle-input:checked + .s3d2-toggle-label:after {
   left: calc(100% - 2px);
   transform: translateX(-100%);
-  background: var(--s3d2-color-surface-gray-900, #fafbfe);
+  background: var(--s3d2-color-surface-gray-900);
 }
 
 .s3d2-toggle-label:active:after {

@@ -26,14 +26,15 @@
     font-weight: 400;
     line-height: 120%;
     text-transform: uppercase;
-    margin-bottom: var(--space-6);
+    // margin-bottom: var(--space-6);
   }
 
   &__flat-explication-screen {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: fit-content;
+    // height: fit-content;
+    height: auto;
     width: 100%;
 
     @media screen and (max-width: 1024px) {
@@ -46,11 +47,13 @@
     width: (290 * 100vw) / 1512;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-right: var(--space-5);
     gap: var(--space-6);
 
     @media screen and (max-width: 1024px) {
       width: 100%;
+      height: auto;
     }
   }
 
@@ -63,11 +66,16 @@
   &__flat-explication-screen-table-content {
     margin-right: calc(-1 * var(--space-5));
     padding-right: var(--space-5);
-    max-height: 300px;
+    // max-height: 300px;
+    max-height: 60vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: var(--space-5);
+
+    @media screen and (max-width: 1024px) {
+      max-height: 350px;
+    }
   }
 
   &__flat-explication-screen-info {

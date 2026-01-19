@@ -231,9 +231,9 @@
     "scroll": "Scroll",
     "see_all_photos": "See all {{count}} photos",
     "explication_data": {
-      "floor_1": "Plan",
-      "floor_2": "Exterior",
-      "floor_3": "2nd floor",
+      "floor_1": "1st floor",
+      "floor_2": "2nd floor",
+      "floor_3": "Exterior",
       "floor_4": "Roof",
       "floor_5": "Top floor",
       "open_full_plan": "layout details"

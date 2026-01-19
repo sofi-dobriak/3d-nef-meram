@@ -35,8 +35,8 @@ export default function s3d2_paymentSection({ i18n, flat, payment_list = [] }) {
           <div class="swiper">
             <ul class="payment__list swiper-wrapper">
               ${getPaymentCardFromDevBase(flat)}
-          </ul>
-        </div>
+            </ul>
+          </div>
 
         <div class="payment__nav-buttons">
           <div class="swiper-button-prev">

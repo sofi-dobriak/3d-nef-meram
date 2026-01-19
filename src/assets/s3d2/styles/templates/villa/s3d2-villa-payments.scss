@@ -39,9 +39,8 @@
       border: 1px solid var(--s3d2-color-border-gray-900);
       border-radius: var(--space-1);
       position: absolute;
-      top: 0;
-      transform: translateY(-50%);
-      left: calc(100% + 4px);
+      top: -25px;
+      left: -10px;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.2s;
@@ -147,10 +146,6 @@
         @include s3d2_fonts.fonts-3d-body-uppercase;
         text-align: center;
         color: var(--s3d2-color-text-gray-900);
-
-        // width: 50%;
-        text-align: center;
-        // margin: 0 auto;
       }
 
       &__description-percent-container {

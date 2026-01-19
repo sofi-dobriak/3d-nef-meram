@@ -20,11 +20,9 @@ export default function $s3d2_ToggleButton(
   wrapperDataAttr = '',
 ) {
   return `
-      <div class="s3d2-toggle-label-wrap " ${hideElementsAttribute([
-    '',
-  ])} ${wrapperDataAttr}>
+      <div class="s3d2-toggle-label-wrap" ${hideElementsAttribute([''])} ${wrapperDataAttr}>
         <div class="s3d2-toggle-checkbox-wrapper">
-          <input type="checkbox" name="${name}" ${dataAttr}  id="${dataAttr}" type="checkbox" class="s3d2-toggle-input"/>
+          <input type="checkbox" name="${name}" ${dataAttr}  id="${dataAttr}"  class="s3d2-toggle-input"/>
           <label for="${dataAttr}" class="s3d2-toggle-label"></label>
         </div>
       </div>

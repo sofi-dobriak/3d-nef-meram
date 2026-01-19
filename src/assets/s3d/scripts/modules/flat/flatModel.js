@@ -105,14 +105,25 @@ class FlatModel extends EventEmitter {
       this.emit('updateExplicationFloorTitle', state);
     });
     this.explicationState$.subscribe(state => {
+      const flat = this.getFlat(this.activeFlat);
+      if (!flat) return;
+
       const type = state.type === '2d' ? 'without' : 'with';
-      const image = get(
-        this.getFlat(this.activeFlat),
-        `flat_levels_photo[${state.floor}][${type}]`,
-        '',
-      );
-      this.emit('updateExplicationImage', image);
+
+      let image = get(flat, `flat_levels_photo[${state.floor}][${type}]`, '');
+
+      if (!image && flat.flat_levels_photo) {
+        const levels = Object.keys(flat.flat_levels_photo);
+        if (levels.length > 0) {
+          image = flat.flat_levels_photo[levels[0]][type];
+        }
+      }
+
+      if (image) {
+        this.emit('updateExplicationImage', image);
+      }
     });
+
     this.explicationState$.subscribe(state => {
       const properties = get(this.getFlat(this.activeFlat), 'properties', {});
       const propertiesOfCurrentFloor = Object.values(properties).filter(
@@ -523,7 +534,13 @@ class FlatModel extends EventEmitter {
       const radioBtn = document.querySelector(
         `.js-s3d__radio-type[data-type=${this.imagesType}] input`,
       );
-      radioBtn.checked = true;
+
+      if (radioBtn) {
+        radioBtn.checked = true;
+      } else {
+        console.warn(`Елемент не знайдено для типу: ${this.imagesType}`);
+      }
+      // radioBtn.checked = true;
     }
 
     this.radioTypeHandler(this.imagesType);

@@ -4,6 +4,8 @@ import ButtonIconLeft from '../../../../../../../s3d2/scripts/templates/common/B
 import { $highlightSvgElements } from '../../../controller/$highlightSvgElements';
 import { numberWithCommas } from '../../../../../../../s3d2/scripts/helpers/helpers_s3d2';
 export default function s3dVillaFloorPlanings(i18n, flat) {
+  const firstLevelPhoto = flat.flat_levels_photo[1].without;
+
   const $floorButtons = () => {
     //прибрати flat.level = 2
     if (flat.level < 2) {
@@ -36,7 +38,7 @@ export default function s3dVillaFloorPlanings(i18n, flat) {
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="s3d-villa__floor-explication-screen-slide">
-                            <img src="${flat['img_big']}" data-flat-explication-image />
+                            <img src="${firstLevelPhoto}" data-flat-explication-image />
                         </div>
                     </div>
                 </div>
@@ -75,7 +77,7 @@ export default function s3dVillaFloorPlanings(i18n, flat) {
             </div>
             <div class="s3d-villa__floor-explication-screen-table">
               <div class="s3d-villa__floor-explication-screen-table-inner">
-                <div class="s3d-villa__floor-explication-screen-table__title" data-flat-explication-title> 1st floor </div>
+                <!--<div class="s3d-villa__floor-explication-screen-table__title" data-flat-explication-title> 1st floor </div>-->
                 <div class="s3d-villa__floor-explication-screen-info ">
                     <div class="s3d-villa__floor-explication-screen-info-row  ">
                         <div class="s3d-villa__floor-explication-screen-info-row-title">
@@ -124,7 +126,7 @@ export default function s3dVillaFloorPlanings(i18n, flat) {
 
             </div>
 
-           
+
         </div>
     `;
 }

@@ -123,7 +123,7 @@ export default function s3dApartmentsList(i18n, flat, favouritesIds$, showPrices
     } else {
       console.warn(`Swiper container not found for ID: ${containerId}`);
     }
-  }, 0);
+  }, 500);
 
   return apartmentsListHtml;
 }

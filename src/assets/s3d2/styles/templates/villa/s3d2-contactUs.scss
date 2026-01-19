@@ -32,7 +32,7 @@
     flex-direction: column;
     gap: 40px;
     width: calc((458 / 1920) * 100vw);
-    padding: var(--space-5) 0;
+    // padding: var(--space-5) 0;
 
     @media screen and (max-width: 1366px) {
       width: 48vw;

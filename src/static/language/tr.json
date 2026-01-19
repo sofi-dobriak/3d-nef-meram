@@ -231,9 +231,9 @@
     "scroll": "Kaydır",
     "see_all_photos": "Tüm {{count}} fotoğrafı görüntüle",
     "explication_data": {
-      "floor_1": "Plan",
-      "floor_2": "Dış",
-      "floor_3": "2. kat",
+      "floor_1": "1. kat",
+      "floor_2": "2. kat",
+      "floor_3": "Dış cephe",
       "floor_4": "Çatı",
       "floor_5": "En üst kat",
       "open_full_plan": "plan detayları"

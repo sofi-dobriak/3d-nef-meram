@@ -75,7 +75,7 @@ class FlatsList {
 
   init() {
     const filterContainer = document.querySelector('.js-s3d-filter');
-    const tableContainer = document.querySelector('.js-s3d-filter__table');
+    const tableContainer = document.querySelector('.js-s3d-filter');
     const bodyContainer = document.querySelector('.js-s3d-filter__body');
 
     this.currentFilteredFlatIdsAviableStatus$.subscribe(value => {
