@@ -16,26 +16,26 @@
       margin-top: var(--space-10);
     }
   }
-  &-swiper-button-prev.swiper-button-disabled {
-    opacity: 0.1;
-    background: rgb(0, 0, 0);
-    pointer-events: none;
-    svg {
-      path {
-        fill: white;
-      }
-    }
-  }
-  &-swiper-button-next.swiper-button-disabled {
-    opacity: 0.1;
-    background: rgb(0, 0, 0);
-    pointer-events: none;
-    svg {
-      path {
-        fill: white;
-      }
-    }
-  }
+  // &-swiper-button-prev.swiper-button-disabled {
+  //   opacity: 0.1;
+  //   background: rgb(0, 0, 0);
+  //   pointer-events: none;
+  //   svg {
+  //     path {
+  //       fill: white;
+  //     }
+  //   }
+  // }
+  // &-swiper-button-next.swiper-button-disabled {
+  //   opacity: 0.1;
+  //   background: rgb(0, 0, 0);
+  //   pointer-events: none;
+  //   svg {
+  //     path {
+  //       fill: white;
+  //     }
+  //   }
+  // }
 
   @media screen and (max-width: 768px) {
     .s3d-villa__floor__title-wrap {

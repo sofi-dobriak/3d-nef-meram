@@ -28,6 +28,7 @@ export default function s3dApartmentsList(i18n, flat, favouritesIds$, showPrices
                       .join('')}
                 </div>
             </div>
+
             <div class="s3d-flat-new__apartments-list-swiper-nav-wrap s3d-villa__construction-swiper-nav-wrap">
                     <div class="s3d-flat-new__apartments-list-swiper-button-prev s3d-villa__construction-swiper-button-prev swiper-button-prev">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -41,7 +42,7 @@ export default function s3dApartmentsList(i18n, flat, favouritesIds$, showPrices
                     </div>
               </div>
           </div>
-        
+
     </div>
     `;
 
@@ -90,7 +91,9 @@ export default function s3dApartmentsList(i18n, flat, favouritesIds$, showPrices
         // loop: true,
         breakpoints: {
           320: {
-            slidesPerView: swiperContainer.querySelector('.s3d-villa__construction-progress-card') ? 2 : 1,
+            slidesPerView: swiperContainer.querySelector('.s3d-villa__construction-progress-card')
+              ? 2
+              : 1,
             spaceBetween: 20,
           },
           768: {
