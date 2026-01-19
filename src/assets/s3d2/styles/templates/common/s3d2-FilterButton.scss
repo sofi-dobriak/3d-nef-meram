@@ -7,27 +7,35 @@
   left: 0;
   top: 50%;
   z-index: 10;
-  transform: translateY(-50%);
-  writing-mode: sideways-lr;
+  transform: translate(-35%, -50%) rotate(-90deg);
+  // writing-mode: sideways-lr;
   display: flex;
   align-items: center;
   cursor: pointer;
-  border-radius: 0 var(--space-2) var(--space-2) 0;
-  border-top: 1px solid (var(--s3d2-color-border-gray-900-transparent-10));
+  // border-radius: 0 var(--space-2) var(--space-2) 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: var(--space-2);
+  border-bottom-left-radius: var(--space-2);
+  border-top: none;
   border-right: 1px solid (var(--s3d2-color-border-gray-900-transparent-10));
   border-bottom: 1px solid (var(--s3d2-color-border-gray-900-transparent-10));
-  border-left: none;
+  border-left: 1px solid (var(--s3d2-color-border-gray-900-transparent-10));
   background: var(--s3d2-color-surface-gray-200-transparent-80);
   color: var(--s3d2-color-text-gray-900);
   backdrop-filter: blur(20px);
   transition: 0.25s ease-out;
   overflow: hidden;
 
+  svg {
+    transform: rotate(90deg);
+  }
+
   &.active {
     left: var(--filter-width);
 
     svg {
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
     }
   }
 

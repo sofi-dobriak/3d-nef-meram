@@ -21,6 +21,7 @@
   transition: 0.25s ease-out;
   cursor: pointer;
   overflow: hidden;
+  padding: 0 !important;
 
   &::after {
     content: '';
@@ -43,6 +44,10 @@
   }
 
   svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+
     path {
       fill: var(--s3d2-color-icon-gray-900);
     }

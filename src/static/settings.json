@@ -29,7 +29,6 @@
     "verticalAlign": "center",
     "horizontalAlign_faq": "left || center || right",
     "horizontalAlign": "center",
-    "video_keyframes": {},
     "controlPoint": [
       25,
       50,
@@ -67,7 +66,6 @@
         "verticalAlign": "center",
         "horizontalAlign_faq": "left || center || right",
         "horizontalAlign": "center",
-        "video_keyframes": {},
         "controlPoint": [
           25,
           50,

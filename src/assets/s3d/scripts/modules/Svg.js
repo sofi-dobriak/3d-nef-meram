@@ -114,7 +114,8 @@ class Svg {
                 this.mutateGenplanInfrastructure(
                   svgWrap,
                   this.putFlatIdInFloorPolygon(svgWrap, svgAligned),
-                );0
+                );
+                0;
                 resolve();
                 return;
               }
@@ -268,7 +269,7 @@ class Svg {
       default:
         break;
     }
-    
+
     if (type === 'text') {
       return this.createTextPath(el.getAttribute('points'), pinText);
     }
@@ -280,7 +281,6 @@ class Svg {
     if (!iframe) {
       return this.createImagePin(x, y, this.pinsInfo[id], el);
     }
-
 
     const pinFill = this.fillCategories[filter_type] || this.fillCategories.default;
     let className = '';
@@ -303,33 +303,33 @@ class Svg {
     }
 
     const pinGroup = `
-        <g 
-          data-pinType="${type}" 
-          data-title="${this.i18n.t(title_i18n)}" 
-          data-infra-filter="${filter_type}" 
-          ${dataHref} 
-          class="${className}" 
-          data-img="${img}" 
-          data-id="${id}" 
+        <g
+          data-pinType="${type}"
+          data-title="${this.i18n.t(title_i18n)}"
+          data-infra-filter="${filter_type}"
+          ${dataHref}
+          class="${className}"
+          data-img="${img}"
+          data-id="${id}"
           data-type="infrastructure"
         >
           ${type !== 'zone' ? '' : el.outerHTML}
-          <rect 
-            data-img="${img}" 
-            data-id="${id}" 
-            data-type="infrastructure" 
-            data-title="${this.i18n.t(title_i18n)}" 
-            x="${x - this.pinWidth / 2}" 
-            y="${y - this.pinHeight / 2}" 
-            width="${this.pinWidth}" 
-            height="${this.pinHeight}" 
-            fill="${pinFill}" 
-            data-href="${iframe}" 
+          <rect
+            data-img="${img}"
+            data-id="${id}"
+            data-type="infrastructure"
+            data-title="${this.i18n.t(title_i18n)}"
+            x="${x - this.pinWidth / 2}"
+            y="${y - this.pinHeight / 2}"
+            width="${this.pinWidth}"
+            height="${this.pinHeight}"
+            fill="${pinFill}"
+            data-href="${iframe}"
             class="${className}"
           ></rect>
-          <text 
-            style="pointer-events: none;" 
-            x="${x + this.pinWidth + 8}" 
+          <text
+            style="pointer-events: none;"
+            x="${x + this.pinWidth + 8}"
             y="${y + this.pinHeight / 1.65}"
           >
             ${this.i18n.t(title_i18n)}
@@ -366,7 +366,7 @@ class Svg {
       polygonDataset,
       'small',
       `data-pin-type="${type}"`,
-      pinData
+      pinData,
     );
   }
 
@@ -397,7 +397,7 @@ class Svg {
       polygonDataset,
       VIDEO_FORMATS_REG_EXP.test(iframe) ? 'video' : 'large',
       `data-pin-type="${type}"`,
-      pinData
+      pinData,
     );
   }
 
@@ -429,21 +429,21 @@ class Svg {
       }, []);
 
       const pinGroup = `
-        <g 
-          data-type="pin" 
-          ${$hrefAttribute} 
-          ${attrs.join(' ')} 
-          class="${pinsHref[el.dataset.id] ? 'js-s3d-flat__3d-tour' : ''}"  
+        <g
+          data-type="pin"
+          ${$hrefAttribute}
+          ${attrs.join(' ')}
+          class="${pinsHref[el.dataset.id] ? 'js-s3d-flat__3d-tour' : ''}"
           data-href="${pinsHref[el.dataset.id] ? pinsHref[el.dataset.id] : ''}"
         >
           ${el.getAttribute('points').split(',').length <= 6 ? '' : el.outerHTML}
-          <rect 
-            x="${x}" 
+          <rect
+            x="${x}"
             y="${y}"
-            width="${this.pinWidth}" 
-            height="${this.pinHeight}" 
-            fill="${pinFill}" 
-            class="${pinsHref[el.dataset.id] ? 'js-s3d-flat__3d-tour' : ''}"  
+            width="${this.pinWidth}"
+            height="${this.pinHeight}"
+            fill="${pinFill}"
+            class="${pinsHref[el.dataset.id] ? 'js-s3d-flat__3d-tour' : ''}"
             data-href="${pinsHref[el.dataset.id] ? pinsHref[el.dataset.id] : ''}"
           >
           </rect>
@@ -511,7 +511,7 @@ class Svg {
         <g ${transformPin}  style="
           transform-origin: center center;
           transform-box: fill-box;
-        ">          
+        ">
           <text style="fill: white; font-weight: 400" x="${x}" y="${y}">${this.i18n.t(
               `infoBox.flyby--${el.dataset.flyby}--${el.dataset.side}`,
             )}</text>
@@ -536,7 +536,7 @@ class Svg {
     }
     normalized.push(lastElement);
 
-    console.log('normalized', normalized.join(','));
+    // console.log('normalized', normalized.join(','));
     return normalized.join(',');
   }
 
@@ -695,7 +695,9 @@ class Svg {
       const width = 135;
       const height = 30;
       const tooltip = `
-        <foreignObject x="${x - width / 2}" y="${y - height / 2}" style="transform: none" width="${width}" height="${height}" class="s3d-svg-flat-tooltip">
+        <foreignObject x="${x - width / 2}" y="${y -
+        height /
+          2}" style="transform: none" width="${width}" height="${height}" class="s3d-svg-flat-tooltip">
           <div class="s3d-svg-flat-tooltip__content">
             <div data-tooltip-sale="${flat.sale}" class="s3d-svg-flat-tooltip__inner">
             </div>
@@ -706,9 +708,7 @@ class Svg {
         </foreignObject>
       `;
       $svg.insertAdjacentHTML('beforeend', tooltip);
-
     });
-    
 
     return $svg.outerHTML;
   }

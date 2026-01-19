@@ -30,6 +30,23 @@
     background-size: cover;
     background-attachment: fixed;
 
+    /* Стандартні властивості */
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* Webkit префікси */
+    -webkit-background-size: cover;
+
+    /* Фікс для iOS Safari */
+    /* background-attachment: fixed часто ігнорується або глючить на iOS. 
+       Щоб воно працювало плавно, іноді краще використовувати такий хак: */
+    // @supports (-webkit-touch-callout: none) {
+    //     /* Стилі спеціально для iOS пристроїв */
+    //     background-attachment: scroll;
+    //     /* Safari на iOS краще рендерить 'scroll' з cover,
+    //        або потребує заміни фону на псевдоелемент :before */
+    // }
+
     // &::after {
     //   content: '';
     //   position: absolute;
@@ -354,7 +371,7 @@
 
       position: relative;
       &::before {
-        // content: '';
+        // content:
         position: absolute;
         top: 50%;
         left: 0;
@@ -365,7 +382,7 @@
       }
 
       &::after {
-        // content: '';
+        // content:
         position: absolute;
         top: 50%;
         left: 0;
