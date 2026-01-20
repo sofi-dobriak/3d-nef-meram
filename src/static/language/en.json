@@ -236,7 +236,7 @@
       "floor_3": "Exterior",
       "floor_4": "Roof",
       "floor_5": "Top floor",
-      "open_full_plan": "layout details"
+      "open_full_plan": "VIEW AS PDF"
     },
     "floor_planning": "Floorplan & specs",
     "change_floor": "Change floor:",
