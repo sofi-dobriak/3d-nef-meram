@@ -237,6 +237,10 @@ foreignObject {
   opacity: 0;
 }
 
+[data-type='infrastructure'] {
+  opacity: 1;
+}
+
 .s3d-flyby-tooltip {
   display: flex;
   flex-direction: column;

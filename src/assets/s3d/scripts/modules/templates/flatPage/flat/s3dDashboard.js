@@ -2,7 +2,10 @@ import get from 'lodash/get';
 import { FLAT_GALLERY_FANCYBOX, TOOLTIP_ATTRIBUTE } from '../../../../../../s3d2/scripts/constants';
 import s3d2_ButtonIconLeft from '../../../../../../s3d2/scripts/templates/common/s3d2_ButtonIconLeft';
 import s3d2spriteIcon from '../../../../../../s3d2/scripts/templates/spriteIcon';
-import { numberWithCommas } from '../../../../../../s3d2/scripts/helpers/helpers_s3d2';
+import {
+  numberWithDots,
+  numberWithCommas,
+} from '../../../../../../s3d2/scripts/helpers/helpers_s3d2';
 
 export default function s3dDashboard(
   i18n,
@@ -15,8 +18,8 @@ export default function s3dDashboard(
   const gallery = get(flat, 'gallery', []);
   const address = get(
     contacts,
-    ['construction_department', 'text', lang],
-    contacts.construction_department.text.en,
+    ['sales_department', 'text', lang],
+    contacts.sales_department.text.en,
   );
 
   return `
@@ -100,8 +103,8 @@ export default function s3dDashboard(
                         <span class="text-style-3-d-fonts-1920-h-1">
                             ${
                               i18n.t('currency_label') === '$'
-                                ? `${i18n.t('currency_label')} ${numberWithCommas(flat.price)} `
-                                : `${numberWithCommas(flat.price)}  ${i18n.t('currency_label')}`
+                                ? `${i18n.t('currency_label')} ${numberWithDots(flat.price)} `
+                                : `${numberWithDots(flat.price)}  ${i18n.t('currency_label')}`
                             }
 
                         </span>
@@ -142,7 +145,15 @@ export default function s3dDashboard(
                             ${numberWithCommas(flat.area)}
                         </span>
                         <span class="text-style-3-d-fonts-1920-body-regular">
-                            ${i18n.t('area_unit')}
+                            ${i18n.t('Flat.information.villa')} ${i18n.t('area_unit')}
+                        </span>
+                    </div>
+                    <div class="s3d-flat-dashboard__info-details-item s3d-flat-dashboard__info-item--mobile-row">
+                        <span class="text-style-3-d-fonts-1920-h-1">
+                            ${numberWithCommas(flat.customProperties[6].value.value)}
+                        </span>
+                        <span class="text-style-3-d-fonts-1920-body-regular">
+                             ${i18n.t('Flat.information.garden')} ${i18n.t('area_unit')}
                         </span>
                     </div>
             </div>

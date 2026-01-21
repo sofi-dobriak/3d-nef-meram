@@ -43,23 +43,19 @@ export default function $s3d2_brandsList({ i18n, flat, brands = [], faqs = [] })
         </div>`
       : '';
 
-  setTimeout(() => {
-    const el = document.querySelector('.s3d2-villa__faq-list');
-
-    if (el && !window.s3d2FlatAccordeon) {
-      new s3d2_Accordion('.s3d2-villa__faq-list', { singleOpen: true });
-      window.s3d2FlatAccordeon = true;
-    }
-  }, 0);
+  if (!window.s3d2FlatAccordeon) {
+    new s3d2_Accordion('body', { singleOpen: true });
+    window.s3d2FlatAccordeon = true;
+  }
 
   return `
         <div class="s3d2-villa__floor" aria-labelledby="brands-title">
             <div class="s3d2-villa__floor__title-wrap">
                 <div class="s3d2-villa__floor__title-wrap__line"></div>
                 <h2 class="s3d2-villa__floor__title"> ${i18n.t('Flat.brands_list_title')}</h2>
-                <p class="s3d2-villa__floor__description"> ${i18n.t(
+                <!--<p class="s3d2-villa__floor__description"> ${i18n.t(
                   'Flat.brands_list_description',
-                )}</p>
+                )}</p>-->
                 <div class="s3d2-villa__floor__title-wrap__line"></div>
             </div>
 

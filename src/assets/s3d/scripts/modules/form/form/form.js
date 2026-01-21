@@ -210,9 +210,9 @@ const lang = langDetect();
           title: 'DAHA FAZLA BİLGİ ALMAK MI İSTİYORSUNUZ?',
           subtitle:
             'Mülk ve satın alma detayları hakkında daha fazla bilgi almak için formu doldurun.',
-          'Your name': 'Adınız:',
-          'Your phone': 'Telefonunuz:',
-          'Your email': 'E-postanız:',
+          'Your name': 'AD SOYAD:',
+          'Your phone': 'TELEFON NUMARANIZ',
+          'Your email': 'E-MAIL ADRESİNİZ',
           'Your comment': 'Mesajınız:',
           'Type your message': 'Mesajınızı yazın',
           field_too_short: 'Telefon en az {{cnt}} karakter olmalıdır',

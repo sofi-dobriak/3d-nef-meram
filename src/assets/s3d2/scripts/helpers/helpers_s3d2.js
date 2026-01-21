@@ -1,4 +1,4 @@
-import device from "current-device";
+import device from 'current-device';
 
 /**
  * Adds commas to a number for better readability.
@@ -7,7 +7,12 @@ import device from "current-device";
  */
 export function numberWithCommas(x) {
   if (!x) return '';
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+export function numberWithDots(x) {
+  if (!x) return '';
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
 /**
@@ -25,7 +30,6 @@ export function isTablet() {
 export function isDesktop() {
   return document.documentElement.classList.contains('desktop');
 }
-
 
 export function showOnMobile(content) {
   return isMobile() ? content : '';
@@ -49,11 +53,14 @@ export function showOn(devices = [], content) {
   return devices.includes(device.type) ? content : '';
 }
 
-
 export function isFullScreenAvailable() {
-  return document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled;
+  return (
+    document.fullscreenEnabled ||
+    document.webkitFullscreenEnabled ||
+    document.mozFullScreenEnabled ||
+    document.msFullscreenEnabled
+  );
 }
-
 
 export function isDesktopTouchMode() {
   return document.body.dataset.s3dTouchMode === 'touch' && isDesktop();
@@ -69,4 +76,4 @@ export function isDeviceHybrid() {
 
 export const isTouchDevice = () => {
   return document.documentElement.classList.contains('primary_input_touch');
-}
+};

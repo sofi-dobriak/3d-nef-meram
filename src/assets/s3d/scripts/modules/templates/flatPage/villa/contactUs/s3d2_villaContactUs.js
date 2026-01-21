@@ -88,7 +88,7 @@ function s3d2_renderVillaContact_v1({ i18n, managerInfo = {} }) {
         </div>
 
         <div class="s3d2__contact__content__column">
-          <div class="s3d2__contact__form-container">
+          <!--<div class="s3d2__contact__form-container">
             <div>
               <h2 class="s3d2__contact__form-container__title">${i18n.t(
                 'Flat.contactUs.form_title',
@@ -96,7 +96,7 @@ function s3d2_renderVillaContact_v1({ i18n, managerInfo = {} }) {
               <p class="s3d2__contact__form-container__description">${i18n.t(
                 'Flat.contactUs.form_description',
               )}</p>
-            </div>
+            </div>-->
             <div class="s3d2__contact__form" id="${containerId}"></div>
           </div>
         </div>
@@ -238,9 +238,9 @@ function s3d2_renderVillaContact_v2({
                 <h2 class="s3d2__contact--v2__content__title">${i18n.t(
                   'Flat.contactUs.contacts_title',
                 )}</h2>
-                <p class="s3d2__contact--v2__content__description">${i18n.t(
+                <!--<p class="s3d2__contact--v2__content__description">${i18n.t(
                   'Flat.contactUs.contacts_description',
-                )}</p>
+                )}</p>-->
               </div>
 
               <div class="s3d2__contact--v2__content__global-number">
@@ -268,14 +268,14 @@ function s3d2_renderVillaContact_v2({
 
           <div class="s3d2__contact__content__column">
             <div class="s3d2__contact__form-container">
-              <div>
+              <!--<div>
                 <h2 class="s3d2__contact__form-container__title">${i18n.t(
                   'Flat.contactUs.form_title',
                 )}</h2>
                 <p class="s3d2__contact__form-container__description">${i18n.t(
                   'Flat.contactUs.form_description',
                 )}</p>
-              </div>
+              </div>-->
               <div class="s3d2__contact__form" id="${containerId}"></div>
             </div>
           </div>

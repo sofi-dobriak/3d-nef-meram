@@ -2,6 +2,7 @@ import {
   isDesktop,
   isNotDesktopTouchMode,
   numberWithCommas,
+  numberWithDots,
 } from '../../../../../s3d2/scripts/helpers/helpers_s3d2';
 import ButtonWithoutIcon from '../../../../../s3d2/scripts/templates/common/ButtonWithoutIcon';
 import s3d2spriteIcon from '../../../../../s3d2/scripts/templates/spriteIcon';
@@ -51,8 +52,8 @@ function Flat(i18n, data) {
     <div class="text-style-3-d-fonts-1920-h-1 s3d-infoBox__title s3d-infoBox__title-no-bottom-margin">
       ${
         currency === '$'
-          ? `${i18n.t(`currency_label`, '')} ${numberWithCommas(price)} `
-          : `${numberWithCommas(price)} ${i18n.t(`currency_label`, '')}`
+          ? `${i18n.t(`currency_label`, '')} ${numberWithDots(price)} `
+          : `${numberWithDots(price)} ${i18n.t(`currency_label`, '')}`
       }
     </div>
   `

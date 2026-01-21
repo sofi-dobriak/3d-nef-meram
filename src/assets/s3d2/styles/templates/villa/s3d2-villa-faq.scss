@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid var(--border-gray-400);
+  border-top: 1px solid var(--s3d2-color-border-gray-400);
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 
@@ -24,15 +24,15 @@
   }
 
   &:last-child {
-    border-bottom: 1px solid var(--border-gray-400);
+    border-bottom: 1px solid var(--s3d2-color-border-gray-400);
   }
 
   &:hover {
-    background: #fafbfe;
+    // background: #fafbfe;
   }
 
   &[data-open='true'] {
-    background: var(--color-surface-gray-200);
+    // background: var(--color-surface-gray-200);
 
     .s3d2-villa__faq-card__answer {
       margin-top: var(--space-3);
@@ -43,7 +43,7 @@
     }
 
     .s3d2-villa__faq-card__question-icon:before {
-      background: var(--color-surface-gray-200);
+      // background: var(--color-surface-gray-200);
     }
 
     line:last-child {
@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-surface-gray-200);
+    // background-color: var(--color-surface-gray-200);
     transition: background-color 0.3s;
     cursor: pointer;
     position: relative;
@@ -109,7 +109,7 @@
 
     @media (hover: hover) {
       overflow: hidden;
-      background-color: var(--color-surface-gray-300);
+      // background-color: var(--color-surface-gray-300);
 
       svg {
         position: relative;
@@ -118,7 +118,7 @@
 
       &::before {
         content: '';
-        background: var(--color-surface-gray-200);
+        // background: var(--color-surface-gray-200);
         width: 100%;
         height: 0;
         padding-bottom: 100%;
@@ -137,7 +137,7 @@
     }
 
     &:hover {
-      background: var(--color-surface-gray-400);
+      // background: var(--color-surface-gray-400);
     }
   }
 

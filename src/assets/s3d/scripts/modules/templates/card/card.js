@@ -1,6 +1,6 @@
 import $addToFavourite from '../$addToFavourite';
 import { TOOLTIP_ATTRIBUTE, BATHS_CUSTOM_PROPERTY_ID } from '../../../../../s3d2/scripts/constants';
-import { numberWithCommas } from '../../../../../s3d2/scripts/helpers/helpers_s3d2';
+import { numberWithDots, numberWithCommas } from '../../../../../s3d2/scripts/helpers/helpers_s3d2';
 import ButtonWithoutIcon from '../../../../../s3d2/scripts/templates/common/ButtonWithoutIcon';
 import s3d2spriteIcon from '../../../../../s3d2/scripts/templates/spriteIcon';
 import closeCard from './$closeCard';
@@ -87,13 +87,13 @@ function Card(
     if (currency.trim() == '$') {
       return `
         <div class="s3d-card__title">
-          ${i18n.t('Flat.information.priceText')} ${numberWithCommas(price)}
+          ${i18n.t('Flat.information.priceText')} ${numberWithDots(price)}
         </div>
       `;
     }
     return `
       <div class="s3d-card__title">
-        ${numberWithCommas(price)} ${i18n.t('Flat.information.priceText')}
+        ${numberWithDots(price)} ${i18n.t('Flat.information.priceText')}
       </div>
     `;
   };

@@ -227,34 +227,11 @@ class InfoBox {
 
   updatePosition(e) {
     const target = e.target;
-    const currentPage = document.querySelector('.js-s3d-ctr').dataset.type;
-    // if (target.dataset.type == 'flat' && currentPage == 'flyby_1_outside') {
-    //   const offset = 10; // расстояние между полигоном и инфобоксом
 
-    //   const target = e.target;
-    //   const targetRect = target.getBoundingClientRect();
-    //   const infoBox = this.infoBox;
-
-    //   // Координаты инфобокса: справа от полигона
-    //   const left = targetRect.right + offset;
-    //   const top = targetRect.top;
-
-    //   infoBox.style.position = 'fixed'; // позиционируем по окну
-    //   infoBox.style.left = `${Math.min(left, window.innerWidth - 280)}px`;
-    //   // infoBox.style.left = `${left}px`;
-    //   infoBox.style.top = `${top}px`;
-    //   return;
-    // }
-    // if (target.dataset.type == 'flat' && currentPage != 'flyby_1_outside') {
-    //   // передвигаем блок за мышкой
-    //   const { x, y } = placeElemInWrapperNearMouse(this.infoBox, document.documentElement, e, 20);
-    //   this.infoBox.style.top = `${y}px`;
-    //   this.infoBox.style.left = `${x}px`;
-    //   return;
-    // }
-    const { x, y } = placeElemInWrapperNearMouse(this.infoBox, document.documentElement, e, 20);
-    this.infoBox.style.top = `${y}px`;
+    const { x, y } = placeElemInWrapperNearMouse(this.infoBox, e);
+    this.infoBox.style.position = 'fixed';
     this.infoBox.style.left = `${x}px`;
+    this.infoBox.style.top = `${y}px`;
   }
 
   updateInfo(data) {

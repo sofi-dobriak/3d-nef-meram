@@ -1,46 +1,23 @@
-const isFit = (pos, size, wrapBorder) => pos + size >= wrapBorder;
-const newPosition = (width, border, offset) => border - width - offset;
-const newPositionX = (width, border, offset) => border - width - offset;
+function placeElemInWrapperNearMouse(el, event, offset = 20) {
+  const mouseX = event.clientX + offset;
+  const mouseY = event.clientY + offset;
 
-// function placeElemInWrapperNearMouse(el, wrap, event, offset = 10) {
-//   const mousePosition = {
-//     x: (event.pageX + offset),
-//     y: (event.pageY),
-//   };
-//   const wrapperSize = { height: wrap.offsetHeight, width: wrap.offsetWidth };
-//   const elementSize = { height: el.offsetHeight, width: el.offsetWidth };
-//   const isWidthFit = isFit(event.pageX, elementSize.width, wrapperSize.width);
-//   const isHeightFit = isFit(event.pageY, elementSize.height, wrapperSize.height);
+  const viewportW = window.innerWidth;
+  const viewportH = window.innerHeight;
 
-//   const x = (isWidthFit) ? newPositionX(elementSize.width, event.pageX, offset) : mousePosition.x;
-//   let y = (isHeightFit) ? newPosition(elementSize.height, wrapperSize.height, offset) : y;
-//   y = Math.max(mousePosition.y, (el.getBoundingClientRect().height / 2));
-//   y = Math.min(y, (window.innerHeight - el.getBoundingClientRect().height / 2));
-//   return { x, y };
-// }
+  const elW = el.offsetWidth;
+  const elH = el.offsetHeight;
 
-function placeElemInWrapperNearMouse(el, wrap, event, offset = 10) {
-  const mousePosition = {
-    x: event.pageX + offset,
-    y: event.pageY,
-  };
+  let x = mouseX;
+  let y = mouseY;
 
-  const wrapperSize = { height: wrap.offsetHeight, width: wrap.offsetWidth };
-  const elementSize = { height: el.offsetHeight, width: el.offsetWidth };
+  if (x + elW > viewportW) x = viewportW - elW - 10;
+  if (x < 0) x = 10;
 
-  const distanceToTop = mousePosition.y;
-
-  const x = mousePosition.x;
-  let y = mousePosition.y;
-
-  if (distanceToTop < 300) {
-    y = mousePosition.y + elementSize.height / 2;
-  }
-
-  if (y + elementSize.height > wrapperSize.height) {
-    y = wrapperSize.height - elementSize.height;
-  }
+  if (y + elH > viewportH) y = viewportH - elH - 10;
+  if (y < 0) y = 10;
 
   return { x, y };
 }
+
 export default placeElemInWrapperNearMouse;

@@ -15,7 +15,7 @@
     "enableParalax": false,
     "enableClouds": false,
     "image_format": "jpg",
-    "show_flat_polygons_tooltip": true,
+    "show_flat_polygons_tooltip": false,
     "show_flat_polygons_tooltip_key": "area",
     "defaultTheme": "light",
     "class": "js-s3d__wrapper",
@@ -147,128 +147,197 @@
     "faq_questions": [
       {
         "question": {
-          "en": "Architecture & Space"
+          "en": "PROJECT OVERVIEW",
+          "tr":"PROJE ÖZETİ"
         },
         "answer": {
-          "en": "<ul><li>Expansive private terraces designed for al fresco living</li><li>Private elevator arrival to every residence</li><li>Floor-to-ceiling impact-rated windows framing natural light and views</li><li>Open-concept layouts emphasizing light, harmony, and European elegance</li><li>“Amp” Machine in each unit</li></ul>"
+          "en": "<p>NEF Meram is a distinctive villa project designed on a sloping terrain that offers panoramic views of the Meram Valley Gardens and the city of Konya. Spanning over 106,000 m², the project stands out with its modern architectural approach inspired by traditional Konya houses.</p><br><p>NEF Meram consists of 132 villas with layouts ranging from 3+1 to 6+1. All villas are designed as two-story residences, featuring terraces, winter gardens, and spacious interiors suitable for year-round living. With its indoor and outdoor social facilities, smart site planning that allows access from different levels, and prestigious location, NEF Meram offers an exclusive living standard in Konya.</p><br><p>The patented Foldhome system extends living spaces beyond the villa itself through shared areas designed for sports, social activities, hosting guests, and daily needs. These areas are used only when needed and do not add unnecessary maintenance costs, creating a more flexible and intelligent living experience.</p>",
+          "tr":"<p>NEF Meram, Konya’nın tamamına hâkim bir noktada, eğimli arazi yapısının sunduğu eşsiz Meram Bağları ve şehir manzarasıyla tasarlanmış özel bir villa projesidir. 106.000 m²’yi aşan geniş bir alanda konumlanan proje, geleneksel Konya evlerinden ilham alan modern mimarisiyle öne çıkıyor.</p><br><p>Toplam 132 adet villadan oluşan NEF Meram’da 3+1’den 6+1’e kadar farklı villa tipleri yer alıyor. Tüm villalar iki katlı; terasları, kış bahçeleri ve geniş iç mekân çözümleriyle yılın her mevsimine uyum sağlıyor. Proje; kapalı ve açık sosyal alanları, farklı kotlardan erişim imkânı sunan akıllı yerleşim planı ve prestijli konumuyla Konya’da ayrıcalıklı bir yaşam standardı sunuyor.</p><br><p>Projede yer alan NEF patentli Foldhome sistemi, evin metrekaresini yaşam alanı olarak genişleten ortak kullanımlı alanlar sunar. Spor, sosyalleşme, misafir ağırlama ve günlük ihtiyaçlara yönelik bu alanlar, ihtiyaç duyulduğunda kullanılır; kullanılmadığında ise aidat yükü yaratmaz. Böylece daha ferah, daha esnek ve akıllı bir yaşam modeli sağlar.</p>"
         }
       },
       {
         "question": {
-          "en": "Kitchens"
+          "en": "1. How many villas are there in NEF Meram?",
+          "tr":"1. NEF Meram kaç villadan oluşuyor?"
         },
         "answer": {
-          "en": "<ul><li>Italian-style kitchens with premium European cabinetry</li><li>Custom Italkraft kitchens and vanities</li><li>Integrated Miele appliance package</li><li>Natural stone countertops and backsplash</li><li>Imported Italian tile and natural wood finishes</li></ul>"
+          "en": "The project consists of a total of 132 villas.",
+          "tr":"Proje toplam 132 adet villadan oluşmaktadır."
         }
       },
       {
         "question": {
-          "en": "Appliances (Miele)"
+          "en": "2. What villa types and layouts are available?",
+          "tr":"2. Villa tipleri ve oda seçenekleri nelerdir?"
         },
         "answer": {
-          "en": "<ul><li>Miele wall oven</li><li>Miele Speedoven</li><li>Miele coffee system</li><li>Miele cooktop & ventilation</li><li>Miele refrigerator & freezer</li></ul>"
+          "en": "NEF Meram offers 3+1, 4+1, 5+1, and 6+1 villa options, including duplex and reverse-duplex layouts.",
+          "tr":"NEF Meram’da 3+1, 4+1, 5+1 ve 6+1 villa seçenekleri bulunmaktadır. Ters dubleks ve dubleks plan alternatifleri mevcuttur."
         }
       },
       {
         "question": {
-          "en": "Bathrooms"
+          "en": "3. Do all villas have a view?",
+          "tr":"3. Tüm villalar manzaraya sahip mi?"
         },
         "answer": {
-          "en": "<ul><li>Spa-inspired bathroom design with timeless elegance</li><li>Imported Italian tilework</li><li>Natural stone vanities and finishes</li><li>Graff luxury plumbing fixtures</li><li>Toto toilets throughout</li><li>Electric bidet toilets in all master baths</li><li>Standard Toto toilets in secondary bathrooms</li></ul>"
+          "en": "Yes. Thanks to the sloping terrain, all villas enjoy panoramic views of the city of Konya.",
+          "tr":"Evet. Arazinin eğimli yapısı sayesinde projedeki tüm villalar Konya şehir manzarasına hâkimdir."
         }
       },
       {
         "question": {
-          "en": "Interior finishes & Craftsmanship"
+          "en": "4. Is the land a foundation (waqf) property?",
+          "tr":"4. Arazi vakıf arazisi mi?"
         },
         "answer": {
-          "en": "<ul><li>European cabinetry and millwork</li><li>Natural stone and Italian tile flooring options</li><li>Warm, refined, contemporary material palette</li><li>High-quality finishes emphasizing craftsmanship and durability</li></ul>"
+          "en": "No. The project land is not a foundation property. It is owned by Timur Real Estate Development Construction and Investment Inc. and was purchased from the Meram Municipality. Relevant documents can be shared upon request.",
+          "tr":"Hayır. Proje arazisi vakıf arazisi değildir. Arazi, Timur Gayrimenkul Geliştirme Yapı ve Yatırım A.Ş.’nin Meram Belediyesi’nden satın almış olduğu bir arazidir. Talep edilmesi halinde ilgili belgeler paylaşılabilmektedir."
         }
       },
       {
         "question": {
-          "en": "Building quality & Convenience"
+          "en": "5. How is the delivery and occupancy schedule planned?",
+          "tr":"5. Teslim ve oturum takvimi nasıl planlanıyor?"
         },
         "answer": {
-          "en": "<ul><li>Impact-resistant floor-to-ceiling glazing</li><li>Private, secure elevator access</li><li>Integrated premium appliance technology</li></ul>"
+          "en": "The project is developed in three phases. Villas in the first phase are planned for occupancy in December 2026 together with social facilities. Subsequent phases are planned to be delivered at one-year intervals.",
+          "tr":"Proje 3 etap halinde ilerlemektedir. İlk etapta yer alan villalar için 2026 Aralık ayında, sosyal alanlarla birlikte oturum planlanmaktadır. Diğer etapların ise birer yıl arayla teslim edilmesi planlanmaktadır."
+        }
+      },
+      {
+        "question": {
+          "en": "6. How many phases does NEF Meram consist of?",
+          "tr":"6. NEF Meram kaç etap halinde geliştiriliyor?"
+        },
+        "answer": {
+          "en": "The project is planned in three phases.",
+          "tr":"Proje 3 etap halinde planlanmıştır."
+        }
+      },
+      {
+        "question": {
+          "en": "7. What are the delivery dates for the phases?",
+          "tr":"7. Etap teslim tarihleri nasıl planlanıyor?"
+        },
+        "answer": {
+          "en": "The first phase, consisting of 44 villas, is planned for occupancy in December 2026 along with social facilities. Other phases will be delivered at one-year intervals.",
+          "tr":"1.etapta yer alan 44 villa için 2026 Aralık ayında, sosyal alanlarla birlikte oturum planlanmaktadır. Diğer etaplar birer yıl arayla teslim edilecektir."
+        }
+      },
+      {
+        "question": {
+          "en": "8. Are claims that construction has stopped accurate?",
+          "tr":"8. İnşaatın uzun süredir durduğu iddiaları doğru mu?"
+        },
+        "answer": {
+          "en": "No. Construction is ongoing. Infrastructure and site works may not always be visible from outside.",
+          "tr":"Hayır. İnşaat çalışmaları devam etmektedir. Altyapı ve saha çalışmaları dışarıdan her zaman görünmemektedir."
+        }
+      },
+      {
+        "question": {
+          "en": "9. Are all villas two-story?",
+          "tr":"9. Projedeki tüm villalar iki katlı mı?"
+        },
+        "answer": {
+          "en": "Yes. All villas in NEF Meram are designed as two-story duplex residences.",
+          "tr":"Evet. NEF Meram’daki tüm villalar iki katlı-dubleks olarak tasarlanmıştır."
+        }
+      },
+      {
+        "question": {
+          "en": "10. What does upper-level and lower-level entrance mean?",
+          "tr":"10. Üstten ve alttan girişli villa ne demek?"
+        },
+        "answer": {
+          "en": "Due to the terrain structure, some villas are accessed from an upper level, while others have entrances from a lower level—providing both functional advantages and optimal views.",
+          "tr":"Arazi yapısı gereği bazı villalara üst kottan, bazı villalara ise alt kottan giriş sağlanmaktadır. Bu sayede hem manzara hem de kullanım avantajı elde edilmektedir."
+        }
+      },
+      {
+        "question": {
+          "en": "11. How are parking solutions designed?",
+          "tr":"11. Otopark çözümleri nasıl?"
+        },
+        "answer": {
+          "en": "Villas with upper-level entrances feature open parking, while villas with lower-level entrances include covered parking.",
+          "tr":"Üstten girişli villalarda açık otopark, alttan girişli villalarda ise kapalı otopark bulunmaktadır."
+        }
+      },
+      {
+        "question": {
+          "en": "12. Do villas include terraces or winter gardens?",
+          "tr":"12. Villalarda teras ve kış bahçesi var mı?"
+        },
+        "answer": {
+          "en": "Yes. Depending on the villa type, terraces and winter gardens are available and designed for year-round use.",
+          "tr":"Evet. Villa tipine göre teras ve kış bahçesi çözümleri bulunmaktadır; bu alanlar dört mevsim kullanıma uygundur."
+        }
+      },
+      {
+        "question": {
+          "en": "13. Are elevator-ready villas available?",
+          "tr":"13. Asansörlü villa seçeneği mevcut mu?"
+        },
+        "answer": {
+          "en": "Yes. Elevator shafts are pre-planned in the 6+1 villa types.",
+          "tr":"Evet. 6+1 villa tiplerinde asansör yeri önceden planlanmıştır."
+        }
+      },
+      {
+        "question": {
+          "en": "14. What social facilities are available?",
+          "tr":"14. Sosyal alanlar nelerden oluşuyor?"
+        },
+        "answer": {
+          "en": "Indoor facilities include a fitness area, indoor swimming pool, cinema & event spaces, kids’ club, and guest rooms. Outdoor areas feature sports courts. These facilities are offered under NEF’s patented Foldhome system and integrated across phases to expand living spaces when needed.",
+          "tr":"Kapalı sosyal alanlarda fitness, kapalı havuz, sinema & etkinlik alanları, kids club ve misafir odaları; açık alanlarda ise spor sahaları yer almaktadır. Bu alanlar NEF’in patentli Foldhome sistemi kapsamında, ihtiyaç duyulduğunda kullanılan ve yaşam alanını genişleten ortak alanlar olarak etaplar arasında entegre şekilde sunulmaktadır."
+        }
+      },
+      {
+        "question": {
+          "en": "15. How are social facilities positioned within the site?",
+          "tr":"15. Sosyal alanlar site içinde nasıl konumlandırıldı?"
+        },
+        "answer": {
+          "en": "Social facilities are distributed across five different points within the site, bringing together complementary functions.",
+          "tr":"Sosyal alanlar site içerisinde beş farklı noktada, birbirini tamamlayan fonksiyonlar bir araya getirilerek konumlandırılmıştır."
+        }
+      },
+      {
+        "question": {
+          "en": "16. Who is NEF Meram suitable for?",
+          "tr":"16. NEF Meram kimler için uygun bir proje?"
+        },
+        "answer": {
+          "en": "NEF Meram is ideal for families seeking spacious villa living, those looking for a prestigious residence in Konya, and long-term investors.",
+          "tr":"Geniş metrekareli villa yaşamı arayan aileler, Konya’da prestijli bir konut isteyenler ve uzun vadeli yatırım düşünenler için uygundur."
+        }
+      },
+      {
+        "question": {
+          "en": "17. What is the project’s strongest feature?",
+          "tr":"17. Projenin en güçlü öne çıkan özelliği nedir?"
+        },
+        "answer": {
+          "en": "The panoramic city and Meram Valley Gardens views from all villas, combined with modern architecture inspired by traditional Konya design.",
+          "tr":"Tüm villaların şehir ve Meram Bağları manzarasına sahip olması ve geleneksel Konya mimarisinden ilham alan modern tasarımı öne çıkmaktadır."
+        }
+      },
+      {
+        "question": {
+          "en": "18. Are sales ongoing?",
+          "tr":"18. Satışlar devam ediyor mu?"
+        },
+        "answer": {
+          "en": "Yes. Sales for the current phases and available units are ongoing.",
+          "tr":"Evet. Mevcut etap ve üzerinden satışlar devam etmektedir."
         }
       }
     ],
-    "brands_list": [
-      {
-        "brand": "Appliances",
-        "category": "Appliances",
-        "description": "Your kitchen comes equipped with stainless steel GE® appliances. The Katona model features a 36\" counter depth french door refrigerator with lower freezer, 36\" 4 burner gas cooktop, 30\" speed oven/convection oven combo, and 24\" dishwasher.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/appliances.png",
-        "logoAlt": "Appliances logo"
-      },
-      {
-        "brand": "Kohler",
-        "category": "Plumbing fixtures",
-        "description": "All fixtures and finishes are made of high-end, durable metal from Kohler®. From your kitchen to all of your bathrooms. You can expect high quality at a minimum.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/kohler.png",
-        "logoAlt": "Kohler logo"
-      },
-      {
-        "brand": "Samsung",
-        "category": "Laundry",
-        "description": "Your Katona home comes equipped with a laundry room complete with full-size front-loading Samsung® washer and dryer.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/samsung.png",
-        "logoAlt": "Samsung logo"
-      },
-      {
-        "brand": "TOTO",
-        "category": "Plumbing (Smart)",
-        "description": "Renowned for precision engineering and refined Japanese design, TOTO sets the global standard in luxury bathroom experiences, blending innovation, comfort, and timeless elegance.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/toto.png",
-        "logoAlt": "TOTO logo"
-      },
-      {
-        "brand": "Graff",
-        "category": "Plumbing fixtures",
-        "description": "Graff plumbing fixtures combine architectural form with meticulous craftsmanship, delivering sculptural design, superior performance, and enduring material quality throughout kitchens and baths.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/graff.png",
-        "logoAlt": "Graff logo"
-      },
-      {
-        "brand": "Miele",
-        "category": "Household appliances",
-        "description": "Synonymous with performance and longevity, Miele appliances are engineered to the highest European standards, offering intuitive technology, exceptional reliability, and understated sophistication.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/miele.png",
-        "logoAlt": "Miele logo"
-      },
-      {
-        "brand": "Italkraft",
-        "category": "Designer kitchens and furniture",
-        "description": "Custom-designed Italkraft kitchens embody Italian craftsmanship and modern design excellence, featuring refined materials, seamless functionality, and tailored elegance at the heart of the home.",
-        "logoUrl": "/wp-content/themes/3d/assets/s3d/images/brands_logo/italkraft.png",
-        "logoAlt": "Italkraft logo"
-      }
-    ],
-    "payment_list": [
-      {
-        "title": {
-          "en": "Reservation",
-          "tr": "Rezervasyon"
-        },
-        "description": {
-          "en": "Hold 72h, sign reservation",
-          "tr": "72 saat bekletme, rezervasyon imzalama"
-        },
-        "percent": {
-          "en": "10%",
-          "tr": "10%"
-        },
-        "payment": {
-          "en": "Payment",
-          "tr": "Ödeme"
-        },
-        "period": {
-          "en": "Week 1",
-          "tr": "1. Hafta"
-        }
-      }
-    ],
+    "brands_list": [],
+    "payment_list": [],
     "contact_block_variant": "2"
   },
   "plannings": {
@@ -297,14 +366,14 @@
       {
         "title": "Filter.checkboxes.villa_type",
         "type": "checkbox",
-        "needTranslation": false,
+        "needTranslation": true,
         "translationNS": "Filter.type.",
         "paramaterByWhatWillBeFilter": "villa_type"
       },
       {
         "title": "Filter.checkboxes.parking_type",
         "type": "checkbox",
-        "needTranslation": false,
+        "needTranslation": true,
         "translationNS": "Filter.type.",
         "paramaterByWhatWillBeFilter": "parking_type"
       },
@@ -318,23 +387,195 @@
     ]
   },
   "pinsInfo": {
-    "video": {
+    "entrance_1": {
       "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
       "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
-      "type": "zone",
+      "type": "pin",
       "position": "center",
       "title": {
-        "en": "Tennis court",
-        "uk": "Тенісний корт"
+        "en": "Site Entrance",
+        "tr": "Site Girişi"
       },
+      "iframe": "",
       "description": {
-        "en": "Parking description",
-        "uk": "Опис паркінгу"
+        "en": "Site Entrance",
+        "tr": "Site Girişi"
       },
-      "img": "/wp-content/themes/3d/assets/s3d/images/flyby/masterplan/113.jpg",
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/site_entrance.jpg",
+      "filter_type": "arrow"
+    },
+    "lounge": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Lounge",
+        "tr": "Salon"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Lounge",
+        "tr": "Salon"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/lounge.jpg",
+      "filter_type": "arrow"
+    },
+    "kids_club": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Kids Club",
+        "tr": "Çocuk Kulübü"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Kids Club",
+        "tr": "Çocuk Kulübü"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/kids_room.jpg",
+      "filter_type": "arrow"
+    },
+    "mini_basketball_court": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Mini Basketball Court",
+        "tr": "Mini Basketbol Sahası"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Mini Basketball Court",
+        "tr": "Mini Basketbol Sahası"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/mini_basketball.jpg",
+      "filter_type": "arrow"
+    },
+    "mini_football_pitch": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Mini Football Pitch",
+        "tr": "Mini Futbol Sahası"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Mini Football Pitch",
+        "tr": "Mini Futbol Sahası"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/mini_football.jpg",
+      "filter_type": "arrow"
+    },
+    "indoor_swimming_pool_and_fitness_center": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Indoor Swimming Pool & Fitness Center",
+        "tr": "Kapalı Yüzme Havuzu & Fitness Merkezi"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Indoor Swimming Pool & Fitness Center",
+        "tr": "Kapalı Yüzme Havuzu & Fitness Merkezi"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/swimming_pool.jpg",
+      "filter_type": "arrow"
+    },
+    "gentlemens_club": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Gentlemens Club",
+        "tr": "Beyefendiler Kulübü"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Gentlemens Club",
+        "tr": "Beyefendiler Kulübü"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/gentlemens_club.jpg",
+      "filter_type": "arrow"
+    },
+    "entrance_2": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Site Entrance",
+        "tr": "Site Girişi"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Site Entrance",
+        "tr": "Site Girişi"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/site_entrance.jpg",
+      "filter_type": "arrow"
+    },
+    "cinema_and_events_room": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Cinema & Events Room",
+        "tr": "Sinema & Etkinlik Salonu"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Cinema & Events Room",
+        "tr": "Sinema & Etkinlik Salonu"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/private_cinema.jpg",
+      "filter_type": "arrow"
+    },
+    "beauty_center": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Beauty Center",
+        "tr": "Güzellik merkezi"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Beauty Center",
+        "tr": "Güzellik merkezi"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/beauty_center.jpg",
+      "filter_type": "arrow"
+    },
+    "guest_room": {
+      "FAQ": "Посилання 'iframe' автоматично буде розпізнавати в  якому тегу в попапі виводити інформацію, якщо це зображення - img, все інше - iframe",
+      "FAQ_2": "Якщо вказати тип text,  за координатами полігона буде виводитися текст, полігон має мати тільки дві точки",
+      "type": "pin",
+      "position": "center",
+      "title": {
+        "en": "Guest Room",
+        "tr": "Konuk Odası"
+      },
+      "iframe": "",
+      "description": {
+        "en": "Guest Room",
+        "tr": "Konuk Odası"
+      },
+      "img": "/wp-content/themes/3d/assets/s3d/images/pins/guest_room_2.jpg",
       "filter_type": "arrow"
     }
   },
+
   "hide_s3dFlybySideChooser": true,
   "markers": [
     "commercial.svg",
@@ -409,21 +650,17 @@
   "currency_list": [],
   "show_prices": true,
   "languages": "en/tr",
-  "show_phoneNumber": "+444 9633",
+  "show_phoneNumber": "444 9 633",
   "hideDocumentation": true,
   "hideExterior": true,
   "hideFinancialTerms": true,
   "hideConstructionProgress": true,
   "social_media_links_faq": "Якщо строчка пуста, то кнопка не буде відображатися",
   "social_media_links": {
-    "telegram": "#",
-    "viber": "#",
-    "whatsapp": "#",
-    "youtube": "https://www.youtube.com/user/DoraPuig?app=desktop",
-    "twitter": "https://twitter.com/DoraPuig",
-    "tiktok": "#",
-    "facebook": "https://www.facebook.com/dora.puig",
-    "instagram": "https://www.instagram.com/dorapuig/"
+    "twitter": "https://x.com/Nef_Style",
+    "facebook": "https://www.facebook.com/Nefstyle",
+    "instagram": "https://www.instagram.com/nef_style/",
+    "linkedin": "https://www.linkedin.com/company/nef-real-estate"
   },
   "manager_info": {
     "tel": "+1 473 416 6121",
@@ -439,24 +676,19 @@
       "uk": "Sales agent"
     },
     "socials": {
-      "telegram": "#",
-      "viber": "#",
-      "whatsapp": "#",
-      "youtube": "https://www.youtube.com/user/DoraPuig?app=desktop",
-      "twitter": "https://twitter.com/DoraPuig",
-      "tiktok": "#",
-      "facebook": "https://www.facebook.com/dora.puig",
-      "instagram": "https://www.instagram.com/dorapuig/"
+      "twitter": "https://x.com/Nef_Style",
+      "facebook": "https://www.facebook.com/Nefstyle",
+      "instagram": "https://www.instagram.com/nef_style/",
+      "linkedin": "https://www.linkedin.com/company/nef-real-estate"
     }
   },
   "g_contacts": {
-    "global_number": "+444 9633",
+    "global_number": "444 9 633",
     "email": "infosales@nef.email",
     "construction_department": {
-      "google_maps_link": "https://maps.app.goo.gl/2YL3L3n2Jv6xayvKA",
+      "google_maps_link": "",
       "text": {
-        "en": "Meram, Konya, Türkiye",
-        "tr": "Meram, Konya, Türkiye"
+        "en": ""
       }
     },
     "sales_department": {

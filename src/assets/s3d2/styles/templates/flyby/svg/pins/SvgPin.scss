@@ -18,7 +18,7 @@
     margin-bottom: 2px;
 
     @include fonts.text-style-3-d-fonts-1920-body-regular;
-    width: max-content;
+    width: fit-content;
     margin: auto;
     &:empty {
       opacity: 0;

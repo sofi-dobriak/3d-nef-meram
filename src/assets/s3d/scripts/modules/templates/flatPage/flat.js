@@ -210,7 +210,7 @@ function Flat({
       ${s3d2_paymentSection({ i18n, flat, payment_list })}
       ${$additionalAmenities(flat)}
     <!--  ${$brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })} -->
-      <!--${$s3d2_brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })}-->
+      ${$s3d2_brandsList({ i18n, flat, brands: brands_list, faqs: faq_questions })}
       ${s3d2_contactFormHtml1}
       ${s3d2_contactFormHtml2}
       ${s3d2_contactFormHtml3}
