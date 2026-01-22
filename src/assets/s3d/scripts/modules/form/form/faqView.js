@@ -1,4 +1,3 @@
-import get from 'lodash';
 import s3d2_Accordion from '../../templates/flatPage/villa/faq/s3d2_villaFaq';
 import s3d2_renderFaqCard from '../../templates/flatPage/villa/faq/s3d2_villaFaqCard';
 
@@ -22,8 +21,8 @@ export default class FaqView {
       window.addEventListener('click', evt => {
         if (evt.target.closest('[data-open-faq]')) this.open();
         if (
-          evt.target.closest('[data-form-layout-close]') ||
-          evt.target.classList.contains('form-layout')
+          evt.target.closest('[data-faq-layout-close]') ||
+          evt.target.classList.contains('faq-layout')
         ) {
           this.close();
         }
@@ -39,7 +38,6 @@ export default class FaqView {
   initAccordion() {
     const containerSelector = `#${this._id} .s3d2-villa__faq-list`;
 
-    // Даємо 100мс на рендер, перш ніж вішати івенти акордеона
     setTimeout(() => {
       const el = document.querySelector(containerSelector);
       if (el) {
@@ -87,9 +85,9 @@ export default class FaqView {
         : `<p>No questions found</p>`;
 
     return `
-      <div class="form-layout faq-popup-layout" id="${this._id}">
-        <div class="form form--popup faq-container">
-          <svg width="24" class="form-layout-close" data-form-layout-close height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="faq-layout faq-popup-layout" id="${this._id}">
+        <div class="faq faq--popup faq-container">
+          <svg width="24" class="faq-layout-close" data-faq-layout-close height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 7.29297L8.35363 7.64652L12.5001 11.793L16.6465 7.64652L17.0001 7.29297L17.7072 8.00008L17.3536 8.35363L13.2072 12.5001L17.3536 16.6465L17.7072 17.0001L17.0001 17.7072L16.6465 17.3536L12.5001 13.2072L8.35363 17.3536L8.00008 17.7072L7.29297 17.0001L7.64652 16.6465L11.793 12.5001L7.64652 8.35363L7.29297 8.00008L8.00008 7.29297Z" fill="#1A1E21"></path>
           </svg>
 

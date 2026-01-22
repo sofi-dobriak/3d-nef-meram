@@ -1144,6 +1144,62 @@
   }
 }
 
+.faq-layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1001;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq {
+  position: relative;
+  background-color: var(--color-surface-gray-200);
+  padding: var(--space-8);
+
+  &--popup {
+    display: flex;
+    gap: var(--space-20);
+    padding: var(--space-12);
+    max-width: 920px;
+    max-height: 90vh;
+    overflow: auto;
+
+    @media screen and (max-width: 768px) {
+      width: calc(100% - var(--space-3) * 2);
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+
+    .faq-layout-close {
+      position: absolute;
+      right: var(--space-5);
+      top: var(--space-5);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      transition: 0.3s ease-in-out;
+
+      @media screen and (min-width: 1023px) {
+        &:hover {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
 .s3d2-villa__additional-amenities-title {
   padding: var(--space-5) 0;
 
