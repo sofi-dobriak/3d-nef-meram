@@ -153,7 +153,7 @@ export default class FormViewPage {
                         })}
                         <div class="input-message" data-input-message="data-input-message"></div>
                     </div>
-                    <div class="form-field form-field-input" data-field-input="data-field-input" data-field-message="data-field-message" data-status="field--inactive">
+                    <div class="form-field form-field-input" data-field-input="data-field-input" data-field-email="data-field-email" data-status="field--inactive">
                         <div class="s3d2__contact__form__title">
                           ${i18next.t('Your email')}
                         </div>
@@ -238,11 +238,30 @@ export default class FormViewPage {
               .string()
               .required(i18next.t('required'))
               .test('phone-validation', i18next.t('field_too_short', { cnt: 10 }), function(value) {
-                if (!value) return false;
+                if (!value || value.length === 0) return true;
                 const digitsOnly = value.replace(/\D/g, '');
                 return digitsOnly.length >= 10;
               }),
             defaultMessage: i18next.t('phone'),
+            valid: false,
+            error: [],
+          },
+          email: {
+            inputWrapper: new SexyInput({
+              animation: 'none',
+              config: this.config,
+              $field: $form.querySelector('[data-field-email]'),
+              typeInput: 'email',
+            }),
+            rule: yup
+              .string()
+              .required(i18next.t('required'))
+              .test('email-validation', i18next.t('invalid email format'), function(value) {
+                if (!value) return false;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(value);
+              }),
+            defaultMessage: i18next.t('email'),
             valid: false,
             error: [],
           },

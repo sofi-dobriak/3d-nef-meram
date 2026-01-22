@@ -191,8 +191,8 @@ export default function s3d2ApartmentPlanings(i18n, flat, socialMediaLinks, cont
                 </button>
 
                 <div class="s3d2-apartment__flat-explication-screen-socials">
-                 ${$socialMediaList}
-                  <a class="s3d2-apartment__flat-explication-screen-socials-item" href="${$email}" target="_blank" rel="noopener noreferrer">
+                  ${$socialMediaList}
+                  <a class="s3d2-apartment__flat-explication-screen-socials-item" href="mailto:${$email}" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path d="M4 16.5C4 17.3249 4.71979 17.9998 5.59961 18L18.4004 18C19.2802 17.9998 20 17.3249 20 16.5L20 7.5C20 7.38762 19.9853 7.27834 19.96 7.17285L12.4941 13.707C12.2115 13.9544 11.7896 13.9542 11.5068 13.707L4.03906 7.17285C4.01379 7.27827 4 7.38769 4 7.5L4 16.5ZM12 12.1455L18.9258 6.08496C18.7609 6.03073 18.5843 6.00004 18.4004 6L5.59961 6C5.41533 6.00004 5.23834 6.03054 5.07324 6.08496L12 12.1455Z" fill="none"/>
                     </svg>
