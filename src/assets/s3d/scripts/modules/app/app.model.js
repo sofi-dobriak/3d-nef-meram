@@ -31,6 +31,7 @@ import { AppContentCustomError, AppUrlCustomError } from '../errors';
 import sendError from '../sendError';
 import ErrorPopup from '../errorPopup';
 import FormView from '../form/form/formView';
+import faqView from '../form/form/faqView';
 import Popup from '../popup/PopupView';
 import dispatchTrigger from '../helpers/triggers';
 import { deviceType, primaryInput } from 'detect-it';
@@ -461,18 +462,20 @@ class AppModel extends EventEmitter {
       const target = evt.target.closest('[data-s3d-share]');
       if (!target) return;
       // share(target);
-      
+
       // Toastify({
       //   text: this.i18n.t('ctr.share.link-copied'),
       //   duration: 1500,
       // alert(navigator.canShare);
       // }).showToast();
-      navigator.share({
-        url: window.location.href,
-        text: 'Share Mansion On Fisher',
-      }).catch(() => {
-        // console.log('Share failed');
-      });
+      navigator
+        .share({
+          url: window.location.href,
+          text: 'Share Mansion On Fisher',
+        })
+        .catch(() => {
+          // console.log('Share failed');
+        });
     });
 
     window.addEventListener('updateFsm', evt => {
@@ -615,8 +618,7 @@ class AppModel extends EventEmitter {
       this.defaultFlybySettings = {
         type: 'intro',
       };
-    }
-    else if (config['genplan']) {
+    } else if (config['genplan']) {
       this.defaultFlybySettings = {
         type: 'genplan',
       };
@@ -967,6 +969,12 @@ class AppModel extends EventEmitter {
     this.callbackForm = new FormView({
       modalManager: this.modalManager,
       config: this.config.form,
+      i18n: this.i18n,
+    });
+
+    this.faqPopup = new faqView({
+      modalManager: this.modalManager,
+      config: this.config,
       i18n: this.i18n,
     });
 

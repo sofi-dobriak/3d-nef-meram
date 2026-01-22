@@ -135,7 +135,7 @@ sup {
     }
 
     &.hide-svg {
-      .s3d__svgWrap svg {
+      .s3d__svgWrap polygon {
         opacity: 0;
       }
     }

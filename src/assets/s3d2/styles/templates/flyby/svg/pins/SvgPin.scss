@@ -19,7 +19,8 @@
     @include s3d2_fonts.fonts-3d-small-uppercase;
     color: var(--s3d2-color-text-gray-900);
     border-radius: var(--border-space-2);
-    background-color: var(--s3d2-color-surface-gray-200);
+    backdrop-filter: blur(20px);
+    background-color: var(--s3d2-color-surface-gray-200-transparent-80) !important;
     text-align: center;
     width: fit-content;
     margin: auto;

@@ -27,7 +27,8 @@
     "video": "Video",
     "brochure": "Brochure",
     "location": "Location",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq": "FAQ"
   },
   "infoBox": {
     "sold": "All residences are sold",

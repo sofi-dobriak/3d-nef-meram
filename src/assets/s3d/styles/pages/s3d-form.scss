@@ -49,7 +49,9 @@
       padding: var(--space-12);
       // width: 47.91%;
       max-width: 920px;
-      overflow: hidden;
+      max-height: 90vh;
+      overflow: auto;
+      // overflow: hidden;
 
       @media screen and (max-width: 768px) {
         width: calc(100% - var(--space-3) * 2);

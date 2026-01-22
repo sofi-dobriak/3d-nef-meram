@@ -64,7 +64,7 @@ const icons = {
   <svg class="SvgPin__icon-triangle"  xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
       <foreignObject x="-40" y="-40" width="90" height="85">
         <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_12790_47376_clip_path);height:100%;width:100%"></div>
-      </foreignObject><path data-figma-bg-blur-radius="40" d="M5 5L0 0L10 0L5 5Z" fill="var(--s3d2-color-surface-gray-200)" />
+      </foreignObject><path data-figma-bg-blur-radius="40" d="M5 5L0 0L10 0L5 5Z" fill="var(--s3d2-color-surface-gray-200-transparent-80)" />
       <defs>
         <clipPath id="bgblur_0_12790_47376_clip_path" transform="translate(40 40)"><path d="M5 5L0 0L10 0L5 5Z"/></clipPath>
       </defs>

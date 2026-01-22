@@ -86,6 +86,28 @@ function menu(i18n, config = {}) {
                 <span>${i18n.t('asideMenu.video')}</span>
               </div>
             </li>
+            <li class="menu-nav-link">
+              <div data-open-faq data-menu-close>
+                <svg data-v-a51d3662="" data-v-e742a666="" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 25 25" role="presentation" class="icon app-menu-item__icon">
+                  <g data-v-a51d3662="" class="stroke no-fill" style="stroke-width: 2.08333; fill: none; stroke: currentColor;">
+                      <circle cx="12.5" cy="12.5" r="10.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+
+                      <path d="M9.5 9C9.5 7.619 10.843 6.5 12.5 6.5C14.157 6.5 15.5 7.619 15.5 9C15.5 10.381 14.157 11.5 12.5 11.5V14"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10">
+                      </path>
+
+                      <path d="M12.5 17.5V17.51"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10">
+                      </path>
+                  </g>
+                </svg>
+                <span>${i18n.t('asideMenu.faq')}</span>
+              </div>
+            </li>
             <li ${
               !config.menu_brochure_link ? 'style="display:none;"' : ''
             } class="menu-nav-link js-s3d-flat__3d-tour" data-menu-close data-href="${
