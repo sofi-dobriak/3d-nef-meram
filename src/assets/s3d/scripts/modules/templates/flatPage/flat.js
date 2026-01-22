@@ -206,7 +206,7 @@ function Flat({
         </div>
 
       </div>
-      ${s3d2FlatFloorPlan(i18n, flat, floorList)}
+      ${s3d2FlatFloorPlan(i18n, flat, floorList, socialMediaLinks, contacts)}
       ${s3d2_paymentSection({ i18n, flat, payment_list })}
       ${$additionalAmenities(flat)}
       ${s3d2_contactFormHtml1}
