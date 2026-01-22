@@ -112,7 +112,7 @@
       "flat_shot": "Apartments",
       "back": "Back",
       "menu": "Menu",
-      "callback": "Inquire Now",
+      "callback": "Get in touch",
       "intro": "Intro",
       "plannings_availability": "Availability",
       "home": "Home",
@@ -346,7 +346,7 @@
         "weekends": "Saturday - Sunday: Flexible schedule"
       },
       "departmentTitle": {
-        "1": "Sales Department",
+        "1": "Sales Office",
         "2": "Construction:"
       },
       "departmentAddress": {

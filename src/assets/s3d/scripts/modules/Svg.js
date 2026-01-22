@@ -364,7 +364,7 @@ class Svg {
       pinText,
       $pin.outerHTML,
       polygonDataset,
-      'small',
+      'triangle',
       `data-pin-type="${type}"`,
       pinData,
     );
