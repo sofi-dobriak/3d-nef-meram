@@ -31,7 +31,7 @@ import { AppContentCustomError, AppUrlCustomError } from '../errors';
 import sendError from '../sendError';
 import ErrorPopup from '../errorPopup';
 import FormView from '../form/form/formView';
-import faqView from '../form/form/faqView';
+import faqView from '../faq/faqView';
 import Popup from '../popup/PopupView';
 import dispatchTrigger from '../helpers/triggers';
 import { deviceType, primaryInput } from 'detect-it';

@@ -1,5 +1,5 @@
-import s3d2_Accordion from '../../templates/flatPage/villa/faq/s3d2_villaFaq';
-import s3d2_renderFaqCard from '../../templates/flatPage/villa/faq/s3d2_villaFaqCard';
+import s3d2_Accordion from '../templates/flatPage/villa/faq/s3d2_villaFaq';
+import s3d2_renderFaqCard from '../templates/flatPage/villa/faq/s3d2_villaFaqCard';
 
 export default class FaqView {
   constructor(props) {
