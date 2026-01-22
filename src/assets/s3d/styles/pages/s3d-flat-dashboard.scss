@@ -79,7 +79,7 @@
   &__info {
     display: flex;
     align-items: center;
-    width: calc(290 / 1512) * 100vw;
+    // width: calc(290 / 1512) * 100vw;
 
     @media screen and (max-width: 600px) {
       width: 100%;
@@ -112,7 +112,7 @@
     }
 
     &-details {
-      width: calc(851 / 1512) * 100vw;
+      // width: calc(851 / 1512) * 100vw;
       display: flex;
       align-items: center;
       justify-content: center;

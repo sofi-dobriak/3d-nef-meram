@@ -142,15 +142,19 @@
       // background-color: var(--color-surface-brand-800);
       // border-color: var(--border-brand-800);
       // color: var(--s3d2-color-text-gray-200);
-      background-color: var(--color-surface-gray-300);
-      color: var(--text-gray-900);
-      border-color: var(--border-gray-600);
+      // background-color: var(--color-surface-gray-300);
+      // color: var(--text-gray-900);
+      background-color: var(--s3d2-color-surface-gray-200-transparent-10);
+      color: var(--s3d2-color-text-gray-900);
+      border-color: none;
+
       [data-not-in-fav] {
         display: none;
       }
 
       [data-in-fav] {
         display: block;
+        max-width: min-content;
       }
       svg {
         // fill: var(--s3d2-color-icon-gray-200);
