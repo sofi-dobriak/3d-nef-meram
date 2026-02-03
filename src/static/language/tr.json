@@ -173,7 +173,7 @@
     "data_changed": "Parametreler değişti",
     "list": {
       "type": "Tür",
-      "rooms": "Yatak Odaları",
+      "rooms": "Odalar",
       "bathrooms": "Banyolar",
       "area": "Alan",
       "area_unit": "$t(area_unit)",
@@ -202,7 +202,7 @@
       "price_unit": "$t(currency_label)"
     },
     "checkboxes": {
-      "rooms": "Yatak Odaları",
+      "rooms": "Odalar",
       "bathrooms": "Banyolar",
       "build": "Blok",
       "type": "Tür",
@@ -235,7 +235,7 @@
     "discount": "İndirim",
     "floor": "kat",
     "bathroom": "banyo",
-    "bedrooms": "yatak odaları",
+    "bedrooms": "Odalar",
     "garage": "garaj",
     "pools": "havuzlar",
     "from_window_view": "360 manzara",
@@ -283,7 +283,7 @@
       "allArea": "Toplam alan",
       "life_area": "Yaşam alanı",
       "area_unit": "$t(area_unit)",
-      "rooms": "Yatak Odaları",
+      "rooms": "Odalar",
       "rooms_R": "YO",
       "floor": "Kat",
       "price": "Fiyat",
@@ -378,7 +378,7 @@
     "brands_list_description": "Welcome evleri, klasik ve güvenilir yerinde inşaat yöntemiyle yapılır. Evlerimiz 'modüler' veya prefabrik değildir; sahada inşa edilirler. Aşağıda Katona bileşenlerine dair genel bir genel bakış bulabilirsiniz.",
     "payment_title": "NEF BÜNYESİNDE FAİZSİZ ÖDEME PLANI",
     "payment_description": "Ödeme planınızı satış uzmanlarımızla kişiselleştirebilirsiniz.",
-    "payment_end_text": "Satış temsilciniz her aşamada size rehberlik edecektir.",
+    "payment_end_text": "Ödeme planını ofisteki yöneticiyle görüşerek değiştirebilirsiniz.",
     "payment_info": "Bilgi"
   },
   "Floor": {
@@ -436,7 +436,7 @@
   "card--link": "Daha fazla oku",
   "card--add_to_compare": "Karşılaştırmaya ekle",
   "PopupFlyby": {
-    "title": "Konut",
+    "title": "Villa",
     "description": "Plan başka bir binada bulunuyor. 3D modelde görüntülemek için diğer bloğa geçmeniz gerekiyor.",
     "btn": "Açıyı değiştir"
   },

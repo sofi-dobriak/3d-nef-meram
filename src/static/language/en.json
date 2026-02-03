@@ -107,7 +107,7 @@
       "level": "Level",
       "floor": "Floor plan",
       "floor_plans": "Floor plans",
-      "flat": "Residence",
+      "flat": "Villa",
       "functions": "Functions",
       "property": "Property",
       "flat_shot": "Apartments",
@@ -121,7 +121,7 @@
       "360_orbit": "360 Orbit",
       "availability": "Availability",
       "fisher_island": "General plan",
-      "mansion": "Residence"
+      "mansion": "Villa"
     },
     "share": {
       "link-copied": "Link copied"
@@ -173,7 +173,7 @@
     "data_changed": "Parameters changed",
     "list": {
       "type": "Type",
-      "rooms": "Bedrooms",
+      "rooms": "Rooms",
       "bathrooms": "Bathrooms",
       "area": "Area",
       "area_unit": "$t(area_unit)",
@@ -202,7 +202,7 @@
       "price_unit": "$t(currency_label)"
     },
     "checkboxes": {
-      "rooms": "Bedrooms",
+      "rooms": "Rooms",
       "bathrooms": "Bathrooms",
       "build": "Build",
       "type": "Type",
@@ -251,7 +251,7 @@
     },
     "floor_planning": "Floorplan & specs",
     "change_floor": "Change floor:",
-    "same_apartment_type": "Available residences",
+    "same_apartment_type": "Available villas",
     "buttons": {
       "with": "3D",
       "without": "2D",
@@ -283,7 +283,7 @@
       "allArea": "Total area",
       "life_area": "Living area",
       "area_unit": "$t(area_unit)",
-      "rooms": "Bedrooms",
+      "rooms": "Rooms",
       "rooms_R": "B",
       "floor": "Floor",
       "price": "Price",
@@ -378,7 +378,7 @@
     "brands_list_description": "Welcome homes are made by way of classic, tried-and-true, stick-built construction. Our homes are not 'modular' homes, nor are they prefabricated; they're built on site. Below, you can find a general overview of the components of the Katona.",
     "payment_title": "Reservation & construction timeline",
     "payment_description": "Step-by-step timeline showing how the purchase and construction progress over time.",
-    "payment_end_text": "Your sales agent will guide you through each stage.",
+    "payment_end_text": "You can change the payment plan with the manager in the office.",
     "payment_info": "Info"
   },
   "Floor": {
@@ -436,7 +436,7 @@
   "card--link": "Read more",
   "card--add_to_compare": "Add to compare",
   "PopupFlyby": {
-    "title": "Residence",
+    "title": "Villa",
     "description": "Planning is in another building. To view it on a 3D model, you need to switch to another block.",
     "btn": "Change the angle"
   },

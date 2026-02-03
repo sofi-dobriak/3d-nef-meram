@@ -116,6 +116,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: start;
+        row-gap: 20px;
+      }
     }
 
     &-details-item {

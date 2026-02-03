@@ -378,6 +378,15 @@ class FilterModel extends EventEmitter {
         from: initialMin || 0,
         to: initialMax || 0,
         step: config.type === 'area' ? 0.5 : 1,
+
+        prettify: function(value) {
+          if (config.type === 'area') {
+            return value.toString().replace('.', ',');
+          } else {
+            return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+          }
+        },
+
         onStart: updateInputs,
         onChange: updateInputs,
         onFinish(e) {
@@ -395,26 +404,28 @@ class FilterModel extends EventEmitter {
       });
 
       if (this.rangesConfig[config.type].delimit_thousands) {
+        const isArea = config.type == 'area';
+
         $min[0].imask = IMask($min[0], {
           mask: Number,
           min: -100000000,
           max: 100000000,
           scale: 2,
-          radix: '.',
-          thousandsSeparator: ',',
+          radix: isArea ? ',' : '.',
+          thousandsSeparator: isArea ? ' ' : '.',
         });
         $max[0].imask = IMask($max[0], {
           mask: Number,
           min: -100000000,
           max: 100000000,
           scale: 2,
-          radix: '.',
-          thousandsSeparator: ',',
+          radix: isArea ? ',' : '.',
+          thousandsSeparator: isArea ? ' ' : '.',
         });
       }
       function updateInputs(data) {
-        $min.prop('value', data.from_pretty.replace(' ', ','));
-        $max.prop('value', data.to_pretty.replace(' ', ','));
+        $min.prop('value', data.from_pretty);
+        $max.prop('value', data.to_pretty);
       }
 
       $min.on('change', function() {
@@ -428,14 +439,14 @@ class FilterModel extends EventEmitter {
         let val = $(this).prop('value');
         const el = $(this);
         val = val.replace(/[^0-9.,]/g, '');
-        val = val.replace(/,/g, '');
+        val = val.replace(/,/g, '.');
         el.prop('value', val);
       });
       $max.on('input', function() {
         let val = $(this).prop('value');
         const el = $(this);
         val = val.replace(/[^0-9.,]/g, '');
-        val = val.replace(/,/g, '');
+        val = val.replace(/,/g, '.');
         el.prop('value', val);
       });
 

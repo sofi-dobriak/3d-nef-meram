@@ -7,7 +7,11 @@ import device from 'current-device';
  */
 export function numberWithCommas(x) {
   if (!x) return '';
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  // return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return parseFloat(x).toLocaleString('uk-UA', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  });
 }
 
 export function numberWithDots(x) {

@@ -407,6 +407,13 @@
     ],
     "checkboxes": [
       {
+        "title": "Filter.checkboxes.rooms",
+        "type": "checkbox",
+        "needTranslation": false,
+        "translationNS": "Filter.rooms.",
+        "paramaterByWhatWillBeFilter": "rooms"
+      },
+      {
         "title": "Filter.checkboxes.villa_type",
         "type": "checkbox",
         "needTranslation": true,
@@ -419,14 +426,8 @@
         "needTranslation": true,
         "translationNS": "Filter.type.",
         "paramaterByWhatWillBeFilter": "parking_type"
-      },
-      {
-        "title": "Filter.checkboxes.rooms",
-        "type": "checkbox",
-        "needTranslation": false,
-        "translationNS": "Filter.rooms.",
-        "paramaterByWhatWillBeFilter": "rooms"
       }
+   
     ]
   },
   "pinsInfo": {

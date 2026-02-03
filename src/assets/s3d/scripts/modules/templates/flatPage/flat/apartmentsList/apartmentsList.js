@@ -6,9 +6,30 @@ Swiper.use([Navigation]);
 
 export default function s3dApartmentsList(i18n, flat, favouritesIds$, showPrices, otherTypeFlats) {
   console.log(otherTypeFlats);
-  if (otherTypeFlats.length == 0) {
-    return '';
-  }
+  if (otherTypeFlats.length == 0) return '';
+
+  const currentPrice = parseFloat(flat.price);
+  const currentType = flat.type;
+  const currentId = flat.id; // щоб не показати ту саму квартиру
+
+  // 1. Шукаємо одну найближчу квартиру ТОГО Ж ТИПУ
+  const sameTypeNearest = otherTypeFlats
+    .filter(item => item.type === currentType && item.id !== currentId)
+    .sort(
+      (a, b) =>
+        Math.abs(parseFloat(a.price) - currentPrice) - Math.abs(parseFloat(b.price) - currentPrice),
+    )
+    .slice(0, 1); // беремо тільки 1 найближчу
+
+  // 2. Шукаємо найближчі за ціною квартири ІНШИХ ТИПІВ
+  const otherTypesNearest = otherTypeFlats
+    .filter(item => item.type !== currentType)
+    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    .slice(0, 4); // беремо 4 найближчі за ціною
+
+  // 3. Склеюємо результат
+  const flatsToShow = [...sameTypeNearest, ...otherTypesNearest];
+
   const containerId = `flat-progress-swiper-${Date.now()}`;
   const apartmentsListHtml = `
     <div class="s3d-flat-new__apartments-list">
@@ -22,7 +43,7 @@ export default function s3dApartmentsList(i18n, flat, favouritesIds$, showPrices
     <div id="${containerId}" class="s3d-flat-new__apartments-list-wrapper s3d-villa__construction-progress-screen__list swiper-container">
             <div class="s3d-flat-new__apartments-list-swiper s3d-villa__construction-progress-screen__list swiper">
                 <div class="swiper-wrapper">
-                    ${otherTypeFlats
+                    ${flatsToShow
                       .map(otherTypeFlat =>
                         Card(i18n, otherTypeFlat, favouritesIds$, showPrices, '', '', true),
                       )

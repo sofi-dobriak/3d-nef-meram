@@ -209,6 +209,7 @@ function Flat({
       ${s3d2FlatFloorPlan(i18n, flat, floorList, socialMediaLinks, contacts)}
       ${s3d2_paymentSection({ i18n, flat, payment_list })}
       ${$additionalAmenities(flat)}
+      ${s3dApartmentsList(i18n, flat, favouritesIds$, showPrices, otherTypeFlats)}
       ${s3d2_contactFormHtml1}
       ${s3d2_contactFormHtml2}
       ${s3d2_contactFormHtml3}
@@ -247,7 +248,7 @@ function Flat({
           : ''
       }
 
-      ${s3dApartmentsList(i18n, flat, favouritesIds$, showPrices, otherTypeFlats)}
+
     <!--  ${renderFaqList(i18n, faq_questions, flat)} -->
       ${VillaFinancialTermsScreen(i18n, financialTermsData)}
       ${FlatDocumentationScreen(i18n, projectDocs)}

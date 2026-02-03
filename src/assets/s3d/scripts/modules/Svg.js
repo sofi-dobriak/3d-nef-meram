@@ -581,7 +581,7 @@ class Svg {
 
     const aspectRatio = width / height;
 
-    console.log(`Aspect Ratio: ${aspectRatio.toFixed(2)}`);
+    // console.log(`Aspect Ratio: ${aspectRatio.toFixed(2)}`);
     return aspectRatio;
   }
 
