@@ -32,6 +32,7 @@ import sendError from '../sendError';
 import ErrorPopup from '../errorPopup';
 import FormView from '../form/form/formView';
 import faqView from '../faq/faqView';
+import constructionProgressView from '../construction-progress/constructionProgressView';
 import Popup from '../popup/PopupView';
 import dispatchTrigger from '../helpers/triggers';
 import { deviceType, primaryInput } from 'detect-it';
@@ -973,6 +974,11 @@ class AppModel extends EventEmitter {
     });
 
     this.faqPopup = new faqView({
+      modalManager: this.modalManager,
+      config: this.config,
+      i18n: this.i18n,
+    });
+    this.progressPopup = new constructionProgressView({
       modalManager: this.modalManager,
       config: this.config,
       i18n: this.i18n,

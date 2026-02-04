@@ -1086,6 +1086,7 @@
     background-color: var(--color-brand-800);
     color: var(--s3d2-color-text-gray-200);
     cursor: pointer;
+    z-index: 999;
     svg {
       margin-bottom: var(--space-1);
     }

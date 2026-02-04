@@ -1,4 +1,5 @@
 export default function $villaUpArrow() {
+  //onclick="this.parentElement.scrollTo({top: 0, behavior: 'smooth'}) коли розміка внизу сторінки
   return `
     <div class="s3d-villa__up-arrow" onclick="this.parentElement.scrollTo({top: 0, behavior: 'smooth'})">
       <span>UP</span>

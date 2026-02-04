@@ -117,7 +117,7 @@ export default function s3dDashboard(
                             ${flat.rooms}+1
                         </span>
                         <span class="text-style-3-d-fonts-1920-body-regular">
-                            ${i18n.t('Flat.information.rooms')}
+                            ${i18n.t('Flat.information.villa_type')}
                         </span>
                     </div>
                     <!--<div class="s3d-flat-dashboard__info-details-item s3d-flat-dashboard__info-item--mobile-row">

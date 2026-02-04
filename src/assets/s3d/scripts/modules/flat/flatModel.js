@@ -97,6 +97,7 @@ class FlatModel extends EventEmitter {
     this.g_contact_advantaged_list = config.g_contact_advantaged_list;
     this.project_google_map_location = config.project_google_map_location;
     this.faq_questions = config.faq_questions || [];
+    this.progress_photos = config.progress_photos || [];
     this.brands_list = config.brands_list || [];
     this.payment_list = config.payment_list || [];
     this.contact_block_variant = config.contact_block_variant || '1';
@@ -442,6 +443,7 @@ class FlatModel extends EventEmitter {
       g_contact_advantaged_list: this.g_contact_advantaged_list,
       project_google_map_location: this.project_google_map_location,
       faq_questions: this.faq_questions,
+      progress_photos: this.progress_photos,
       brands_list: this.brands_list,
       payment_list: this.payment_list,
       contact_block_variant: this.contact_block_variant,

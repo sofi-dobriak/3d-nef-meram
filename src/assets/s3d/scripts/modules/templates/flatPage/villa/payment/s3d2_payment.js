@@ -51,7 +51,7 @@ export default function s3d2_paymentSection({ i18n, flat, payment_list = [] }) {
           </div>
         </div>
 
-        <p class="payment__end-text">${i18n.t('Flat.payment_end_text')}</p>
+        <!--<p class="payment__end-text">${i18n.t('Flat.payment_end_text')}</p>-->
       </div>
     </section>
   `

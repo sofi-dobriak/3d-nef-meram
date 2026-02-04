@@ -376,3 +376,86 @@
     // }
   }
 }
+
+.progress-layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1001;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.progress {
+  position: relative;
+  background-color: var(--color-surface-gray-200);
+  padding: var(--space-8);
+
+  &--popup {
+    display: flex;
+    gap: var(--space-20);
+    padding: var(--space-12);
+    // max-width: 920px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+
+    @media screen and (max-width: 768px) {
+      // width: calc(100% - var(--space-3) * 2);
+      flex-direction: column;
+      gap: var(--space-5);
+      padding: var(--space-10);
+    }
+
+    .progress-layout-close {
+      position: absolute;
+      right: var(--space-5);
+      top: var(--space-5);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      transition: 0.3s ease-in-out;
+
+      @media screen and (min-width: 1023px) {
+        &:hover {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 60vw;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+      width: 50vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 80vw;
+    }
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  & .s3d2-villa__floor {
+    align-items: center;
+  }
+}

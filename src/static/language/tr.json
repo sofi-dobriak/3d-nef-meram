@@ -26,6 +26,7 @@
     "tours": "SANAL TUR",
     "video": "Video",
     "brochure": "KATALOG",
+    "construction_progress": "ŞANTİYE GÖRÜNÜMÜ",
     "location": "Konum",
     "contact": "İletişim",
     "faq": "SSS"
@@ -285,6 +286,7 @@
       "area_unit": "$t(area_unit)",
       "rooms": "Odalar",
       "rooms_R": "YO",
+      "villa_type": "Villa Tipi",
       "floor": "Kat",
       "price": "Fiyat",
       "priceText": " $t(currency_label)",

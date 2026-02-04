@@ -213,6 +213,7 @@ function Flat({
       ${s3d2_contactFormHtml1}
       ${s3d2_contactFormHtml2}
       ${s3d2_contactFormHtml3}
+
       <!-- ${contactFormHtml1} -->
       ${
         flat['view_from_window_link']
@@ -270,7 +271,6 @@ function Flat({
     </div>
     ${svgFlybyLink ? createFlybyVillaPage(flat) : ''}
     ${$villaUpArrow()}
-
   </div>
 `;
 

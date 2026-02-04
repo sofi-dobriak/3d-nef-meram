@@ -26,6 +26,7 @@
     "tours": "Tours",
     "video": "Video",
     "brochure": "Brochure",
+    "construction_progress": "Construction progress",
     "location": "Location",
     "contact": "Contact",
     "faq": "FAQ"
@@ -285,6 +286,7 @@
       "area_unit": "$t(area_unit)",
       "rooms": "Rooms",
       "rooms_R": "B",
+      "villa_type": "Villa Type",
       "floor": "Floor",
       "price": "Price",
       "priceText": " $t(currency_label)",
@@ -318,6 +320,7 @@
         "1": "The price of the residence is"
       }
     },
+
     "exterior": {
       "exteriorTitle": "EXTERIOR OF THE VILLA",
       "exteriorItemTitle": {
@@ -376,8 +379,8 @@
     "share": "Share",
     "brands_list_title": "FREQUENTLY ASKED QUESTIONS",
     "brands_list_description": "Welcome homes are made by way of classic, tried-and-true, stick-built construction. Our homes are not 'modular' homes, nor are they prefabricated; they're built on site. Below, you can find a general overview of the components of the Katona.",
-    "payment_title": "Reservation & construction timeline",
-    "payment_description": "Step-by-step timeline showing how the purchase and construction progress over time.",
+    "payment_title": "Interest-Free Payment Plan by NEF",
+    "payment_description": "Your payment plan can be personalized with our sales consultants, based on your needs and preferences.",
     "payment_end_text": "You can change the payment plan with the manager in the office.",
     "payment_info": "Info"
   },

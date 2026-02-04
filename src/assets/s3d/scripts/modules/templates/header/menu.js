@@ -18,7 +18,7 @@ function menu(i18n, config = {}) {
         <div class="menu-nav">
           <ul>
             <li class="menu-nav-link">
-              <div class="js-s3d-nav__btn" data-type="intro" ddata-title="Home" data-menu-close>
+              <div class="js-s3d-nav__btn" data-type="intro" data-title="Home" data-menu-close>
                 <!--<svg data-v-a51d3662="" data-v-e742a666="" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 25 25" role="presentation" class="icon app-menu-item__icon"><g data-v-a51d3662="" class="stroke no-fill" style="stroke-width: 2.08333;"><path d="M10 18.9995H9.00002C7.90003 18.9995 7.00003 19.8995 7.00003 20.9995V23.9995H12V20.9995C12 19.8995 11.1 18.9995 10 18.9995Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.00011 1H17V23.9998H2.00011V1Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 7H23V23.9999H17V7Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 6H6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 10H6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 14H6" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>-->
                 <svg class="app-menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#4b535b"  width="18" height="18" viewBox="0 0 495.398 495.398">
                   <path d="M487.083,225.514l-75.08-75.08V63.704c0-15.682-12.708-28.391-28.413-28.391c-15.669,0-28.377,12.709-28.377,28.391     v29.941L299.31,37.74c-27.639-27.624-75.694-27.575-103.27,0.05L8.312,225.514c-11.082,11.104-11.082,29.071,0,40.158     c11.087,11.101,29.089,11.101,40.172,0l187.71-187.729c6.115-6.083,16.893-6.083,22.976-0.018l187.742,187.747     c5.567,5.551,12.825,8.312,20.081,8.312c7.271,0,14.541-2.764,20.091-8.312C498.17,254.586,498.17,236.619,487.083,225.514z"/>
@@ -121,6 +121,18 @@ function menu(i18n, config = {}) {
                   </g>
                   </svg>
                 <span>${i18n.t('asideMenu.brochure')}</span>
+              </div>
+            </li>
+            <li class="menu-nav-link">
+              <div data-open-progress data-menu-close>
+                <svg data-v-a51d3662="" data-v-e742a666="" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 25 25" role="presentation" class="icon app-menu-item__icon">
+                  <g data-v-a51d3662="" class="stroke no-fill" style="stroke-width: 2.08333; fill: none; stroke: currentColor;">
+                    <rect x="3" y="5" width="19" height="15" rx="1.5" stroke-linecap="round" stroke-linejoin="round"></rect>
+                    <path d="M3 16L8.5 10.5L13.5 15.5L17 12L22 17" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M17.5 8.5V8.51" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                <span>${i18n.t('asideMenu.construction_progress')}</span>
               </div>
             </li>
             <li class="menu-nav-link js-s3d-flat__3d-tour" data-href="${

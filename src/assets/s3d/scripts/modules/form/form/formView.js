@@ -104,7 +104,7 @@ export default class FormView {
                 </div>
 
                 <div class="form--popup__intro">
-                  <div class="form--popup__title">${i18next.t('title')}</div>
+                  <div class="form--popup__title">${i18next.t('title').toUpperCase()}</div>
                   <div class="form--popup__description">
                   ${i18next.t('subtitle')}
                   </div>
@@ -209,6 +209,7 @@ export default class FormView {
             rule: yup
               .string()
               .required(i18next.t('required'))
+              .min(2, i18next.t('name_too_short', { cnt: 2 }))
               .trim(),
             defaultMessage: i18next.t('name'),
             config: this.config,

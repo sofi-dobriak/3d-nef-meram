@@ -105,13 +105,8 @@ function Flat(i18n, data) {
               ${i18n.t('Flat.information.floor')}: ${floor}
             </div>-->
             <div class="s3d-card__info-label">
-              ${i18n.t('Flat.information.rooms')}: ${rooms}+1
+              ${i18n.t('Flat.information.villa_type')}: ${rooms}+1
             </div>
-            <!--<div class="s3d-card__info-label">
-              ${i18n.t('Flat.information.baths')}: ${
-    Object.values(customProperties)?.find(prop => prop?.value.crm_properties_id == 52)?.value.value
-  }
-            </div>-->
           </div>
           <!--<div class="s3d-infoBox__flat__block">
             <div class="s3d-infoBox__flat__text">${i18n.t('Flat.information.price')}</div>

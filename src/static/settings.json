@@ -381,6 +381,12 @@
         "period": "Q1 2027"
       }
     ],
+    "progress_photos":[
+      {
+        "img":"https://www.nef.com.tr/media/cgbhg0b5/20716-min.jpg",
+        "link":"https://player.tvkur.com/l/d4sqmraescpc73f3e5sg"
+      }
+    ],
     "contact_block_variant": "2"
   },
   "plannings": {
@@ -407,14 +413,14 @@
     ],
     "checkboxes": [
       {
-        "title": "Filter.checkboxes.rooms",
+        "title": "Filter.checkboxes.villa_type",
         "type": "checkbox",
         "needTranslation": false,
         "translationNS": "Filter.rooms.",
         "paramaterByWhatWillBeFilter": "rooms"
       },
       {
-        "title": "Filter.checkboxes.villa_type",
+        "title": "Filter.checkboxes.type",
         "type": "checkbox",
         "needTranslation": true,
         "translationNS": "Filter.type.",
@@ -427,7 +433,6 @@
         "translationNS": "Filter.type.",
         "paramaterByWhatWillBeFilter": "parking_type"
       }
-   
     ]
   },
   "pinsInfo": {
