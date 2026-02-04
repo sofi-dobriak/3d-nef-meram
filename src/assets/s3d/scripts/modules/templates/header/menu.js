@@ -153,6 +153,7 @@ function menu(i18n, config = {}) {
         </div>
       </div>
     </div>
+    <div class="menu-wrap__overlay" data-menu-close></div>
   `;
 }
 

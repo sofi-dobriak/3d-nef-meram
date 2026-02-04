@@ -16,45 +16,6 @@ const lang = langDetect();
     lng: lang,
     debug: window.status === 'local',
     resources: {
-      uk: {
-        translation: {
-          name: 'Ім’я:*',
-          phone: 'Телефон:*',
-          email: 'Пошта:*',
-          namePlaceholder: 'Ім’я',
-          emailPlaceholder: 'Пошта',
-          send: 'Надіслати',
-          sending: 'Відправлення',
-          field_too_short: 'Телефон повинен містити не менше {{cnt}} символів',
-          name_too_short: 'Телефон повинен містити не менше {{cnt}} символів',
-          field_too_long: 'Телефон має містити не більше {{cnt}} символів',
-          field_only_letter: 'Ім`я повинно містити тільки букви',
-          field_more_letter: 'Ім`я повинно містити не більше 30 букв',
-          title: 'ЧИ ВИ ВЖЕ ЗНАЙШЛИ СВІЙ МАЙБУТНІЙ ДІМ?',
-          subtitle:
-            'Заповніть форму, щоб отримати більше інформації про нерухомість та умови придбання.',
-          only_number: 'Тут лише цифри',
-          'Your phone': 'Ваш телефон:',
-          'Your name': "Ваше ім'я:",
-          'Your email': 'Ваш email:',
-          'Type your message': 'Ваше повідомлення',
-          required: 'Це поле є обов`язковим',
-          'Your comment': 'Ваш коментар',
-          sendingSuccessTitle: 'Дякуємо за ваш запит!',
-          sendingSuccessText: 'Чекайте відповіді наших менеджерів',
-          sendingErrorText: 'Чекайте відповіді наших менеджерів',
-          sendingErrorTitle: 'Сталася помилка',
-          send_fail:
-            'Повідомлення не було відправлено через невідому помилку сервера. Код: [send_fail] ',
-          invalid_form:
-            'Повідомлення не було відправлено через невідому помилку сервера. Код: [invalid_form] ',
-          front_error:
-            'Повідомлення не було відправлено через невідому помилку сервера. Код: [front_error] ',
-          invalid_upload_file: 'Помилка завантаження файлу. Код: [invalid_upload_file]',
-          invalid_recaptcha: 'Заповніть капчу і спробуйте ще раз знову. Код: [invalid_recaptcha]',
-          connectionFailed: "Помилка з'єднання с CRM",
-        },
-      },
       en: {
         translation: {
           name: 'Name:*',
@@ -77,6 +38,7 @@ const lang = langDetect();
           name_too_short: 'Name must be at least {{cnt}} characters',
           field_only_letter: 'Name must contain only letters',
           field_more_letter: 'Name must be at most 30 letters',
+          invalid_email_format: 'Email must have @',
           only_number: 'Only digits here',
           required: 'This field is required',
           sendingSuccessTitle: 'Thank you for your request!',
@@ -105,8 +67,8 @@ const lang = langDetect();
           subtitle:
             'Formu doldurduğunuzda, <strong>uzman ekibimiz</strong> size en kısa sürede dönüş sağlayacaktır.',
           'Your name': 'AD SOYAD:',
-          'Your phone': 'TELEFON NUMARANIZ',
-          'Your email': 'E-MAIL ADRESİNİZ',
+          'Your phone': 'Telefon numaraniz',
+          'Your email': 'E-mail adresiniz',
           'Your comment': 'Mesajınız:',
           'Type your message': 'Mesajınızı yazın',
           field_too_short: 'Telefon en az {{cnt}} karakter olmalıdır',
@@ -114,6 +76,7 @@ const lang = langDetect();
           field_only_letter: 'İsim sadece harflerden oluşmalıdır',
           name_too_short: 'İsim en az {{cnt}} karakter olmalıdır',
           field_more_letter: 'İsim en fazla 30 harf olmalıdır',
+          invalid_email_format: 'E-posta adresinde @ işareti bulunmalıdır',
           only_number: 'Buraya sadece rakam giriniz',
           required: 'Bu alan zorunludur',
           sendingSuccessTitle: 'Talebiniz için teşekkür ederiz!',

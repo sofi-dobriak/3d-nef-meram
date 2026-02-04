@@ -474,11 +474,11 @@
   &__wrapper-label {
     // @extend .s3d-card__info-label-wrapper;
     display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 12px;
-      margin-top: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 12px;
     // display: flex;
     // flex-wrap: wrap;
     // width: 100%;
@@ -818,8 +818,7 @@
     }
 
     &__infrastructure,
-    &__general,
-    &__flat {
+    &__general {
       &:after {
         content: '';
         position: fixed;
@@ -832,6 +831,17 @@
         z-index: -1;
         pointer-events: none;
       }
+    }
+
+    &__flat-overlay {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg-overlay);
+      transform: translate(-50%, -50%);
+      z-index: -1;
     }
   }
 
@@ -849,8 +859,7 @@
 .mobile {
   .s3d-infoBox {
     &__infrastructure,
-    &__general,
-    &__flat {
+    &__general {
       &:after {
         content: '';
         position: fixed;
@@ -863,6 +872,17 @@
         z-index: -1;
         pointer-events: none;
       }
+    }
+
+    &__flat-overlay {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg-overlay);
+      transform: translate(-50%, -50%);
+      z-index: -1;
     }
 
     &__sold {

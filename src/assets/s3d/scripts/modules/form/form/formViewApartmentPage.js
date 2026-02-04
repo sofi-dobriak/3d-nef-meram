@@ -221,6 +221,7 @@ export default class FormViewPage {
             rule: yup
               .string()
               .required(i18next.t('required'))
+              .min(2, i18next.t('name_too_short', { cnt: 2 }))
               .trim(),
             defaultMessage: i18next.t('name'),
             config: this.config,
@@ -256,7 +257,7 @@ export default class FormViewPage {
             rule: yup
               .string()
               .required(i18next.t('required'))
-              .test('email-validation', i18next.t('invalid email format'), function(value) {
+              .test('email-validation', i18next.t('invalid_email_format'), function(value) {
                 if (!value) return false;
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 return emailRegex.test(value);

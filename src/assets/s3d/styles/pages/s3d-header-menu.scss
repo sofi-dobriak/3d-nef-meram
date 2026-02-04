@@ -23,11 +23,33 @@
     @media screen and (max-width: 600px) {
       max-width: 250px;
     }
+    & + .menu-wrap__overlay {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
     &.active {
       visibility: visible;
       opacity: 1;
       transition: /*opacity .3s ease-in-out,*/ visibility 0.3s ease-in-out;
       animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+      & + .menu-wrap__overlay {
+        z-index: 1999;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
     }
     &.slide-out-right {
       -webkit-animation: slide-out-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
