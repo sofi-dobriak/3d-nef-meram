@@ -123,7 +123,7 @@ function menu(i18n, config = {}) {
                 <span>${i18n.t('asideMenu.brochure')}</span>
               </div>
             </li>
-            <li class="menu-nav-link">
+            <!--<li class="menu-nav-link">
               <div data-open-progress data-menu-close>
                 <svg data-v-a51d3662="" data-v-e742a666="" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 25 25" role="presentation" class="icon app-menu-item__icon">
                   <g data-v-a51d3662="" class="stroke no-fill" style="stroke-width: 2.08333; fill: none; stroke: currentColor;">
@@ -132,6 +132,16 @@ function menu(i18n, config = {}) {
                     <path d="M17.5 8.5V8.51" stroke-linecap="round" stroke-linejoin="round"></path>
                   </g>
                 </svg>
+                <span>${i18n.t('asideMenu.construction_progress')}</span>
+              </div>
+            </li>-->
+            <li class="menu-nav-link" ${
+              !config.menu_construction_progress_link ? 'style="display:none;"' : ''
+            }>
+              <div data-menu-close class="js-s3d-flat__3d-tour" data-href="${
+                config.menu_construction_progress_link
+              }">
+                <svg data-v-a51d3662="" data-v-e742a666="" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 25 25" role="presentation" class="icon app-menu-item__icon"><g data-v-a51d3662="" class="stroke no-fill" style="stroke-width: 2.08333;"><path d="M12.5 24C18.8513 24 24 18.8513 24 12.5C24 6.14873 18.8513 1 12.5 1C6.14873 1 1 6.14873 1 12.5C1 18.8513 6.14873 24 12.5 24Z" stroke-miterlimit="10" stroke-linecap="round"></path><path d="M18 12.5L9 6.5V18.5L18 12.5Z" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
                 <span>${i18n.t('asideMenu.construction_progress')}</span>
               </div>
             </li>
