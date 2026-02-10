@@ -46,6 +46,14 @@ export default function s3d2ApartmentPlanings(i18n, flat, socialMediaLinks, cont
   };
   const hasFlat2dAnd3dPlansOnLevel =
     flat.level !== 1 && Object.keys(get(flat, 'flat_levels_photo.1', {})).length > 1;
+
+  const parking_sqm = flat.customProperties.find(
+    el => get(el, 'value.crm_properties_id', false) == 69,
+  );
+  const winter_garden = flat.customProperties.find(
+    el => get(el, 'value.crm_properties_id', false) == 70,
+  );
+
   return `
       <div class="s3d2-apartment__flat-explication-screen-wrap">
         <div class="s3d2-apartment__flat-explication-screen">
@@ -174,10 +182,45 @@ export default function s3d2ApartmentPlanings(i18n, flat, socialMediaLinks, cont
                         </div>
                     </div>
                   </div>
+                  <div class="class="s3d-villa__floor-explication-screen-info"">
+                     ${
+                       parking_sqm
+                         ? `<div class="s3d-villa__floor-explication-screen-info-row  " ${
+                             parking_sqm.value.value == 0 || !parking_sqm.value.value
+                               ? 'style="display:none;"'
+                               : ''
+                           }>
+                        <div class="s3d-villa__floor-explication-screen-info-row-title">
+                            ${parking_sqm.properties.label}:
+                        </div>
+                        <div class="s3d-villa__floor-explication-screen-info-row-blank">
+                        </div>
+                        <div class="s3d-villa__floor-explication-screen-info-row-value">
+                            ${parking_sqm.value.value} ${i18n.t('area_unit')}
+                        </div>
+                      </div>`
+                         : ''
+                     }
+                    ${
+                      winter_garden
+                        ? `<div class="s3d-villa__floor-explication-screen-info-row  " ${
+                            winter_garden.value.value == 0 || !winter_garden.value.value
+                              ? 'style="display:none;"'
+                              : ''
+                          }>
+                        <div class="s3d-villa__floor-explication-screen-info-row-title">
+                            ${winter_garden.properties.label}:
+                        </div>
+                        <div class="s3d-villa__floor-explication-screen-info-row-blank">
+                        </div>
+                        <div class="s3d-villa__floor-explication-screen-info-row-value">
+                            ${winter_garden.value.value} ${i18n.t('area_unit')}
+                        </div>
+                      </div>`
+                        : ''
+                    }
+                   </div>
                 </div>
-
-
-
               </div>
               <button class="s3d2-ButtonIconLeft active s3d2-ButtonIconLeft--secondary text-uppercase-important s3d2-apartment__flat-explication-screen-open text-uppercase-important js-s3d__create-pdf" data-flat-explication-button>
                 <span>${i18n.t('Flat.explication_data.open_full_plan')}</span>

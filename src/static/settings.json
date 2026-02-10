@@ -381,10 +381,10 @@
         "period": "Q1 2027"
       }
     ],
-    "progress_photos":[
+    "progress_photos": [
       {
-        "img":"https://3d-nef-meram.smarto.agency/wp-content/themes/3d/assets/img/projects/1/1/B1.jpg",
-        "link":"https://player.tvkur.com/l/d4sqmraescpc73f3e5sg"
+        "img": "https://3d-nef-meram.smarto.agency/wp-content/themes/3d/assets/img/projects/1/1/B1.jpg",
+        "link": "https://player.tvkur.com/l/d4sqmraescpc73f3e5sg"
       }
     ],
     "contact_block_variant": "2"
@@ -917,7 +917,7 @@
   },
   "menu_tour_link": "https://apartment-tours.smartorange.com.ua/en/english-mension-fisher-island-lot7/?scene=0",
   "menu_video_link": "https://3d-mension-on-fisher.smartorange.site/wp-content/themes/3d/assets/images-wp/real-estate-v5-v2.mp4",
-  "menu_construction_progress_link":"https://player.tvkur.com/l/d4sqmraescpc73f3e5sg",
+  "menu_construction_progress_link": "https://player.tvkur.com/l/d4sqmraescpc73f3e5sg",
   "menu_brochure_link": "/wp-content/themes/3d/assets/images-wp/The Mansions on Fisher Island - brochure (4).pdf",
   "flat_description_2": {
     "title": "Share Property",

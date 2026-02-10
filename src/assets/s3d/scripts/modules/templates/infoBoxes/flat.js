@@ -145,7 +145,7 @@ function Flat(i18n, data) {
           </div>
         </div>
       </div>
-    </div c>`;
+    </div>`;
 }
 
 export default Flat;

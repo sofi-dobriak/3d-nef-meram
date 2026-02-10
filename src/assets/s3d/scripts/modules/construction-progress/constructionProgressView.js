@@ -7,7 +7,6 @@ export default class constructionProgressView {
     this.inited = false;
     this.config = props.config;
     this.i18n = props.i18n;
-    this.faqs = props.faqs || [];
     this.init();
   }
 

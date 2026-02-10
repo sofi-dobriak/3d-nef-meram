@@ -71,6 +71,7 @@ const lang = langDetect();
           'Your email': 'E-mail adresiniz',
           'Your comment': 'Mesajınız:',
           'Type your message': 'Mesajınızı yazın',
+          invalid_email_format: 'Электрондық поштада @ болуы керек',
           field_too_short: 'Telefon en az {{cnt}} karakter olmalıdır',
           field_too_long: 'Telefon en fazla {{cnt}} karakter olmalıdır',
           field_only_letter: 'İsim sadece harflerden oluşmalıdır',
