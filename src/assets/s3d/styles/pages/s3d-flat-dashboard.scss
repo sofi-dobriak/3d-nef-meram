@@ -136,6 +136,11 @@
       &:last-child {
         border-right: none;
       }
+
+      @media screen and (max-width: 768px) {
+        padding: 0 var(--space-3);
+      }
+
       &__icon {
         width: 16px;
         height: 16px;

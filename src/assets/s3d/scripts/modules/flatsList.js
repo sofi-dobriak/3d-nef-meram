@@ -8,7 +8,7 @@ import paginationScroll from './pagination';
 import sortArray from './sort';
 import Card from './templates/card/card';
 import s3d2spriteIcon from '../../../s3d2/scripts/templates/spriteIcon';
-import { numberWithCommas } from '../../../s3d2/scripts/helpers/helpers_s3d2';
+import { numberWithCommas, numberWithDots } from '../../../s3d2/scripts/helpers/helpers_s3d2';
 
 class FlatsList {
   constructor(config, filter) {
@@ -193,6 +193,7 @@ class FlatsList {
         e.currentTarget && e.currentTarget.dataset && has(e.currentTarget.dataset, 'sort')
           ? e.currentTarget.dataset.sort
           : undefined;
+
       if (nameSort === undefined || (nameSort && nameSort === 'none')) {
         return;
       }
@@ -341,7 +342,8 @@ class FlatsList {
     const favourites = this.favouritesIds$.value;
     const arr = flats.reduce((previous, current, index) => {
       if (index >= this.currentShowAmount && index < this.currentShowAmount + amount) {
-        previous.push(this.createElem(this.getFlat(+current), favourites));
+        const flat = this.getFlat(+current);
+        previous.push(this.createElem(flat, favourites));
       }
       return previous;
     }, []);
@@ -401,8 +403,8 @@ class FlatsList {
 					<td class="s3d-filter__td">${floor || '-'}</td>
 					<td class="s3d-filter__td">${rooms}</td>
 					<td class="s3d-filter__td">${area}</td>
-					${this.show_prices ? `<td class="s3d-filter__td bold">${numberWithCommas(price)}</td>` : ''}
-					${this.show_prices ? `<td class="s3d-filter__td bold">${numberWithCommas(price_m2)}</td>` : ''}
+					${this.show_prices ? `<td class="s3d-filter__td bold">${price}</td>` : ''}
+					${this.show_prices ? `<td class="s3d-filter__td bold">${price_m2}</td>` : ''}
 					<td class="s3d-filter__td">
             <div class="s3d-filter__td-status-label" style="background-color: ${
               unitStatus.background
