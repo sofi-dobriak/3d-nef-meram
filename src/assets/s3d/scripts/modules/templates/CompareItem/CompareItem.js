@@ -12,6 +12,7 @@ import get from 'lodash/get';
 import ButtonWithoutIcon from '../../../../../s3d2/scripts/templates/common/ButtonWithoutIcon';
 import s3d2spriteIcon from '../../../../../s3d2/scripts/templates/spriteIcon';
 import { TOOLTIP_ATTRIBUTE } from '../../../../../s3d2/scripts/constants';
+import { numberWithDots } from '../../../../../s3d2/scripts/helpers/helpers_s3d2';
 
 export default function CompareItem({ i18n, id, flat, propertiesToShow = [] }) {
   const $status = (i18n, flat) => {
@@ -36,8 +37,12 @@ export default function CompareItem({ i18n, id, flat, propertiesToShow = [] }) {
       <div class="CompareItem__table">
         ${propertiesToShow
           .map(({ keyPath, hide, valueFormat = e => e, title }) => {
+            console.log('keyPath: ', keyPath);
+
             if (hide) return '';
+
             const value = get(flat, keyPath, undefined);
+
             if (value === 0) return ``;
             if (value === undefined)
               return `
@@ -47,12 +52,19 @@ export default function CompareItem({ i18n, id, flat, propertiesToShow = [] }) {
               </div>
             </div>
             `;
+
+            const unit = keyPath.includes('price')
+              ? ' ₺'
+              : keyPath === 'area' || keyPath === 'life_room' || keyPath.includes('_m2')
+              ? ' m²'
+              : '';
+
             return `
             <div class="CompareItem__table-row">
               <div class="CompareItem__table-cell">
                 <span class="CompareItem__table-title text-style-3-d-fonts-1920-body-regular">${title}:</span>
                 <span class="text-style-3-d-fonts-1920-body-regular">${
-                  keyPath === 'sale' ? $status(i18n, flat) : valueFormat(value)
+                  keyPath === 'sale' ? $status(i18n, flat) : numberWithDots(value) + unit
                 } </span>
               </div>
             </div>

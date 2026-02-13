@@ -99,7 +99,7 @@
     position: sticky;
     top: 0;
     z-index: 2;
-    padding: calc(var(--s3d-header) + var(--space-2)) var(--space-5) 0 var(--space-5);
+    padding: calc(var(--s3d-header) + var(--space-10)) var(--space-5) 0 var(--space-5);
     background-color: var(--color-gray-100);
     width: 100%;
     @media screen and (max-width: 600px) {

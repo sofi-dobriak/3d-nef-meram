@@ -16,9 +16,11 @@ class FilterView extends EventEmitter {
 
     $('#resetFilter').on('click', () => {
       this.emit('resetFilter');
+      this.resetSortClasses();
     });
     $('#resetFilter-mobile').on('click', () => {
       this.emit('resetFilter');
+      this.resetSortClasses();
     });
     $('.js-s3d-filter__close').on('click', () => {
       // this.hidden();
@@ -108,6 +110,22 @@ class FilterView extends EventEmitter {
     });
   }
 
+  resetSortClasses() {
+    // Знайти всі елементи з класом s3d-sort-inactive
+    const inactiveElements = document.querySelectorAll('.s3d-sort-inactive');
+
+    // Видалити клас s3d-sort-inactive з кожного елемента
+    inactiveElements.forEach(el => {
+      el.classList.remove('s3d-sort-inactive');
+    });
+
+    // Також видалити клас s3d-sort-active якщо потрібно
+    const activeElements = document.querySelectorAll('.s3d-sort-active');
+    activeElements.forEach(el => {
+      el.classList.remove('s3d-sort-active');
+    });
+  }
+
   handleTableInfobox() {
     $('.js-s3d-filter').on('mouseover', '.js-s3d-filter__tr', evt => {
       const infobox = document.querySelector('[data-s3d-table-infobox]');
@@ -155,7 +173,10 @@ class FilterView extends EventEmitter {
       'js-s3d-filter-open',
       document.querySelector('.js-s3d-filter').classList.contains('s3d-open-filter'),
     );
-    this._model.g_notify('filter-container-switch-view', document.querySelector('.js-s3d-filter').classList.contains('s3d-open-filter'));
+    this._model.g_notify(
+      'filter-container-switch-view',
+      document.querySelector('.js-s3d-filter').classList.contains('s3d-open-filter'),
+    );
   }
 
   setFilterStatusToButtons() {

@@ -82,7 +82,6 @@
   &__list {
     display: flex;
     position: relative;
-    margin-bottom: var(--space-10);
     position: relative;
 
     &.swiper-wrapper {
@@ -210,6 +209,7 @@
     width: fit-content;
     // margin: 0 auto var(--space-10);
     margin: 0 auto;
+    margin-top: var(--space-10);
 
     .swiper-button-disabled {
       button {
@@ -223,6 +223,10 @@
           opacity: 0.5;
         }
       }
+    }
+
+    &:has(.swiper-button-prev.swiper-button-disabled):has(.swiper-button-next.swiper-button-disabled) {
+      display: none;
     }
 
     &__button {

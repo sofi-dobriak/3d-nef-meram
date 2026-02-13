@@ -173,6 +173,16 @@ class AppView extends EventEmitter {
       video.pause();
     });
 
+    // ДОДАЙТЕ ЦЕ - одразу приховати всі інші блоки
+    document.querySelectorAll(`.s3d__wrap:not(.js-s3d__wrapper__${name})`).forEach(wrap => {
+      wrap.style.transition = 'opacity 0.75s ease-out';
+      wrap.style.opacity = '0';
+      setTimeout(() => {
+        wrap.style.display = 'none';
+        wrap.style.zIndex = 5;
+      }, 300);
+    });
+
     gsap
       .timeline()
       .set('.page__inner', {
@@ -186,7 +196,9 @@ class AppView extends EventEmitter {
       })
       .set(`.js-s3d__wrapper__${name}`, { zIndex: 100, display: '' }, '<')
       .add(() => {
-        const pinchZoomContainer = document.querySelector(`.js-s3d__wrapper__${name}`).closest('.pinch-zoom-container');
+        const pinchZoomContainer = document
+          .querySelector(`.js-s3d__wrapper__${name}`)
+          .closest('.pinch-zoom-container');
         if (pinchZoomContainer) {
           pinchZoomContainer.style.display = '';
         }
@@ -212,7 +224,10 @@ class AppView extends EventEmitter {
           this._model[name].resizeCanvas(true);
         }
       }, '<')
-      .set(`.s3d__wrap:not(.js-s3d__wrapper__${name})`, { zIndex: 5, display: 'none' })
+      .set(`.s3d__wrap:not(.js-s3d__wrapper__${name})`, {
+        zIndex: 5,
+        display: 'none',
+      })
 
       .add(() => {
         document.querySelector('.js-s3d-ctr').dataset.type = name;

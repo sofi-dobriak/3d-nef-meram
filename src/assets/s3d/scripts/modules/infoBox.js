@@ -228,10 +228,16 @@ class InfoBox {
   updatePosition(e) {
     const target = e.target;
 
-    const { x, y } = placeElemInWrapperNearMouse(this.infoBox, e);
-    this.infoBox.style.position = 'fixed';
-    this.infoBox.style.left = `${x}px`;
+    if (target.dataset.type == 'flat') {
+      // передвигаем блок за мышкой
+      const { x, y } = placeElemInWrapperNearMouse(this.infoBox, document.documentElement, e, 20);
+      this.infoBox.style.top = `${y}px`;
+      this.infoBox.style.left = `${x}px`;
+      return;
+    }
+    const { x, y } = placeElemInWrapperNearMouse(this.infoBox, document.documentElement, e, 20);
     this.infoBox.style.top = `${y}px`;
+    this.infoBox.style.left = `${x}px`;
   }
 
   updateInfo(data) {

@@ -1160,36 +1160,53 @@
   opacity: 0;
 }
 
+.faq-list-popup {
+  margin-bottom: 40px;
+}
+
 .faq {
   position: relative;
   background-color: var(--color-surface-gray-200);
   padding: var(--space-8);
 
   &--popup {
+    position: relative;
     display: flex;
-    gap: var(--space-20);
+    flex-direction: column;
+    // gap: var(--space-20);
     padding: var(--space-12);
     max-width: 920px;
     max-height: 90vh;
     overflow: auto;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px) {
       width: calc(100% - var(--space-3) * 2);
       flex-direction: column;
       gap: var(--space-5);
+      padding: var(--space-5);
     }
 
     .faq-layout-close {
-      position: absolute;
-      right: var(--space-5);
-      top: var(--space-5);
+      position: sticky;
+      top: 0;
+      // right: var(--space-5);
+      align-self: flex-end;
+      margin-right: calc(var(--space-8) * -1);
+      z-index: 10;
       width: 24px;
       height: 24px;
       border-radius: 50%;
       border: none;
       cursor: pointer;
-
       transition: 0.3s ease-in-out;
+      flex-shrink: 0;
+      pointer-events: all;
+      background-color: var(--color-surface-gray-200);
+
+      @media screen and (max-width: 768px) {
+        margin-right: calc(var(--space-3) * -1);
+      }
 
       @media screen and (min-width: 1023px) {
         &:hover {

@@ -119,7 +119,7 @@
 
       @media screen and (max-width: 767px) {
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: space-between;
         row-gap: 20px;
       }
     }
