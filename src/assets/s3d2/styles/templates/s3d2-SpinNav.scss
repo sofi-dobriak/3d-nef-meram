@@ -178,13 +178,6 @@
     &__arrow:active {
       transform: scale(1.05);
     }
-  }
-}
-
-.mobile {
-  .s3d2-SpinNav {
-    // bottom: calc(var(--mobile-controller-height) + var(--space-1));
-    // bottom: var(--space-2);
 
     position: static;
     transform: none;
@@ -200,5 +193,27 @@
     &__counter {
       margin: 0;
     }
+  }
+}
+
+.mobile {
+  .s3d2-SpinNav {
+    // bottom: calc(var(--mobile-controller-height) + var(--space-1));
+    // bottom: var(--space-2);
+
+    // position: static;
+    // transform: none;
+    // border-top-left-radius: 0px;
+    // border-bottom-left-radius: 0px;
+    // backdrop-filter: none;
+
+    // &__load-element {
+    //   max-width: 126px;
+    //   backdrop-filter: none;
+    // }
+
+    // &__counter {
+    //   margin: 0;
+    // }
   }
 }

@@ -402,9 +402,9 @@ class FlatsList {
           <td class="s3d-filter__th--offset"></td>
 					<td class="s3d-filter__td">${floor || '-'}</td>
 					<td class="s3d-filter__td">${rooms}</td>
-					<td class="s3d-filter__td">${area}</td>
-					${this.show_prices ? `<td class="s3d-filter__td bold">${price}</td>` : ''}
-					${this.show_prices ? `<td class="s3d-filter__td bold">${price_m2}</td>` : ''}
+					<td class="s3d-filter__td">${numberWithCommas(area)}</td>
+					${this.show_prices ? `<td class="s3d-filter__td bold">${numberWithDots(price)}</td>` : ''}
+					${this.show_prices ? `<td class="s3d-filter__td bold">${numberWithDots(price_m2)}</td>` : ''}
 					<td class="s3d-filter__td">
             <div class="s3d-filter__td-status-label" style="background-color: ${
               unitStatus.background

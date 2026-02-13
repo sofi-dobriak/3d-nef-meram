@@ -17,10 +17,11 @@ export default function s3d2_MobileFlybyController(i18n, config) {
         'data-icon-open="Tiny chevron down" data-icon-closed="close"',
         'Tiny chevron down',
       )}-->
-      
-          <button type="button" class = "s3d2-mobile-flyby__button js-s3d-nav__btn" data-type="plannings" data-s3d2-header-plannings> 
+
+          <button type="button" class = "s3d2-mobile-flyby__button js-s3d-nav__btn" data-type="plannings" data-s3d2-header-plannings>
           ${i18n.t('ctr.nav.availability')}
           </button>
+
       <div class="s3d2-mobile-flyby__content js-mobile-flyby-content">
 
         <!--<div class="s3d2-mobile-flyby__content__first-block">

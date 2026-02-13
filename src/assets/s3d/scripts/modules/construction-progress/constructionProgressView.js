@@ -11,7 +11,6 @@ export default class constructionProgressView {
   }
 
   init() {
-    console.log('progress this.config: ', this.config);
     if (!this.inited) {
       document.body.insertAdjacentHTML('beforeend', this.getTemplate());
 
