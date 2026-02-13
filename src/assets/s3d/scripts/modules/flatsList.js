@@ -79,7 +79,7 @@ class FlatsList {
     const bodyContainer = document.querySelector('.js-s3d-filter__body');
 
     this.currentFilteredFlatIdsAviableStatus$.subscribe(value => {
-      tableContainer.scrollTop = 0;
+      //tableContainer.scrollTop = 0;
       bodyContainer.textContent = '';
       this.currentShowAmount = 0;
       this.updateShowFlat(value);

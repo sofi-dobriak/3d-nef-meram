@@ -1,3 +1,4 @@
+import { get } from 'lodash';
 import $addToFavourite from '../$addToFavourite';
 import { TOOLTIP_ATTRIBUTE, BATHS_CUSTOM_PROPERTY_ID } from '../../../../../s3d2/scripts/constants';
 import { numberWithDots, numberWithCommas } from '../../../../../s3d2/scripts/helpers/helpers_s3d2';
@@ -35,7 +36,7 @@ function Card(
     id,
   } = flat;
 
-  const buildType = flat.customProperties[1].value.value;
+  const buildType = get(flat, 'customProperties[1].value.value', '');
 
   const $showIn3dButton = (() => {
     const isMarked = Array.isArray(specifiedFlybys) && specifiedFlybys.length > 0;
@@ -178,7 +179,7 @@ function Card(
           </div>
           <!--<div class="s3d-card__info-label">
            ${i18n.t('Flat.information.baths')}: ${
-    Object.values(customProperties)?.find(prop => prop?.value.crm_properties_id == 52)?.value.value
+    Object.values(get(flat, 'customProperties', {}))?.find(prop => prop?.value.crm_properties_id == 52)?.value.value
   }
           </div>-->
         </div>
