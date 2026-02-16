@@ -106,7 +106,7 @@ class InfoBox {
 
   changeState(value, data = null) {
     const prevState = this.stateUI.status;
-    if (prevState === 'active') return;
+    if (prevState === 'active' && value === 'hover') return;
     let flat = null;
 
     const mappingStatus = {

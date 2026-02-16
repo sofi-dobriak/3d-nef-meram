@@ -72,7 +72,7 @@ class InfoBox {
   changeState(value, data = null) {
     const prevState = this.stateUI.status;
     const nextState = value;
-    if (prevState === 'active') return;
+    if (prevState === 'active' && value == 'hover') return;
 
     let flat = null;
     if (data) {
