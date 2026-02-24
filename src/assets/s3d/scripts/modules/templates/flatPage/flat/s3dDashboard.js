@@ -21,6 +21,9 @@ export default function s3dDashboard(
     ['sales_department', 'text', lang],
     contacts.sales_department.text.en,
   );
+  const total_garden_area = flat.customProperties.find(
+    el => get(el, 'value.crm_properties_id', false) == 58,
+  );
 
   return `
         <div class="s3d-flat-dashboard">
@@ -142,7 +145,7 @@ export default function s3dDashboard(
                     </div>
                     <div class="s3d-flat-dashboard__info-details-item s3d-flat-dashboard__info-item--mobile-row">
                         <span class="text-style-3-d-fonts-1920-h-1">
-                            ${numberWithCommas(flat.customProperties[6].value.value)}
+                            ${numberWithCommas(total_garden_area?.value?.value)}
                         </span>
                         <span class="text-style-3-d-fonts-1920-body-regular">
                              ${i18n.t('Flat.information.garden')} ${i18n.t('area_unit')}
