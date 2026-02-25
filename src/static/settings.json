@@ -7,41 +7,7 @@
     "video_url": "https://3d-mension-on-fisher.smartorange.site/wp-content/themes/3dshow_num/assets/images-wp/real-estate-v5-v2.mp4",
     "faq": "Видалити цей об'єкт, якщо не потрібен інтро екран перед обльотом"
   },
-  "genplan": {
-    "id": "genplan",
-    "generalWrapId": "#js-s3d__wrapper",
-    "imageUrl": "images/flyby/masterplan/",
-    "sd_imageUrl": "images/flyby/masterplan/",
-    "enableParalax": false,
-    "enableClouds": false,
-    "image_format": "jpg",
-    "show_flat_polygons_tooltip": false,
-    "show_flat_polygons_tooltip_key": "area",
-    "defaultTheme": "light",
-    "class": "js-s3d__wrapper",
-    "SLIDER_MOBILE_FINGER_SWIPE": false,
-    "DISABLE_MOBILE_ZOOM": false,
-    "numberSlide": {
-      "min": 0,
-      "max": 101
-    },
-    "verticalAlig_faq": "top || center || bottom",
-    "verticalAlign": "center",
-    "horizontalAlign_faq": "left || center || right",
-    "horizontalAlign": "center",
-    "controlPoint": [
-      25,
-      50,
-      75,
-      100
-    ],
-    "activeSlide": 100,
-    "rotateSpeedDefault": 24,
-    "rotateSpeed": [],
-    "frameWithNorthDirection": 100,
-    "mouseSpeed": 0.5,
-    "startDegCompass": 60
-  },
+  "genplan": {},
   "flyby": {
     "1": {
       "outside": {
@@ -459,13 +425,13 @@
       "type": "pin",
       "position": "center",
       "title": {
-        "en": "Lounge",
-        "tr": "Salon"
+        "en": "Chef’s Table",
+        "tr": "Chef’s Table"
       },
       "iframe": "",
       "description": {
-        "en": "Lounge",
-        "tr": "Salon"
+        "en": "Chef’s Table",
+        "tr": "Chef’s Table"
       },
       "img": "/wp-content/themes/3d/assets/s3d/images/pins/lounge.jpg",
       "filter_type": "arrow"
@@ -544,13 +510,13 @@
       "type": "pin",
       "position": "center",
       "title": {
-        "en": "Gentlemens Club",
-        "tr": "Beyefendiler Kulübü"
+        "en": "Gentlemen’s Club",
+        "tr": "Gentlemen’s Club"
       },
       "iframe": "",
       "description": {
-        "en": "Gentlemens Club",
-        "tr": "Beyefendiler Kulübü"
+        "en": "Gentlemen’s Club",
+        "tr": "Gentlemen’s Club"
       },
       "img": "/wp-content/themes/3d/assets/s3d/images/pins/gentlemens_club.jpg",
       "filter_type": "arrow"
@@ -612,13 +578,13 @@
       "type": "pin",
       "position": "center",
       "title": {
-        "en": "Guest Room",
-        "tr": "Konuk Odası"
+        "en": "Guest House",
+        "tr": "Guest House"
       },
       "iframe": "",
       "description": {
-        "en": "Guest Room",
-        "tr": "Konuk Odası"
+        "en": "Guest House",
+        "tr": "Guest House"
       },
       "img": "/wp-content/themes/3d/assets/s3d/images/pins/guest_room_2.jpg",
       "filter_type": "arrow"

@@ -132,9 +132,22 @@ export default class FormViewPage {
                           ${i18next.t('Your name')}*
                         </div>
                         ${TextInput({
-                          text: i18next.t('Type your name'),
+                          text: i18next.t('Your name'),
                           className: 's3d2-TextInput',
                           attributes: 'name="name"',
+                          type: 'text',
+                          value: '',
+                        })}
+                        <div class="input-message" data-input-message="data-input-message"></div>
+                    </div>
+                    <div class="s3d2-form-field s3d2-form-field-input" data-field-input="data-field-input" data-field-last-name="data-field-last-name" data-status="field--inactive">
+                        <div class="s3d2__contact__form__title">
+                          ${i18next.t('Your last name')}*
+                        </div>
+                        ${TextInput({
+                          text: i18next.t('Your last name'),
+                          className: 's3d2-TextInput',
+                          attributes: 'name="lastName"',
                           type: 'text',
                           value: '',
                         })}
@@ -158,7 +171,7 @@ export default class FormViewPage {
                           ${i18next.t('Your email')}
                         </div>
                         ${TextInput({
-                          text: i18next.t('Type your Email'),
+                          text: i18next.t('Your email'),
                           className: '',
                           attributes: 'name="email"',
                           type: 'email',
@@ -224,6 +237,21 @@ export default class FormViewPage {
               .min(2, i18next.t('name_too_short', { cnt: 2 }))
               .trim(),
             defaultMessage: i18next.t('name'),
+            config: this.config,
+            valid: false,
+            error: [],
+          },
+          lastName: {
+            inputWrapper: new SexyInput({
+              animation: 'none',
+              $field: $form.querySelector('[data-field-last-name]'),
+            }),
+            rule: yup
+              .string()
+              .required(i18next.t('required'))
+              .min(2, i18next.t('last_name_too_short', { cnt: 2 }))
+              .trim(),
+            defaultMessage: i18next.t('lastName'),
             config: this.config,
             valid: false,
             error: [],

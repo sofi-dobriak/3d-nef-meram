@@ -124,6 +124,19 @@ export default class FormView {
                         })}
                         <div class="input-message" data-input-message="data-input-message"></div>
                     </div>
+                    <div class="form-field form-field-input form--popup-input" data-field-input="data-field-input" data-field-last-name="data-field-last-name" data-status="field--inactive">
+                        <div class="form-field-input__title">
+                          ${i18next.t('Your last name')} *
+                        </div>
+                        ${TextInput({
+                          text: i18next.t('lastNamePlaceholder'),
+                          className: '',
+                          attributes: 'name="lastName"',
+                          type: 'text',
+                          value: '',
+                        })}
+                        <div class="input-message" data-input-message="data-input-message"></div>
+                    </div>
                     <div class="form-field disabled form-field-input form--popup-input" data-field-input="data-field-input" data-field-phone="data-field-phone" data-status="field--inactive">
                         <div class="form-field-input__title">
                           ${i18next.t('Your phone')} *
@@ -212,6 +225,21 @@ export default class FormView {
               .min(2, i18next.t('name_too_short', { cnt: 2 }))
               .trim(),
             defaultMessage: i18next.t('name'),
+            config: this.config,
+            valid: false,
+            error: [],
+          },
+          lastName: {
+            inputWrapper: new SexyInput({
+              animation: 'none',
+              $field: $form.querySelector('[data-field-last-name]'),
+            }),
+            rule: yup
+              .string()
+              .required(i18next.t('required'))
+              .min(2, i18next.t('last_name_too_short', { cnt: 2 }))
+              .trim(),
+            defaultMessage: i18next.t('lastName'),
             config: this.config,
             valid: false,
             error: [],
