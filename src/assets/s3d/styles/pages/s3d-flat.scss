@@ -1603,3 +1603,12 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 
 @include meta.load-css('s3d-smarto-tours');
 @include meta.load-css('s3d-smarto-tours-v3');
+
+.panorama-screen {
+  padding: var(--space-32) 0 0 0;
+
+  iframe {
+    width: 100%;
+    height: 80vh;
+  }
+}

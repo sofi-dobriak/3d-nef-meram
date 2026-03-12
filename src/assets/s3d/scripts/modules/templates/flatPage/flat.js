@@ -45,6 +45,7 @@ import s3d2FlatFloorPlan from './flat/s3d2FlatFloor';
 import $brandsList from './$brandsList';
 import $s3d2_brandsList from './$s3d2_brandsList';
 import s3d2_paymentSection from './villa/payment/s3d2_payment';
+import s3d2_PanoramaScreen from './villa/panorama/s3d2_PanoramaScreen';
 
 /**
  * Represents a Flat object.
@@ -208,6 +209,7 @@ function Flat({
       </div>
       ${s3d2FlatFloorPlan(i18n, flat, floorList, socialMediaLinks, contacts)}
       ${s3d2_paymentSection({ i18n, flat, payment_list })}
+      ${s3d2_PanoramaScreen(CONFIG, i18n)}
       ${$additionalAmenities(flat)}
       ${s3dApartmentsList(i18n, flat, favouritesIds$, showPrices, otherTypeFlats)}
       ${s3d2_contactFormHtml1}
@@ -215,6 +217,7 @@ function Flat({
       ${s3d2_contactFormHtml3}
 
       <!-- ${contactFormHtml1} -->
+
       ${
         flat['view_from_window_link']
           ? `

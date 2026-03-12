@@ -881,7 +881,8 @@
       "plannings": "/wp-content/themes/3d/static/plannings.mp3"
     }
   },
-  "menu_tour_link": "",
+  "panorama_view": "https://apartment-tours.smartorange.com.ua/en/tour/nef-meram-locations/",
+  "menu_tour_link": "https://apartment-tours.smartorange.com.ua/en/tour/nef-meram-locations/",
   "menu_video_link": "",
   "menu_construction_progress_link": "",
   "menu_brochure_link": "",

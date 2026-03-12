@@ -242,6 +242,9 @@
     "from_window_view": "360 views",
     "scroll": "Scroll",
     "see_all_photos": "See all {{count}} photos",
+    "panorama_info": "Explore real 360° views from different floors and orientations",
+    "panorama": "Panorama",
+    "panorama_description": "Explore real 360° views from different floors and orientations",
     "explication_data": {
       "floor_1": "1st floor",
       "floor_2": "2nd floor",

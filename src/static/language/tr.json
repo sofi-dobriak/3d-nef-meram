@@ -242,6 +242,9 @@
     "from_window_view": "360 manzara",
     "scroll": "Kaydır",
     "see_all_photos": "Tüm {{count}} fotoğrafı görüntüle",
+    "panorama_info": "Farklı katlardan ve yönlerden gerçek 360° manzaraları keşfedin",
+    "panorama": "Panorama",
+    "panorama_description": "Farklı katlardan ve yönlerden gerçek 360° manzaraları keşfedin",
     "explication_data": {
       "floor_1": "Bahçe Katı",
       "floor_2": "1. kat",
